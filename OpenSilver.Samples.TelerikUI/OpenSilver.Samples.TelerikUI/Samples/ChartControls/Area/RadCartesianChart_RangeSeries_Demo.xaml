@@ -5,7 +5,7 @@
     xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="340" Width="440">
+    <ContentControl Style="{StaticResource Chart_Card_Style}">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>

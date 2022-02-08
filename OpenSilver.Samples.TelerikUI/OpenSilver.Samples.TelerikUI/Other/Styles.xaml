@@ -39,6 +39,12 @@
             </Setter>
         </Style.Setters>
     </Style>
+    <Style x:Key="Chart_Card_Style" TargetType="ContentControl" BasedOn="{StaticResource Card_Style}">
+        <Style.Setters>
+            <Setter Property="Width" Value="440"/>
+            <Setter Property="Height" Value=" 340"/>
+        </Style.Setters>
+    </Style>
     <Style x:Key="HeaderControl_Style" TargetType="ContentControl">
         <Style.Setters>
             <Setter Property="FontSize" Value="20"/>

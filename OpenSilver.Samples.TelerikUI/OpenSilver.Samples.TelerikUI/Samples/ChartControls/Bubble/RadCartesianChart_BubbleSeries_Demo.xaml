@@ -1,38 +1,36 @@
 ﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.RadCartesianChart_ScatterSplineSeries_Demo"
+    x:Class="OpenSilver.Samples.TelerikUI.RadCartesianChart_BubbleSeries_Demo"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="340" Width="440">
+    <ContentControl Style="{StaticResource Chart_Card_Style}">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <ContentControl Content="RadCartesianChart (ScatterSplineSeries)" Foreground="#FFFF657F" Background="#FFCB8591" Style="{StaticResource HeaderControl_Style}"/>
+            <ContentControl Content="RadCartesianChart (BubbleSeries)" Foreground="#FFFF657F" Background="#FFCB8591" Style="{StaticResource HeaderControl_Style}"/>
             <Grid Grid.Row="1">
                 <telerik:RadCartesianChart>
                     <telerik:RadCartesianChart.HorizontalAxis>
-                        <telerik:LinearAxis/>
+                        <telerik:CategoricalAxis />
                     </telerik:RadCartesianChart.HorizontalAxis>
                     <telerik:RadCartesianChart.VerticalAxis>
                         <telerik:LinearAxis />
                     </telerik:RadCartesianChart.VerticalAxis>
                     <telerik:RadCartesianChart.Series>
-                        <telerik:ScatterSplineSeries>
-                            <telerik:ScatterSplineSeries.DataPoints>
-                                <telerik:ScatterDataPoint XValue="0" YValue="2" />
-                                <telerik:ScatterDataPoint XValue="1" YValue="5" />
-                                <telerik:ScatterDataPoint XValue="2" YValue="3" />
-                                <telerik:ScatterDataPoint XValue="3" YValue="10" />
-                                <telerik:ScatterDataPoint XValue="4" YValue="9" />
-                                <telerik:ScatterDataPoint XValue="5" YValue="7" />
-                                <telerik:ScatterDataPoint XValue="6" YValue="1" />
-                            </telerik:ScatterSplineSeries.DataPoints>
-                        </telerik:ScatterSplineSeries>
+                        <telerik:BubbleSeries ShowLabels="True">
+                            <telerik:BubbleSeries.DataPoints>
+                                <telerik:BubbleDataPoint BubbleSize="50" Category="Mexico" Value="20"/>
+                                <telerik:BubbleDataPoint BubbleSize="100" Category="USA" Value="8" />
+                                <telerik:BubbleDataPoint BubbleSize="70" Category="UK" Value="13" />
+                                <telerik:BubbleDataPoint BubbleSize="50" Category="France" Value="20" />
+                                <telerik:BubbleDataPoint BubbleSize="42" Category="Germany" Value="5" />
+                            </telerik:BubbleSeries.DataPoints>
+                        </telerik:BubbleSeries>
                     </telerik:RadCartesianChart.Series>
                 </telerik:RadCartesianChart>
             </Grid>

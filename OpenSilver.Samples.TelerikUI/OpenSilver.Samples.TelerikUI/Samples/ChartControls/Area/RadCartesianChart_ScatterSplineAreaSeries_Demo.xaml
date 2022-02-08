@@ -1,18 +1,18 @@
 ﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.RadCartesianChart_ScatterAreaSeries_Demo"
+    x:Class="OpenSilver.Samples.TelerikUI.RadCartesianChart_ScatterSplineAreaSeries_Demo"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
 	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="340" Width="440">
+    <ContentControl Style="{StaticResource Chart_Card_Style}">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <ContentControl Content="RadCartesianChart (ScatterAreaSeries)" Foreground="#FFFF657F" Background="#FFCB8591" Style="{StaticResource HeaderControl_Style}"/>
+            <ContentControl Content="RadCartesianChart (ScatterSplineAreaSeries)" Foreground="#FFFF657F" Background="#FFCB8591" Style="{StaticResource HeaderControl_Style}"/>
             <Grid Grid.Row="1">
                 <telerik:RadCartesianChart>
                     <telerik:RadCartesianChart.HorizontalAxis>
@@ -22,8 +22,8 @@
                         <telerik:LinearAxis />
                     </telerik:RadCartesianChart.VerticalAxis>
                     <telerik:RadCartesianChart.Series>
-                        <telerik:ScatterAreaSeries>
-                            <telerik:ScatterAreaSeries.DataPoints>
+                        <telerik:ScatterSplineAreaSeries>
+                            <telerik:ScatterSplineAreaSeries.DataPoints>
                                 <telerik:ScatterDataPoint XValue="0" YValue="2" />
                                 <telerik:ScatterDataPoint XValue="1" YValue="5" />
                                 <telerik:ScatterDataPoint XValue="2" YValue="3" />
@@ -31,8 +31,8 @@
                                 <telerik:ScatterDataPoint XValue="4" YValue="9" />
                                 <telerik:ScatterDataPoint XValue="5" YValue="7" />
                                 <telerik:ScatterDataPoint XValue="6" YValue="1" />
-                            </telerik:ScatterAreaSeries.DataPoints>
-                        </telerik:ScatterAreaSeries>
+                            </telerik:ScatterSplineAreaSeries.DataPoints>
+                        </telerik:ScatterSplineAreaSeries>
                     </telerik:RadCartesianChart.Series>
                 </telerik:RadCartesianChart>
             </Grid>
