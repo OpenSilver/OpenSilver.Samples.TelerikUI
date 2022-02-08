@@ -1,0 +1,40 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.RadCartesianChart_ScatterBubbleSeries_Demo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
+	xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <ContentControl Style="{StaticResource Card_Style}" Height="340" Width="440">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadCartesianChart (ScatterBubbleSeries)" Foreground="#FFFF657F" Background="#FFCB8591" Style="{StaticResource HeaderControl_Style}"/>
+            <Grid Grid.Row="1">
+                <telerik:RadCartesianChart>
+                    <telerik:RadCartesianChart.HorizontalAxis>
+                        <telerik:LinearAxis />
+                    </telerik:RadCartesianChart.HorizontalAxis>
+                    <telerik:RadCartesianChart.VerticalAxis>
+                        <telerik:LinearAxis />
+                    </telerik:RadCartesianChart.VerticalAxis>
+                    <telerik:RadCartesianChart.Series>
+                        <telerik:ScatterBubbleSeries ShowLabels="True" >
+                            <telerik:ScatterBubbleSeries.DataPoints>
+                                <telerik:ScatterBubbleDataPoint BubbleSize="50" XValue="1" YValue="20" />
+                                <telerik:ScatterBubbleDataPoint BubbleSize="100" XValue="2" YValue="8" />
+                                <telerik:ScatterBubbleDataPoint BubbleSize="70" XValue="3" YValue="13" />
+                                <telerik:ScatterBubbleDataPoint BubbleSize="50" XValue="4" YValue="20" />
+                                <telerik:ScatterBubbleDataPoint BubbleSize="42" XValue="5" YValue="5" />
+                            </telerik:ScatterBubbleSeries.DataPoints>
+                        </telerik:ScatterBubbleSeries>
+                    </telerik:RadCartesianChart.Series>
+                </telerik:RadCartesianChart>
+            </Grid>
+            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFFF657F" Style="{StaticResource ButtonViewSource_Style}"/>
+        </Grid>
+    </ContentControl>
+</UserControl>

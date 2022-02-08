@@ -28,8 +28,36 @@
     <None Remove="Other\embed.js" />
     <None Remove="Other\Styles.xaml" />
     <None Remove="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml" />
-    <None Remove="Samples\Controls\RadCartesianChart\RadCartesianChart_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_AreaSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_RangeSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_RangeSplineSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_ScatterAreaSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_ScatterSplineAreaSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_SplineAreaSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_StepAreaSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Bar\RadCartesianChart_BarSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Bar\RadCartesianChart_RangeBarSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Bubble\RadCartesianChart_BubbleSeries_Demo.xaml" />
+    <None Remove="Samples\Controls\RadCartesianChart\Bubble\RadCartesianChart_ScatterBubbleSeries_Demo.xaml" />
+	  <None Remove="Samples\Controls\RadCartesianChart\Financial\RadCartesianChart_CandlestickSeries_Demo.xaml" />
+
     <None Remove="Samples\Controls\Controls.xaml" />
+
+    <None Remove="Samples\Controls\RadCartesianChart\Financial\RadCartesianChart_OhlcSeries_Demo.xaml" />
+
+    <None Remove="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_LineSeries_Demo.xaml" />
+
+    <None Remove="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_ScatterLineSeries_Demo.xaml" />
+
+    <None Remove="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_ScatterSplineSeries_Demo.xaml" />
+
+    <None Remove="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_SplineSeries_Demo.xaml" />
+
+    <None Remove="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_StepLineSeries_Demo.xaml" />
+
+    <None Remove="Samples\Controls\RadCartesianChart\Point\RadCartesianChart_PointSeries_Demo.xaml" />
+
+    <None Remove="Samples\Controls\RadCartesianChart\Point\RadCartesianChart_ScatterPointSeries_Demo.xaml" />
     <None Remove="Samples\Controls\RadGallery\RadGallery_Demo.xaml" />
 	  <None Remove="Samples\Controls\RadListBox\RadListBox_Demo.xaml" />
 	  <None Remove="Samples\Controls\RadMap\RadMap_Demo.xaml" />
@@ -85,9 +113,68 @@
     <Content Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_Demo.xaml">
+    <Content Include="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_AreaSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_RangeSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_RangeSplineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_ScatterAreaSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_ScatterSplineAreaSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_SplineAreaSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Area\RadCartesianChart_StepAreaSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Bar\RadCartesianChart_BarSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+	  <Content Include="Samples\Controls\RadCartesianChart\Bar\RadCartesianChart_RangeBarSeries_Demo.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+	  </Content>
+	  <Content Include="Samples\Controls\RadCartesianChart\Bubble\RadCartesianChart_BubbleSeries_Demo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Content>
+	  <Content Include="Samples\Controls\RadCartesianChart\Bubble\RadCartesianChart_ScatterBubbleSeries_Demo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Financial\RadCartesianChart_CandlestickSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Financial\RadCartesianChart_OhlcSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_LineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_ScatterLineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_ScatterSplineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_SplineSeries_Demo.xaml">
+      <CustomToolNamespace></CustomToolNamespace>
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Line\RadCartesianChart_StepLineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Point\RadCartesianChart_PointSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadCartesianChart\Point\RadCartesianChart_ScatterPointSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    
     <Content Include="Samples\Controls\RadGallery\RadGallery_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
