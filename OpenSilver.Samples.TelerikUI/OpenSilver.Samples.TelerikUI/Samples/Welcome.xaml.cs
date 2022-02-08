@@ -19,9 +19,13 @@ namespace OpenSilver.Samples.TelerikUI
             this.InitializeComponent();
         }
 
-        private void ButtonToContinue_Click(object sender, RoutedEventArgs e)
+        private void ButtonContinueUIControls_Click(object sender, RoutedEventArgs e)
         {
             MainPage.Current.NavigateToPage("/Controls");
+        }
+        private void ButtonContinueChartsControls_Click(object sender, RoutedEventArgs e)
+        {
+            MainPage.Current.NavigateToPage("/ChartControls");
         }
     }
 }
