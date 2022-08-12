@@ -3,9 +3,10 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="using:Telerik.Windows.Controls"
+    xmlns:schedule="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
     xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="150" Width="220">
+    <ContentControl Style="{StaticResource Card_Style}" Height="350" Width="730">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -13,10 +14,16 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="RadScheduleView" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <!--Commented out because it causes an exception-->
-                <!--<controls:RadScheduleView CustomLayout="True" Width="150"/>-->
-            </StackPanel>
+
+            <Grid  Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                <schedule:RadScheduleView  x:Name="scheduleView" CustomLayout="True">
+                    <schedule:RadScheduleView.ViewDefinitions>
+                        <schedule:MonthViewDefinition MinTimeRulerExtent="1" />
+                        <schedule:TimelineViewDefinition MinTimeRulerExtent="1" />
+                    </schedule:RadScheduleView.ViewDefinitions>
+                </schedule:RadScheduleView>
+            </Grid>
+
 
             <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF6F7DFF" Style="{StaticResource ButtonViewSource_Style}"/>
         </Grid>
