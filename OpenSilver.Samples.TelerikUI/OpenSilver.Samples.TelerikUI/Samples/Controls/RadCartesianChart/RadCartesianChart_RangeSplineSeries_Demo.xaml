@@ -1,0 +1,44 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.RadCartesianChart_RangeSplineSeries_Demo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:charts="Telerik.Windows.Controls.ChartView"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+
+    <ContentControl Style="{StaticResource Card_Style}" Height="430" Width="750">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ContentControl Content="Rad Cartesian chart - RangeSplineSeries" Foreground="#FFFF7065" Background="#FFD5928F" Style="{StaticResource HeaderControl_Style}"/>
+            <Grid Grid.Row="1" >
+                <telerik:RadCartesianChart>
+                    <telerik:RadCartesianChart.HorizontalAxis>
+                        <telerik:CategoricalAxis/>
+                    </telerik:RadCartesianChart.HorizontalAxis>
+                    <telerik:RadCartesianChart.VerticalAxis>
+                        <telerik:LinearAxis/>
+                    </telerik:RadCartesianChart.VerticalAxis>
+                    <telerik:RadCartesianChart.Series>
+                        <telerik:RangeSplineSeries>
+                            <telerik:RangeSplineSeries.DataPoints>
+                                <telerik:RangeDataPoint Category="January" High="5" Low="0"/>
+                                <telerik:RangeDataPoint Category="February" High="7" Low="2"/>
+                                <telerik:RangeDataPoint Category="March" High="6" Low="4"/>
+                                <telerik:RangeDataPoint Category="April" High="8" Low="5"/>
+                                <telerik:RangeDataPoint Category="May" High="4" Low="3"/>
+                                <telerik:RangeDataPoint Category="June" High="9" Low="7"/>
+                                <telerik:RangeDataPoint Category="July" High="3" Low="1"/>
+                            </telerik:RangeSplineSeries.DataPoints>
+                        </telerik:RangeSplineSeries>
+                    </telerik:RadCartesianChart.Series>
+                </telerik:RadCartesianChart>
+            </Grid>
+
+            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFFF7065" Style="{StaticResource ButtonViewSource_Style}"/>
+        </Grid>
+    </ContentControl>
+</UserControl>
