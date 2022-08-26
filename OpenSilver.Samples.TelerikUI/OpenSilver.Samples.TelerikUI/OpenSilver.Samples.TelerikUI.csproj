@@ -27,6 +27,7 @@
     <None Remove="MyTemplate_rename_me_after_export.vstemplate" />
     <None Remove="Other\embed.js" />
     <None Remove="Other\Styles.xaml" />
+    <None Remove="Samples\Controls\Charts.xaml" />
     <None Remove="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml" />
     <None Remove="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml" />
     <None Remove="Samples\Controls\RadCartesianChart\RadCartesianChart_AreaSeries_Demo.xaml" />
@@ -84,6 +85,11 @@
     <None Remove="Samples\Controls\RadRadioButton\RadRadioButton_Demo.xaml" />
     <None Remove="Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml" />
     <None Remove="Samples\Controls\RadWindow\RadWindow_demo.xaml" />
+    <None Remove="Samples\DataManagement.xaml" />
+    <None Remove="Samples\Editors.xaml" />
+    <None Remove="Samples\Layouts.xaml" />
+    <None Remove="Samples\Navigations.xaml" />
+    <None Remove="Samples\Scheduling.xaml" />
     <None Remove="Samples\Welcome.xaml" />
   </ItemGroup>
 
@@ -94,6 +100,9 @@
     </Content>
     <Content Include="Other\embed.js" />
     <Content Include="Other\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Charts.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml">
@@ -266,6 +275,21 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\Controls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\DataManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Editors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Navigations.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Layouts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Scheduling.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Welcome.xaml">

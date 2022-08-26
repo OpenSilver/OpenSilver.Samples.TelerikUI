@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.Samples.Editors"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+
+    <StackPanel>
+        <TextBlock Text="Editors" Style="{StaticResource PageHeader_Style}"/>
+        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+            <local:RadRadioButton_Demo HorizontalAlignment="Center"/>
+            <local:RadSlider_Demo HorizontalAlignment="Center"/>
+            <local:RadDatePicker_Demo HorizontalAlignment="Center"/>
+            <local:RadRichTextBox_Demo HorizontalAlignment="Center"/>
+            <local:RadToggleSwitchButton_Demo HorizontalAlignment="Center"/>
+            <local:RadTimePicker_Demo HorizontalAlignment="Center"/>
+            <local:RadWatermarkTextBox_Demo HorizontalAlignment="Center"/>
+            <local:RadComboBox_Demo HorizontalAlignment="Center"/>
+            <local:RadAutoCompleteBox_Demo HorizontalAlignment="Center"/>
+            <local:RadDropDownButton_Demo HorizontalAlignment="Center"/>
+            <local:RadNumericUpDown_Demo HorizontalAlignment="Center"/>
+            <local:RadColorPicker_Demo HorizontalAlignment="Center"/>
+        </local:MasonryPanelWithProgressiveLoading>
+    </StackPanel>
+    
+</UserControl>

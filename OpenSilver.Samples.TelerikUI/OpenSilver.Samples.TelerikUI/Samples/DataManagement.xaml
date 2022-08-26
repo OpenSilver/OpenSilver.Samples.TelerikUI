@@ -1,0 +1,15 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.Samples.DataManagement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+
+    <StackPanel>
+        <TextBlock Text="DataManagement" Style="{StaticResource PageHeader_Style}"/>
+        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+            <local:RadGridView_Demo HorizontalAlignment="Center"/>
+            <local:RadTreeListView_Demo HorizontalAlignment="Center"/>
+            <local:RadListBox_Demo HorizontalAlignment="Center"/>
+        </local:MasonryPanelWithProgressiveLoading>
+    </StackPanel>
+</UserControl>

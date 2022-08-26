@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.Charts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+
+    <StackPanel>
+        <TextBlock Text="Charts" Style="{StaticResource PageHeader_Style}"/>
+        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+            <local:RadCartesianChart_AreaSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_BarSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_BubbleSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_LineSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_OhlcSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_ScatterPointSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_SplineSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_StepLineSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_CandlestickSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_RangeSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_RangeSplineSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_SplineAreaSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_StepAreaSeries_Demo HorizontalAlignment="Center"/>
+        </local:MasonryPanelWithProgressiveLoading>
+    </StackPanel>
+</UserControl>

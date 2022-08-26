@@ -40,6 +40,35 @@ namespace OpenSilver.Samples.TelerikUI
             NavigateToPage("/Controls");
         }
 
+        void ButtonCharts_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToPage("/Charts");
+        }
+
+        private void ButtonEditors_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToPage("/Editors");
+        }
+
+        private void ButtonLayouts_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToPage("/Layouts");
+        }
+
+        private void ButtonNavigations_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToPage("/Navigations");
+        }
+
+        private void ButtonScheduling_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToPage("/Scheduling");
+        }
+
+        private void ButtonDataManagement_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToPage("/DataManagement");
+        }
         void ButtonHome_Click(object sender, RoutedEventArgs e)
         {
             NavigateToPage("/Welcome");
@@ -197,6 +226,12 @@ namespace OpenSilver.Samples.TelerikUI
             }
         }
 
+
+
         #endregion
+
+
+
+
     }
 }

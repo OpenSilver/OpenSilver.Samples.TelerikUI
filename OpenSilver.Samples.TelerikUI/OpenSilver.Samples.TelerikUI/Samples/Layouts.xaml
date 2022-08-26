@@ -1,0 +1,22 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.Samples.Layouts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+
+    <StackPanel>
+        <TextBlock Text="Layouts" Style="{StaticResource PageHeader_Style}"/>
+        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+            <local:GroupBox_Demo HorizontalAlignment="Center"/>
+            <local:RadDockPanel_Demo HorizontalAlignment="Center"/>
+            <local:RadGallery_Demo HorizontalAlignment="Center"/>
+            <local:RadWindow_demo HorizontalAlignment="Center"/>
+            <local:RadWrapPanel_Demo HorizontalAlignment="Center"/>
+            <local:Label_Demo HorizontalAlignment="Center"/>
+            <local:RadBusyIndicator_Demo HorizontalAlignment="Center"/>
+            <local:RadProgressBar_Demo HorizontalAlignment="Center"/>
+            <local:RadTickBar_Demo HorizontalAlignment="Center"/>
+            <local:RadAlert_Demo HorizontalAlignment="Center"/>
+        </local:MasonryPanelWithProgressiveLoading>
+    </StackPanel>
+</UserControl>
