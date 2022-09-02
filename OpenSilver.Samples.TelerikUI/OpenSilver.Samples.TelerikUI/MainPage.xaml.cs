@@ -39,6 +39,10 @@ namespace OpenSilver.Samples.TelerikUI
         {
             NavigateToPage("/Controls");
         }
+        void ButtonChartControls_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateToPage("/ChartControls");
+        }
 
         void ButtonHome_Click(object sender, RoutedEventArgs e)
         {

@@ -33,6 +33,7 @@
                             </TextBlock>
                         </StackPanel>
                         <Button Content="All Controls" Click="ButtonControls_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
+                        <Button Content="Chart Controls" Click="ButtonChartControls_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
                         <Button Content="Home" Click="ButtonHome_Click"  Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,3,0,0" Padding="20,3,3,3"/>
                     </StackPanel>
                 </ScrollViewer>

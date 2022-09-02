@@ -9,23 +9,15 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Navigation;
+using Telerik.Windows.Data;
 
 namespace OpenSilver.Samples.TelerikUI
 {
-    public partial class Welcome : UserControl
+    public partial class ChartControls : UserControl
     {
-        public Welcome()
+        public ChartControls()
         {
             this.InitializeComponent();
-        }
-
-        private void ButtonContinueUIControls_Click(object sender, RoutedEventArgs e)
-        {
-            MainPage.Current.NavigateToPage("/Controls");
-        }
-        private void ButtonContinueChartsControls_Click(object sender, RoutedEventArgs e)
-        {
-            MainPage.Current.NavigateToPage("/ChartControls");
         }
     }
 }
