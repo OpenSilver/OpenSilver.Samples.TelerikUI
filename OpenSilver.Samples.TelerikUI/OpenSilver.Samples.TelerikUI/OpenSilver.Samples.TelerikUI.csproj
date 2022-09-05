@@ -311,8 +311,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="1.1.0-rc-2022-08-12-082810-dbfc2185" />
-    <PackageReference Include="OpenSilver.Compatibility.TelerikUI" Version="1.1.0-rc-2022-07-30-062210-4ec7d0b4" />
+    <PackageReference Include="OpenSilver" Version="1.0.0" />
+    <PackageReference Include="OpenSilver.Compatibility.TelerikUI" Version="1.0.0.1" />
   </ItemGroup>
 
 </Project>
