@@ -27,13 +27,13 @@ namespace OpenSilver.Samples.TelerikUI
             {
                 new ViewSourceButtonInfo()
                 {
-                    TabHeader = "RadBusyIndicator_Demo.xaml",
-                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadBusyIndicator/RadAutoCompleteBox_Demo.xaml"
+                    TabHeader = "RadAutoCompleteBox_Demo.xaml",
+                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadAutoCompleteBox/RadAutoCompleteBox_Demo.xaml"
                 },
                 new ViewSourceButtonInfo()
                 {
-                     TabHeader = "RadBusyIndicator_Demo.xaml.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadBusyIndicator/RadAutoCompleteBox_Demo.xaml.cs"
+                     TabHeader = "RadAutoCompleteBox_Demo.xaml.cs",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadAutoCompleteBox/RadAutoCompleteBox_Demo.xaml.cs"
                 }
             });
         }

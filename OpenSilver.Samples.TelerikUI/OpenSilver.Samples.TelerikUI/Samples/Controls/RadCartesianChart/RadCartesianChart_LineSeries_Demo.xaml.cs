@@ -13,10 +13,10 @@ using Telerik.Windows.Data;
 
 namespace OpenSilver.Samples.TelerikUI
 {
-    public partial class RadCartesianChart_CandlestickSeries_Demo : UserControl
+    public partial class RadCartesianChart_LineSeries_Demo : UserControl
     {
 
-        public RadCartesianChart_CandlestickSeries_Demo()
+        public RadCartesianChart_LineSeries_Demo()
         {
             InitializeComponent();
         }
@@ -28,12 +28,12 @@ namespace OpenSilver.Samples.TelerikUI
                 new ViewSourceButtonInfo()
                 {
                     TabHeader = "RadCartesianChart_Demo.xaml",
-                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadCartesianChart/RadCartesianChart_Demo.xaml"
+                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadCartesianChart/RadCartesianChart_LineSeries_Demo.xaml"
                 },
                 new ViewSourceButtonInfo()
                 {
                      TabHeader = "RadCartesianChart_Demo.xaml.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadCartesianChart/RadCartesianChart_Demo.xaml.cs"
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadCartesianChart/RadCartesianChart_LineSeries_Demo.xaml.cs"
                 }
             });
         }
