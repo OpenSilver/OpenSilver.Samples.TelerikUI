@@ -29,9 +29,9 @@
             </TextBlock>
 
             <TextBlock FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0">
-                    <Span xml:space="preserve"><Run>2. A license for the OpenSilver Compatibility Pack for Telerik UI. To buy it, please contact us at: </Run>
-                     <Hyperlink FontSize="16" Foreground="Blue" NavigateUri="https://opensilver.net/contact.aspx" Cursor="Hand">
-                         https://opensilver.net/contact.aspx
+                    <Span xml:space="preserve"><Run>2. A license for the OpenSilver Compatibility Pack for Telerik UI. For more information or to request a Trial, please refer to the documentation at: </Run>
+                     <Hyperlink FontSize="16" Foreground="Blue" NavigateUri="https://doc.opensilver.net/documentation/3rd-party-libraries/telerik.html" Cursor="Hand">
+                         https://doc.opensilver.net/documentation/3rd-party-libraries/telerik.html
                      </Hyperlink>
                     </Span>
             </TextBlock>
