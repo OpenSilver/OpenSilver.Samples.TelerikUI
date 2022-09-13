@@ -10,7 +10,7 @@
         </Border.Effect>
         <StackPanel Margin="0,0,20,20">
             <TextBlock Text="Welcome!" Foreground="#FF2299A1" Style="{StaticResource PageHeader_Style}"/>
-            <TextBlock x:Name="IntroductionTextBlock" Text="This app demonstrates the current state of the 'Telerik UI for Silverlight' source code recompiled with OpenSilver, so that it can run on modern browsers without plugins, where Silveright is not supported. It also provides sample code to show how to use those Telerik UI controls in an OpenSilver application." FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0"/>
+            <TextBlock x:Name="IntroductionTextBlock" Text="This app demonstrates the current state of the 'Telerik UI for Silverlight' source code recompiled with OpenSilver, so that it can run on modern browsers without plugins, where Silverlight is not supported. It also provides sample code to show how to use those Telerik UI controls in an OpenSilver application." FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0"/>
             <TextBlock FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0">
               <Span xml:space="preserve"><Run>The source code of this demo application is available at: </Run>
                      <Hyperlink FontSize="16" Foreground="Blue" NavigateUri="https://github.com/OpenSilver/OpenSilver.Samples.TelerikUI" Cursor="Hand">
