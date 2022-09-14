@@ -55,7 +55,7 @@ jobs:
           sed -i 's\myget_password\${{ secrets.MYGET_PASSWORD }}\" />\g' Nuget.Config
       - name: Get OpenSilver version
         run: |
-          nuget install OpenSilver.Compatibility.TelerikUI.4.6 -source https://www.myget.org/F/opensilver-private/api/v3/index.json -source https://www.myget.org/F/opensilver/api/v3/index.json -source https://api.nuget.org/v3/index.json -version ${{ github.event.inputs.telerik-version }} -output TelerikInstall
+          nuget install OpenSilver.Compatibility.TelerikUI.4.6 -source https://www.myget.org/F/opensilver-private/api/v3/index.json -source https://www.myget.org/F/opensilver-private-rc/api/v3/index.json -source https://www.myget.org/F/opensilver/api/v3/index.json -source https://api.nuget.org/v3/index.json -version ${{ github.event.inputs.telerik-version }} -output TelerikInstall
           ls TelerikInstall
           $opensilver_version = ls TelerikInstall -Filter OpenSilver.1* | % { $_.name }
           $opensilver_version = $opensilver_version.Split(".", 2)[1]
