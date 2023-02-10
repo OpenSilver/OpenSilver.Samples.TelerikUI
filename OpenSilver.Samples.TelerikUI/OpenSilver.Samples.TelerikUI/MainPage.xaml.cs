@@ -98,7 +98,6 @@ namespace OpenSilver.Samples.TelerikUI
                 RowThatContainsThePage.Height = new GridLength(0.5d, GridUnitType.Star);
                 RowThatContainsTheGridSplitter.Height = new GridLength(5d);
                 RowThatContainsTheSourceCodePane.Height = new GridLength(0.5d, GridUnitType.Star);
-                GridSplitter1.ResizeDirection = GridSplitter.GridResizeDirection.Rows;
                 GridSplitter1.Visibility = Visibility.Visible;
                 SourceCodePane.Visibility = Visibility.Visible;
             }
