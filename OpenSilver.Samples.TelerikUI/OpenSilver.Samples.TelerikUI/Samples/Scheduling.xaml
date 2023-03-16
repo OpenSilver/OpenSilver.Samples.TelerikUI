@@ -6,9 +6,9 @@
 
     <StackPanel>
         <TextBlock Text="Scheduling" Style="{StaticResource PageHeader_Style}"/>
-        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+        <local:WrapPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
             <local:RadScheduleView_Demo HorizontalAlignment="Center"/>
             <local:RadCalendar_Demo HorizontalAlignment="Center"/>
-        </local:MasonryPanelWithProgressiveLoading>
+        </local:WrapPanelWithProgressiveLoading>
     </StackPanel>
 </UserControl>

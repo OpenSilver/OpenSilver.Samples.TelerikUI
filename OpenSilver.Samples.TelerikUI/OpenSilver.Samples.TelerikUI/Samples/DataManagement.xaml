@@ -6,10 +6,10 @@
 
     <StackPanel>
         <TextBlock Text="DataManagement" Style="{StaticResource PageHeader_Style}"/>
-        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+        <local:WrapPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
             <local:RadGridView_Demo HorizontalAlignment="Center"/>
             <local:RadTreeListView_Demo HorizontalAlignment="Center"/>
             <local:RadListBox_Demo HorizontalAlignment="Center"/>
-        </local:MasonryPanelWithProgressiveLoading>
+        </local:WrapPanelWithProgressiveLoading>
     </StackPanel>
 </UserControl>

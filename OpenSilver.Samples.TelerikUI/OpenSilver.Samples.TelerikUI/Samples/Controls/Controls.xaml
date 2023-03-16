@@ -6,7 +6,7 @@
 
     <StackPanel>
         <TextBlock Text="All Telerik UI Controls" Style="{StaticResource PageHeader_Style}"/>
-        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+        <local:WrapPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
             <local:RadButton_Demo HorizontalAlignment="Center"/>
             <local:RadExpander_Demo HorizontalAlignment="Center"/>
             <local:RadPathButton_Demo HorizontalAlignment="Center"/>
@@ -70,6 +70,6 @@
             <local:RadCartesianChart_SplineAreaSeries_Demo HorizontalAlignment="Center"/>
             <local:RadCartesianChart_StepAreaSeries_Demo HorizontalAlignment="Center"/>
             <!--End Charts Part-->
-        </local:MasonryPanelWithProgressiveLoading>
+        </local:WrapPanelWithProgressiveLoading>
     </StackPanel>
 </UserControl>

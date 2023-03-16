@@ -6,7 +6,7 @@
 
     <StackPanel>
         <TextBlock Text="Editors" Style="{StaticResource PageHeader_Style}"/>
-        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+        <local:WrapPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
             <local:RadRadioButton_Demo HorizontalAlignment="Center"/>
             <local:RadSlider_Demo HorizontalAlignment="Center"/>
             <local:RadDatePicker_Demo HorizontalAlignment="Center"/>
@@ -19,7 +19,7 @@
             <local:RadDropDownButton_Demo HorizontalAlignment="Center"/>
             <local:RadNumericUpDown_Demo HorizontalAlignment="Center"/>
             <local:RadColorPicker_Demo HorizontalAlignment="Center"/>
-        </local:MasonryPanelWithProgressiveLoading>
+        </local:WrapPanelWithProgressiveLoading>
     </StackPanel>
     
 </UserControl>

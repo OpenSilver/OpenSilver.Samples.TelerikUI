@@ -6,7 +6,7 @@
 
     <StackPanel>
         <TextBlock Text="Layouts" Style="{StaticResource PageHeader_Style}"/>
-        <local:MasonryPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+        <local:WrapPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
             <local:GroupBox_Demo HorizontalAlignment="Center"/>
             <local:RadDockPanel_Demo HorizontalAlignment="Center"/>
             <local:RadGallery_Demo HorizontalAlignment="Center"/>
@@ -17,6 +17,6 @@
             <local:RadProgressBar_Demo HorizontalAlignment="Center"/>
             <local:RadTickBar_Demo HorizontalAlignment="Center"/>
             <local:RadAlert_Demo HorizontalAlignment="Center"/>
-        </local:MasonryPanelWithProgressiveLoading>
+        </local:WrapPanelWithProgressiveLoading>
     </StackPanel>
 </UserControl>
