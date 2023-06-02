@@ -6,14 +6,14 @@ env:
   virtual-directory-release: '/telerikshowcase/release/'
   app-path-release: 'opensilverdemos/telerikshowcase/release/'
   deploy-service-url: 'opensilverdemos.scm.azurewebsites.net:443'
-  next-release-version: '1.1.0'
+  next-release-version: '1.2.0'
 
 on:
   workflow_dispatch:
     inputs:
       telerik-version:
         description: 'Telerik version to use'
-        default: '1.1.0-private-2022-08-06-104015-59af5103'
+        default: '1.2.0-private-2023-05-30-071443-3cda9ca1'
         required: true
       telerik-options:
         type: choice
