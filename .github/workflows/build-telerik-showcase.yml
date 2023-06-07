@@ -65,8 +65,8 @@ jobs:
         run: |
           sed -i 's\1.0.0.1\${{ github.event.inputs.telerik-version }}\g' OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.csproj
           sed -i 's\OpenSilver.Compatibility.TelerikUI\OpenSilver.Compatibility.TelerikUI.4.6\g' OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.csproj
-          sed -i 's\1.0.0\${{ env.opensilver_version }}\g' OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.csproj
-          sed -i 's\1.0.0\${{ env.opensilver_version }}\g' OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.Browser/OpenSilver.Samples.TelerikUI.Browser.csproj
+          sed -i 's\1.1.0\${{ env.opensilver_version }}\g' OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.csproj
+          sed -i 's\1.1.0\${{ env.opensilver_version }}\g' OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.Browser/OpenSilver.Samples.TelerikUI.Browser.csproj
       - name: Restore Showcase packages
         run: |
           nuget restore OpenSilver.Samples.TelerikUI.sln
