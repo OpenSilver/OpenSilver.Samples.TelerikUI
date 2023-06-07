@@ -13,7 +13,7 @@ on:
     inputs:
       telerik-version:
         description: 'Telerik version to use'
-        default: '1.2.0-private-2023-05-30-071443-3cda9ca1'
+        default: '1.2.0-private-2023-05-31-073125-3cda9ca1'
         required: true
       telerik-options:
         type: choice
