@@ -126,7 +126,7 @@ namespace OpenSilver.Samples.TelerikUI
                 for (int children = 0; children < 5; children++)
                 {
                     double startAdd = children / 2 + (children % 2) * 0.5 - 0.5;
-                    double endAdd = startAdd + 0.43;
+                    double endAdd = startAdd + 0.5;
                     var child = new GanttTask { Title = string.Format("Task{0}", ganttTasksCount), Start = start.AddDays(startAdd), End = start.AddDays(endAdd) };
                     if (children != 0)
                     {
