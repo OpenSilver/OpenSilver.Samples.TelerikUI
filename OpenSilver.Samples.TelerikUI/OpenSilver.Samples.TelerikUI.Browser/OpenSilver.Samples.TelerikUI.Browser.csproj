@@ -32,7 +32,7 @@
   </PropertyGroup>
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 	</PropertyGroup>
 
 	<!-- Cshtml5 Part -->
@@ -66,8 +66,8 @@
     <None Remove="EmptyOpenSilverMigrationApplication.Browser.csproj.vspscc" />
   </ItemGroup>
   <ItemGroup>
-	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0-preview.7.21378.6" />
-	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0-preview.7.21378.6" PrivateAssets="all" />
+	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.4" />
+	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.4" PrivateAssets="all" />
 	  <PackageReference Include="OpenSilver" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
