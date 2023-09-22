@@ -13,11 +13,15 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="RadDocking" Foreground="#FFD66DED" Background="#FFBA8AC6" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadDocking Grid.Row="1" Width="420" Height="150" CustomLayout="True" ClipToBounds="True">
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Button Click="ButtonShowPanes_Click" Width="50">
+                    <TextBlock Text="Show panes" TextWrapping="Wrap" HorizontalAlignment="Center" TextAlignment="Center"/>
+                </Button>
+                <controls:RadDocking x:Name="MyRadDocking" Grid.Row="1" Width="420" Height="130" CustomLayout="True" ClipToBounds="True">
                 <controls:RadDocking.DocumentHost>
                     <controls:RadSplitContainer>
-                        <controls:RadPaneGroup>
-                            <controls:RadPane Header="Description">
+                        <controls:RadPaneGroup  x:Name="PaneGroup">
+                            <controls:RadPane x:Name="FirstPane" Header="Description">
                                 <TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab."/>
                             </controls:RadPane>
                             <controls:RadPane Header="NonDraggable" CanFloat="False">
@@ -27,6 +31,7 @@
                     </controls:RadSplitContainer>
                 </controls:RadDocking.DocumentHost>
             </controls:RadDocking>
+            </StackPanel>
             <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFD66DED" Style="{StaticResource ButtonViewSource_Style}"/>
         </Grid>
     </ContentControl>

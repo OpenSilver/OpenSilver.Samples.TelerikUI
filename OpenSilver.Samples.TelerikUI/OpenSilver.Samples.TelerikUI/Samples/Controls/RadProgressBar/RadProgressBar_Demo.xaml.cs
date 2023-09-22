@@ -21,12 +21,12 @@ namespace OpenSilver.Samples.TelerikUI
 
         public void decreaseProgress_Click(object sender, RoutedEventArgs e)
         {
-            //ProgressBar.Value--;
+            ProgressBar.Value--;
         }
 
         public void increaseProgress_Click(object sender, RoutedEventArgs e)
         {
-            //ProgressBar.Value++;
+            ProgressBar.Value++;
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)

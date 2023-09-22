@@ -15,7 +15,7 @@
             <ContentControl Content="RadProgressBar" Foreground="#FF6F98FF" Background="#FF93A5D1" Style="{StaticResource HeaderControl_Style}"/>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <controls:RadButton Content="--"  x:Name="DecreaseBtn2" Click="decreaseProgress_Click" />
-                <!--<controls:RadProgressBar Minimum="0" Maximum="5" Width="70" Height="10" Orientation="Horizontal" x:Name="ProgressBar" Margin="0,5,0,5"/>-->
+                <controls:RadProgressBar Minimum="0" Maximum="5" Width="70" Height="10" Orientation="Horizontal" x:Name="ProgressBar" Margin="0,5,0,5"/>
                 <controls:RadButton Content="++"  x:Name="IncreaseBtn2" Click="increaseProgress_Click" />
             </StackPanel>
 
