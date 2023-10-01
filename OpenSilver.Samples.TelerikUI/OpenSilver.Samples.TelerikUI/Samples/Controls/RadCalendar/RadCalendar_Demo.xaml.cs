@@ -32,6 +32,11 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "RadCalendar_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadCalendar/RadCalendar_Demo.xaml.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadCalendar_Demo.xaml.cs",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.VB/Samples/Controls/RadCalendar/RadCalendar_Demo.xaml.vb"
                 }
             });
         }

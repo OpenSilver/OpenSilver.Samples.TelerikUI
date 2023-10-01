@@ -32,6 +32,11 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "RadBusyIndicator_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadBusyIndicator/RadBusyIndicator_Demo.xaml.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadBusyIndicator_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.VB/Samples/Controls/RadBusyIndicator/RadBusyIndicator_Demo.xaml.vb"
                 }
             });
         }

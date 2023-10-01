@@ -29,6 +29,14 @@ Namespace Global.OpenSilver.Samples.TelerikUI
                     New ViewSourceButtonInfo() With {
          .TabHeader = "GanttViewModel.cs",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Other/GanttViewModel.cs"
+    },
+                    New ViewSourceButtonInfo() With {
+         .TabHeader = "RadGanttView_Demo.xaml.vb",
+         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.VB/Samples/Controls/RadGanttView/RadGanttView_Demo.xaml.vb"
+    },
+                    New ViewSourceButtonInfo() With {
+         .TabHeader = "GanttViewModel.cs",
+         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.VB/Other/GanttViewModel.vb"
     }
 })
         End Sub

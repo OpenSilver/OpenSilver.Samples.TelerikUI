@@ -18,6 +18,10 @@ Namespace Global.OpenSilver.Samples.TelerikUI
                     New ViewSourceButtonInfo() With {
          .TabHeader = "RadWindow_demo.xaml.cs",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/RadWindow_demo.xaml.cs"
+    },
+                    New ViewSourceButtonInfo() With {
+         .TabHeader = "RadWindow_demo.xaml.vb",
+         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.VB/Samples/Controls/RadWindow/RadWindow_demo.xaml.vb"
     }
 })
         End Sub

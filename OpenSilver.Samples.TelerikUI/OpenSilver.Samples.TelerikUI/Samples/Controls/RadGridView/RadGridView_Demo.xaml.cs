@@ -45,6 +45,16 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "Planets.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Other/Planets.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadGridView_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.VB/Samples/Controls/RadGridView/RadGridView_Demo.xaml.vb"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "Planets.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.VB/Other/Planets.vb"
                 }
             });
         }
