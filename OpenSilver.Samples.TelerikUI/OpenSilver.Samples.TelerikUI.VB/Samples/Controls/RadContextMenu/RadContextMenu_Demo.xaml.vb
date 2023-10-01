@@ -4,7 +4,7 @@ Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports Telerik.Windows
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Partial Class RadContextMenu_Demo
         Inherits UserControl
         Public Sub New()

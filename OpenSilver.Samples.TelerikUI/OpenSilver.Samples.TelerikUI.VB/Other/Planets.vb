@@ -2,7 +2,7 @@
 Imports System.ComponentModel
 Imports System.Runtime.CompilerServices
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Enum PlanetStructure
         Rock
         Gas

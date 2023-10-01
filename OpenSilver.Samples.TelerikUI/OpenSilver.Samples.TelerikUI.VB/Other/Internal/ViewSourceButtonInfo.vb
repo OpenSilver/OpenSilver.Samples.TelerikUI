@@ -1,5 +1,5 @@
 ﻿
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Friend Class ViewSourceButtonInfo
         Public Property TabHeader As String
         Public Property FilePathOnGitHub As String

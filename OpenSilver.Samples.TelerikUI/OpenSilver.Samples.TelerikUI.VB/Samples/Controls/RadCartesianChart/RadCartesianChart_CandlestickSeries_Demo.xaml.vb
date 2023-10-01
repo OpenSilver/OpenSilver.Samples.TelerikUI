@@ -2,7 +2,7 @@
 Imports System.Windows
 Imports System.Windows.Controls
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Partial Class RadCartesianChart_CandlestickSeries_Demo
         Inherits UserControl
 

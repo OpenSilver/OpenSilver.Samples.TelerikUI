@@ -3,7 +3,7 @@ Imports System.Windows
 Imports System.Windows.Controls
 Imports Telerik.Windows.Controls.ScheduleView
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Partial Public Class RadScheduleView_Demo
         Inherits UserControl
         Private _Appointments As Telerik.Windows.Controls.ScheduleView.ObservableAppointmentCollection = New ObservableAppointmentCollection()

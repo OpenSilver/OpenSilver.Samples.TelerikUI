@@ -5,11 +5,11 @@ Imports System.Windows.Media
 Imports System.Windows.Browser
 
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Partial Public Class MainPage
         Inherits Page
 
-        Private Shared _Current As OpenSilver.Samples.TelerikUI.VB.MainPage
+        Private Shared _Current As OpenSilver.Samples.TelerikUI.MainPage
 
         Public Sub New()
             Me.InitializeComponent()

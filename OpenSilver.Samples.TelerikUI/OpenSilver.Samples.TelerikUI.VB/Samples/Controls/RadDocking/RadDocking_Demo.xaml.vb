@@ -3,7 +3,7 @@ Imports System.Windows
 Imports System.Windows.Controls
 Imports Telerik.Windows.Controls
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Partial Class RadDocking_Demo
         Inherits UserControl
         Private firstPaneField As RadPane

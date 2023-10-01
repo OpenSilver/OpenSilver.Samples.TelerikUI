@@ -6,7 +6,6 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccLocalPath>SAK</SccLocalPath>
     <Configurations>Debug;Release;</Configurations>
-    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.cs</DefaultItemExcludes>
   </PropertyGroup>
   <!-- Blazor Part -->
   <PropertyGroup>
@@ -93,211 +92,211 @@
     <None Remove="Samples\Welcome.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MainPage.xaml" Link="MainPage.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\MainPage.xaml" Link="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Other\embed.js" />
-    <Content Include="Other\Styles.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Other\embed.js" Link="Other\embed.js" />
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Other\Styles.xaml" Link="Other\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Charts.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Charts.xaml" Link="Samples\Charts.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml" Link="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCalendar\RadCalendar_Demo.xaml" Link="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineAreaSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_SplineAreaSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineAreaSeries_Demo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSplineSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSplineSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSplineSeries_Demo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_StepAreaSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_StepAreaSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_StepAreaSeries_Demo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSeries_Demo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_AreaSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_AreaSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_AreaSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_BarSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_BarSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_BarSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_BubbleSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_BubbleSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_BubbleSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_StepLineSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_StepLineSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_StepLineSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_SplineSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_LineSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_LineSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_LineSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_ScatterPointSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_ScatterPointSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_ScatterPointSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_OhlcSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_OhlcSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_OhlcSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_CandlestickSeries_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadCartesianChart\RadCartesianChart_CandlestickSeries_Demo.xaml" Link="Samples\Controls\RadCartesianChart\RadCartesianChart_CandlestickSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadGallery\RadGallery_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadGallery\RadGallery_Demo.xaml" Link="Samples\Controls\RadGallery\RadGallery_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadGanttView\RadGanttView_Demo.xaml" Link="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadListBox\RadListBox_Demo.xaml" Link="Samples\Controls\RadListBox\RadListBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadMap\RadMap_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadMap\RadMap_Demo.xaml" Link="Samples\Controls\RadMap\RadMap_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml" Link="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml" Link="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadToolBar\RadToolBar_Demo.xaml" Link="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadTreeView\RadTreeView_Demo.xaml" Link="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml" Link="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml" Link="Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadContextMenu\RadContextMenu_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadContextMenu\RadContextMenu_Demo.xaml" Link="Samples\Controls\RadContextMenu\RadContextMenu_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadGridView\RadGridView_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadGridView\RadGridView_Demo.xaml" Link="Samples\Controls\RadGridView\RadGridView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml" Link="Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml" Link="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadAlert\RadAlert_Demo.xaml" Link="Samples\Controls\RadAlert\RadAlert_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml" Link="Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadComboBox\RadComboBox_Demo.xaml" Link="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadDocking\RadDocking_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadDocking\RadDocking_Demo.xaml" Link="Samples\Controls\RadDocking\RadDocking_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadDockPanel\RadDockPanel_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadDockPanel\RadDockPanel_Demo.xaml" Link="Samples\Controls\RadDockPanel\RadDockPanel_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadMenu\RadMenu_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadMenu\RadMenu_Demo.xaml" Link="Samples\Controls\RadMenu\RadMenu_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadRibbonView\RadRibbonView_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadRibbonView\RadRibbonView_Demo.xaml" Link="Samples\Controls\RadRibbonView\RadRibbonView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadSplitButton\RadSplitButton_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadSplitButton\RadSplitButton_Demo.xaml" Link="Samples\Controls\RadSplitButton\RadSplitButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadTabControl\RadTabControl_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadTabControl\RadTabControl_Demo.xaml" Link="Samples\Controls\RadTabControl\RadTabControl_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadToggleSwitchButton\RadToggleSwitchButton_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadToggleSwitchButton\RadToggleSwitchButton_Demo.xaml" Link="Samples\Controls\RadToggleSwitchButton\RadToggleSwitchButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\GroupBox\GroupBox_Demo.xaml" Link="Samples\Controls\GroupBox\GroupBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadBusyIndicator\RadBusyIndicator_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadBusyIndicator\RadBusyIndicator_Demo.xaml" Link="Samples\Controls\RadBusyIndicator\RadBusyIndicator_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadDropDownButton\RadDropDownButton_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadDropDownButton\RadDropDownButton_Demo.xaml" Link="Samples\Controls\RadDropDownButton\RadDropDownButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadProgressBar\RadProgressBar_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadProgressBar\RadProgressBar_Demo.xaml" Link="Samples\Controls\RadProgressBar\RadProgressBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadSlider\RadSlider_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadSlider\RadSlider_Demo.xaml" Link="Samples\Controls\RadSlider\RadSlider_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadTickBar\RadTickBar_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadTickBar\RadTickBar_Demo.xaml" Link="Samples\Controls\RadTickBar\RadTickBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml" Link="Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadWatermarkTextBox\RadWatermarkTextBox_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadWatermarkTextBox\RadWatermarkTextBox_Demo.xaml" Link="Samples\Controls\RadWatermarkTextBox\RadWatermarkTextBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\Label\Label_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\Label\Label_Demo.xaml" Link="Samples\Controls\Label\Label_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadButton\RadButton_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadButton\RadButton_Demo.xaml" Link="Samples\Controls\RadButton\RadButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml"  Link="Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml" Link="Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadExpander\RadExpander_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadExpander\RadExpander_Demo.xaml" Link="Samples\Controls\RadExpander\RadExpander_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadPathButton\RadPathButton_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadPathButton\RadPathButton_Demo.xaml" Link="Samples\Controls\RadPathButton\RadPathButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadRadioButton\RadRadioButton_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadRadioButton\RadRadioButton_Demo.xaml" Link="Samples\Controls\RadRadioButton\RadRadioButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml" Link="Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadWindow\RadWindow_demo.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\RadWindow\RadWindow_demo.xaml" Link="Samples\Controls\RadWindow\RadWindow_demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\Controls.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Controls\Controls.xaml" Link="Samples\Controls\Controls.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\DataManagement.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\DataManagement.xaml" Link="Samples\DataManagement.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Editors.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Editors.xaml" Link="Samples\Editors.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Navigations.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Navigations.xaml" Link="Samples\Navigations.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Layouts.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Layouts.xaml" Link="Samples\Layouts.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Scheduling.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Scheduling.xaml" Link="Samples\Scheduling.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Welcome.xaml">
+    <Content Include="..\OpenSilver.Samples.TelerikUI\Samples\Welcome.xaml" Link="Samples\Welcome.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Page Include="App.xaml">
+    <Page Include="..\OpenSilver.Samples.TelerikUI\App.xaml" Link="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

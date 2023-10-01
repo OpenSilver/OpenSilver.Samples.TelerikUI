@@ -1,6 +1,6 @@
 ﻿Imports System.Windows.Controls
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Class WrapPanelWithProgressiveLoading
         Inherits WrapPanel
         Public Sub New()

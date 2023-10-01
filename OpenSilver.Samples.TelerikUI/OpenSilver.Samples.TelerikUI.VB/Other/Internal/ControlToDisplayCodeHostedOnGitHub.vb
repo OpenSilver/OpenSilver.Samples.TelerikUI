@@ -3,7 +3,7 @@ Imports System.Windows.Browser
 Imports System.Windows.Controls
 Imports CSHTML5.Internal
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Class ControlToDisplayCodeHostedOnGitHub
         Inherits ContentControl
         Private _filePathOnGitHub As String

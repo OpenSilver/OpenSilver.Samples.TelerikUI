@@ -1,6 +1,6 @@
 ﻿Imports System.Windows
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public NotInheritable Partial Class App
         Inherits Application
         Public Sub New()

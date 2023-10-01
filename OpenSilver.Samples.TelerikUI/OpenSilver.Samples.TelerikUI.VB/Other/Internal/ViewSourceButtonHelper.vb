@@ -1,7 +1,7 @@
 ﻿Imports System.Collections.Generic
 Imports System.Windows.Controls
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Friend Module ViewSourceButtonHelper
         Public Sub ViewSource(ByVal sourcePaths As List(Of ViewSourceButtonInfo))
             If sourcePaths.Count > 0 Then

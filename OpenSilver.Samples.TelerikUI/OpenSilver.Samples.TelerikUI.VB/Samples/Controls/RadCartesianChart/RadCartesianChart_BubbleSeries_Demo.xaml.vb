@@ -2,7 +2,7 @@
 Imports System.Windows
 Imports System.Windows.Controls
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Partial Class RadCartesianChart_BubbleSeries_Demo
         Inherits UserControl
 

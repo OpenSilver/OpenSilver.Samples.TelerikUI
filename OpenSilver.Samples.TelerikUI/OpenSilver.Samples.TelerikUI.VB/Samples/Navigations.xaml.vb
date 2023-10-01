@@ -1,6 +1,6 @@
 ﻿Imports System.Windows.Controls
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB.Samples
+Namespace Global.OpenSilver.Samples.TelerikUI.Samples
     Public Partial Class Navigations
         Inherits UserControl
         Public Sub New()

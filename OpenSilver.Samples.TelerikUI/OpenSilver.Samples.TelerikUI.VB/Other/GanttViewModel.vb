@@ -6,7 +6,7 @@ Imports Telerik.Windows.Controls
 Imports Telerik.Windows.Controls.GanttView
 Imports Telerik.Windows.Controls.Scheduling
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Class GanttViewModel
         Inherits ViewModelBase
         Private ganttTasksField As ObservableCollection(Of GanttTask)

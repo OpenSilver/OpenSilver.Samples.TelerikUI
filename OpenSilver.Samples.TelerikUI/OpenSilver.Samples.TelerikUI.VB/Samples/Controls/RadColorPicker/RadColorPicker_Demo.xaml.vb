@@ -4,7 +4,7 @@ Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 
-Namespace Global.OpenSilver.Samples.TelerikUI.VB
+Namespace Global.OpenSilver.Samples.TelerikUI
     Public Partial Class RadColorPicker_Demo
         Inherits UserControl
         Public Sub New()
