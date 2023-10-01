@@ -35,7 +35,7 @@ namespace OpenSilver.Samples.TelerikUI
                 },
                 new ViewSourceButtonInfo()
                 {
-                     TabHeader = "RadRadioButton_Demo.xaml.cs",
+                     TabHeader = "RadRadioButton_Demo.xaml.vb",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI.VB/Samples/Controls/RadRadioButton/RadRadioButton_Demo.xaml.vb"
                 }
             });
