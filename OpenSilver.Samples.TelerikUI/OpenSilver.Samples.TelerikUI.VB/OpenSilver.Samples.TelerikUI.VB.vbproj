@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup Label="Globals">
+    <OptionInfer>On</OptionInfer>
     <SccProjectName>SAK</SccProjectName>
     <SccProvider>SAK</SccProvider>
     <SccAuxPath>SAK</SccAuxPath>
     <SccLocalPath>SAK</SccLocalPath>
     <Configurations>Debug;Release;</Configurations>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.cs</DefaultItemExcludes>
   </PropertyGroup>
-
   <!-- Blazor Part -->
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -16,12 +16,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <DefineConstants>DEBUG;OPENSILVER</DefineConstants>
+    <DefineConstants>DEBUG,OPENSILVER</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants>OPENSILVER</DefineConstants>
   </PropertyGroup>
-  
   <ItemGroup>
     <None Remove="EmptyOpenSilverMigrationApplication.csproj.vspscc" />
     <None Remove="MyTemplate_rename_me_after_export.vstemplate" />
@@ -47,18 +46,18 @@
     <None Remove="Samples\Controls\RadCartesianChart\RadPolarChart_PolarAreaSeries_Demo.xaml" />
     <None Remove="Samples\Controls\RadGallery\RadGallery_Demo.xaml" />
     <None Remove="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadListBox\RadListBox_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadMap\RadMap_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml" />
+    <None Remove="Samples\Controls\RadListBox\RadListBox_Demo.xaml" />
+    <None Remove="Samples\Controls\RadMap\RadMap_Demo.xaml" />
+    <None Remove="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml" />
+    <None Remove="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml" />
+    <None Remove="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml" />
+    <None Remove="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml" />
+    <None Remove="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml" />
+    <None Remove="Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml" />
     <None Remove="Samples\Controls\RadContextMenu\RadContextMenu_Demo.xaml" />
     <None Remove="Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadAlert\RadAlert_Demo.xaml" />
+    <None Remove="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml" />
+    <None Remove="Samples\Controls\RadAlert\RadAlert_Demo.xaml" />
     <None Remove="Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml" />
     <None Remove="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml" />
     <None Remove="Samples\Controls\RadDocking\RadDocking_Demo.xaml" />
@@ -78,10 +77,10 @@
     <None Remove="Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml" />
     <None Remove="Samples\Controls\RadWatermarkTextBox\RadWatermarkTextBox_Demo.xaml" />
     <None Remove="Samples\Controls\Label\Label_Demo.xaml" />
-	<None Remove="Samples\Controls\RadButton\RadButton_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml" />
-	  <None Remove="Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml" />
-	<None Remove="Samples\Controls\RadExpander\RadExpander_Demo.xaml" />
+    <None Remove="Samples\Controls\RadButton\RadButton_Demo.xaml" />
+    <None Remove="Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml" />
+    <None Remove="Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml" />
+    <None Remove="Samples\Controls\RadExpander\RadExpander_Demo.xaml" />
     <None Remove="Samples\Controls\RadPathButton\RadPathButton_Demo.xaml" />
     <None Remove="Samples\Controls\RadRadioButton\RadRadioButton_Demo.xaml" />
     <None Remove="Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml" />
@@ -93,9 +92,8 @@
     <None Remove="Samples\Scheduling.xaml" />
     <None Remove="Samples\Welcome.xaml" />
   </ItemGroup>
-
   <ItemGroup>
-    <Content Include="MainPage.xaml">
+    <Content Include="MainPage.xaml" Link="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -161,30 +159,30 @@
     <Content Include="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-	  <Content Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml">
+    <Content Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-	  <Content Include="Samples\Controls\RadMap\RadMap_Demo.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </Content>
-	  <Content Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </Content>
-	  <Content Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </Content>
-	  <Content Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </Content>
-	  <Content Include="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml">
-		  <Generator>MSBuild:Compile</Generator>
-	  </Content>
-	  <Content Include="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml">
-		  <Generator>MSBuild:Compile</Generator>
-	  </Content>
-	  <Content Include="Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </Content>
+    <Content Include="Samples\Controls\RadMap\RadMap_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
     <Content Include="Samples\Controls\RadContextMenu\RadContextMenu_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -197,9 +195,9 @@
     <Content Include="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-	  <Content Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml">
-		  <Generator>MSBuild:Compile</Generator>
-	  </Content>
+    <Content Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
     <Content Include="Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -257,13 +255,13 @@
     <Content Include="Samples\Controls\RadButton\RadButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-	  <Content Include="Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml">
-		<Generator>MSBuild:Compile</Generator>
-	</Content>
-	  <Content Include="Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml">
-		  <Generator>MSBuild:Compile</Generator>
-	  </Content>
-	  <Content Include="Samples\Controls\RadExpander\RadExpander_Demo.xaml">
+    <Content Include="Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Samples\Controls\RadExpander\RadExpander_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\RadPathButton\RadPathButton_Demo.xaml">
@@ -304,23 +302,19 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-
   <ItemGroup>
-    <Compile Update="App.xaml.cs">
+    <Compile Update="App.xaml.vb">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Update="MainPage.xaml.cs">
+    <Compile Update="MainPage.xaml.vb">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="OpenSilver" Version="2.0.0-private-09262023" />
     <PackageReference Include="OpenSilver.Compatibility.TelerikUI" Version="1.1.0" />
   </ItemGroup>
-
   <ItemGroup>
     <UpToDateCheckInput Remove="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml" />
   </ItemGroup>
-
 </Project>

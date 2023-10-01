@@ -1,0 +1,36 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.VB.RadGanttView_Demo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI.VB"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <ContentControl Style="{StaticResource Card_Style}" Height="350" Width="730">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadGanttView" Foreground="#FFA05BFF" Background="#FFA793C3" Style="{StaticResource HeaderControl_Style}"/>
+            <telerik:RadGanttView x:Name="RadGanttView" PixelLength="{Binding PixelLength}" Grid.Row="1"
+					TasksSource="{Binding GanttTasks}" VisibleRange="{Binding VisibleRange}">
+                <telerik:RadGanttView.TimeRulerLines>
+                    <telerik:GroupTickLine>
+                        <telerik:TickInterval Interval="OneMonth" />
+                    </telerik:GroupTickLine>
+                    <telerik:MajorTickLine>
+                        <telerik:TickInterval Interval="OneDay" FormatString="{}{0:ddd}"/>
+                    </telerik:MajorTickLine>
+                </telerik:RadGanttView.TimeRulerLines>
+                <telerik:RadGanttView.Columns>
+                    <telerik:TreeColumnDefinition MemberBinding="{Binding Title}" Header="Title" Width="100" IsFrozenColumn="True"/>
+                    <telerik:ColumnDefinition MemberBinding="{Binding Duration}" Header="Duration" Width="100" />
+                    <telerik:ColumnDefinition MemberBinding="{Binding Start}" Header="Start" Width="120" />
+                    <telerik:ColumnDefinition MemberBinding="{Binding End}" Header="End" Width="120" />
+                </telerik:RadGanttView.Columns>
+            </telerik:RadGanttView>
+            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFA05BFF" Style="{StaticResource ButtonViewSource_Style}"/>
+        </Grid>
+    </ContentControl>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.VB.RadGridView_Demo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI.VB"
+    xmlns:controls="using:Telerik.Windows.Controls">
+
+    <ContentControl Style="{StaticResource Card_Style}" Height="350" Width="730">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadGridView" Foreground="#FFA05BFF" Background="#FFA793C3" Style="{StaticResource HeaderControl_Style}"/>
+            <controls:RadGridView x:Name="RadGridView1" Grid.Row="1" CustomLayout="True" Width="680" Height="270" HorizontalAlignment="Center" VerticalAlignment="Center"/> <!--Width="750" Height="400"-->
+            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFA05BFF" Style="{StaticResource ButtonViewSource_Style}"/>
+        </Grid>
+    </ContentControl>
+</UserControl>

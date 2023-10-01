@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.VB.GroupBox_Demo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI.VB"
+    xmlns:controls="using:Telerik.Windows.Controls">
+
+    <ContentControl Style="{StaticResource Card_Style}" Height="200" Width="220">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ContentControl Content="GroupBox" Foreground="#FFFF81E3" Background="#FFCB9DC1" Style="{StaticResource HeaderControl_Style}"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <controls:GroupBox Header="GroupBox Header">
+                    <TextBlock>I am inside a groupbox</TextBlock>
+                </controls:GroupBox>
+            </StackPanel>
+
+            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFFF81E3" Style="{StaticResource ButtonViewSource_Style}"/>
+        </Grid>
+    </ContentControl>
+</UserControl>

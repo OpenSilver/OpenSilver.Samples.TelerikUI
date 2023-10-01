@@ -1,0 +1,24 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.VB.RadToolBar_Demo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Telerik.Windows.Controls"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI.VB">
+
+    <ContentControl Style="{StaticResource Card_Style}" Height="150" Width="220">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadToolBar" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
+            <controls:RadToolBar Grid.Row="1" CustomLayout="True" Height="25">
+                <controls:RadButton Content="FILE" />
+                <controls:RadButton Content="EDIT" />
+                <controls:RadButton Content="VIEW" />
+            </controls:RadToolBar>
+            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF6F7DFF" Style="{StaticResource ButtonViewSource_Style}"/>
+        </Grid>
+    </ContentControl>
+</UserControl>

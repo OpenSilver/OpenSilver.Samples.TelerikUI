@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikUI.Browser", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.Browser\OpenSilver.Samples.TelerikUI.Browser.csproj", "{C420E2DA-1644-4A40-A0AE-153ADBEA531C}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "OpenSilver.Samples.TelerikUI.VB", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.VB\OpenSilver.Samples.TelerikUI.VB.vbproj", "{E9750617-B56E-0B57-1017-60C2EB16222B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikUI.VB", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.VB\OpenSilver.Samples.TelerikUI.VB.csproj", "{5B51877C-7936-44A6-924F-AABC8981168B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{C420E2DA-1644-4A40-A0AE-153ADBEA531C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C420E2DA-1644-4A40-A0AE-153ADBEA531C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C420E2DA-1644-4A40-A0AE-153ADBEA531C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9750617-B56E-0B57-1017-60C2EB16222B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9750617-B56E-0B57-1017-60C2EB16222B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9750617-B56E-0B57-1017-60C2EB16222B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9750617-B56E-0B57-1017-60C2EB16222B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B51877C-7936-44A6-924F-AABC8981168B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B51877C-7936-44A6-924F-AABC8981168B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B51877C-7936-44A6-924F-AABC8981168B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B51877C-7936-44A6-924F-AABC8981168B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,51 @@
+﻿<UserControl
+    x:Class="OpenSilver.Samples.TelerikUI.VB.Welcome"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI.VB">
+
+    <Border Background="White" CornerRadius="6" Width="650" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,22,0,0">
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="3" Color="Black" BlurRadius="10" Opacity="0.1" />
+        </Border.Effect>
+        <StackPanel Margin="0,0,20,20">
+            <TextBlock Text="Welcome!" Foreground="#FF2299A1" Style="{StaticResource PageHeader_Style}"/>
+            <TextBlock x:Name="IntroductionTextBlock" Text="This app demonstrates the current state of the 'Telerik UI for Silverlight' source code recompiled with OpenSilver, so that it can run on modern browsers without plugins, where Silverlight is not supported. It also provides sample code to show how to use those Telerik UI controls in an OpenSilver application." FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0"/>
+            <TextBlock FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0">
+              <Span xml:space="preserve"><Run>The source code of this demo application is available at: </Run>
+                     <Hyperlink FontSize="16" Foreground="Blue" NavigateUri="https://github.com/OpenSilver/OpenSilver.Samples.TelerikUI" Cursor="Hand">
+                         https://github.com/OpenSilver/OpenSilver.Samples.TelerikUI
+                     </Hyperlink>
+              </Span>
+            </TextBlock>
+            <TextBlock Text="To use the Telerik controls in your own OpenSilver application, you need:" FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0"/>
+
+            <TextBlock FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0">
+                    <Span xml:space="preserve"><Run>1. A valid license from Telerik for 'Telerik UI for Silverlight', which is available at: </Run>
+                     <Hyperlink FontSize="16" Foreground="Blue" NavigateUri="https://www.telerik.com/purchase/individual/silverlight.aspx" Cursor="Hand">
+                         https://www.telerik.com/purchase/individual/silverlight.aspx
+                     </Hyperlink>
+                    </Span>
+            </TextBlock>
+
+            <TextBlock FontSize="16" Foreground="#FF333333" TextWrapping="Wrap" Margin="22,10,0,0">
+                    <Span xml:space="preserve"><Run>2. A license for the OpenSilver Compatibility Pack for Telerik UI. For more information or to request a Trial, please refer to the documentation at: </Run>
+                     <Hyperlink FontSize="16" Foreground="Blue" NavigateUri="https://doc.opensilver.net/documentation/3rd-party-libraries/telerik.html" Cursor="Hand">
+                         https://doc.opensilver.net/documentation/3rd-party-libraries/telerik.html
+                     </Hyperlink>
+                    </Span>
+            </TextBlock>
+
+            <TextBlock FontSize="12" FontStyle="Italic" Foreground="#FF888888" TextWrapping="Wrap" Margin="22,14,0,0">
+                    <Span xml:space="preserve"><Run>Legal notice: Telerik UI is the property of Progress, not Userware. Userware is not affiliated with Telerik. Userware will provide the tools that allow you to compile the source code of Telerik UI using OpenSilver. Userware does not provide the source code itself. The source code of Telerik UI is provided to you by Progress as part of your license for Telerik UI for Silverlight. For support and further information, please contact Userware at: </Run>
+                     <Hyperlink FontSize="12" Foreground="Blue" NavigateUri="https://www.opensilver.net/contact.aspx" Cursor="Hand">
+                         https://www.opensilver.net/contact.aspx
+                     </Hyperlink>
+                    </Span>
+            </TextBlock>
+
+            <Button Content="Continue to the demos" FontSize="16" FontWeight="Bold" Background="#FF2299A1" Padding="10,6" Foreground="White" Style="{StaticResource FlatButtonStyle}" HorizontalAlignment="Left" Margin="25,30,0,0" Click="ButtonToContinue_Click"/>
+
+        </StackPanel>
+    </Border>
+</UserControl>
