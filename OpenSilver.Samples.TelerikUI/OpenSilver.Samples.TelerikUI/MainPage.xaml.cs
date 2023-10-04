@@ -32,7 +32,10 @@ namespace OpenSilver.Samples.TelerikUI
                 NavigateToPage("/Welcome");
             }
 
-            UpdateMenuDispositionBasedOnDisplaySize();
+            Dispatcher.BeginInvoke(() =>
+            {
+                UpdateMenuDispositionBasedOnDisplaySize();
+            });
         }
 
         void ButtonControls_Click(object sender, RoutedEventArgs e)
@@ -198,6 +201,7 @@ namespace OpenSilver.Samples.TelerikUI
             //double displayWidth = windowBounds.Width;
 
             double actualWidth = this.ActualWidth;
+            Console.WriteLine($"Window actualWidth = {actualWidth}");
             if (!double.IsNaN(actualWidth) && actualWidth > 560d)
             {
                 GoToState(CurrentState.LargeResolution_SeeBothMenuAndPage);

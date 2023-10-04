@@ -19,7 +19,7 @@ namespace OpenSilver.Samples.TelerikUI
         public RadCartesianChart_BarSeries_Demo()
         {
             //deactivated for now 
-            //InitializeComponent();
+            InitializeComponent();
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)

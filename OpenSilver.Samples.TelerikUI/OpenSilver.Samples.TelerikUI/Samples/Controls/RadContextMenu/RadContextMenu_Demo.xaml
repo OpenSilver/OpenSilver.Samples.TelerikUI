@@ -16,7 +16,7 @@
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="Right click the box below."/>
-                    <Border x:Name="ContextMenuBorder" Background="LightGray" Width="50" Height="20" Loaded="ContextMenuBorder_Loaded">
+                    <Border x:Name="ContextMenuBorder" Background="LightGray" Width="50" Height="20">
                         <controls:RadContextMenu.ContextMenu>
                             <controls:RadContextMenu>
                                 <controls:RadMenuItem Header="Red" Click="RadMenuItemRed_Click"/>
