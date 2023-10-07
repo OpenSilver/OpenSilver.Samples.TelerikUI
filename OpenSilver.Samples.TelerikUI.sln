@@ -9,7 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikUI.Browser", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.Browser\OpenSilver.Samples.TelerikUI.Browser.csproj", "{C420E2DA-1644-4A40-A0AE-153ADBEA531C}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "OpenSilver.Samples.TelerikUI.VB", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.VB\OpenSilver.Samples.TelerikUI.VB.vbproj", "{E9750617-B56E-0B57-1017-60C2EB16222B}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "OpenSilver.Samples.TelerikUI.VB", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.VB.vbproj", "{E9750617-B56E-0B57-1017-60C2EB16222B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{A6101DA3-76C4-418F-9B6E-3AEAB0B891F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VB", "VB", "{94853C2F-EA8B-480E-9B83-3CE859987241}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikUI.Browser.VB", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.Browser\OpenSilver.Samples.TelerikUI.Browser.VB.csproj", "{E955DE04-0FFF-49A6-AE22-55DCA73A2752}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikUI.Simulator.VB", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.Simulator\OpenSilver.Samples.TelerikUI.Simulator.VB.csproj", "{48250897-203A-4AAD-92FA-64972ECCCCF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +41,25 @@ Global
 		{E9750617-B56E-0B57-1017-60C2EB16222B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9750617-B56E-0B57-1017-60C2EB16222B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9750617-B56E-0B57-1017-60C2EB16222B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E955DE04-0FFF-49A6-AE22-55DCA73A2752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E955DE04-0FFF-49A6-AE22-55DCA73A2752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E955DE04-0FFF-49A6-AE22-55DCA73A2752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E955DE04-0FFF-49A6-AE22-55DCA73A2752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48250897-203A-4AAD-92FA-64972ECCCCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48250897-203A-4AAD-92FA-64972ECCCCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48250897-203A-4AAD-92FA-64972ECCCCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48250897-203A-4AAD-92FA-64972ECCCCF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4637FB6B-CF22-4D8D-AA19-D8714B194760} = {A6101DA3-76C4-418F-9B6E-3AEAB0B891F3}
+		{4B5AAE02-CA76-4F20-8CE7-EAB35DEB20AD} = {A6101DA3-76C4-418F-9B6E-3AEAB0B891F3}
+		{C420E2DA-1644-4A40-A0AE-153ADBEA531C} = {A6101DA3-76C4-418F-9B6E-3AEAB0B891F3}
+		{E9750617-B56E-0B57-1017-60C2EB16222B} = {94853C2F-EA8B-480E-9B83-3CE859987241}
+		{E955DE04-0FFF-49A6-AE22-55DCA73A2752} = {94853C2F-EA8B-480E-9B83-3CE859987241}
+		{48250897-203A-4AAD-92FA-64972ECCCCF3} = {94853C2F-EA8B-480E-9B83-3CE859987241}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DA7FFA6-E0CC-4A88-A709-46BE92E5FE7B}

@@ -3,11 +3,12 @@
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net472</TargetFramework>
-		<StartArguments>"..\..\..\..\OpenSilver.Samples.TelerikUI\bin\$(Configuration)\netstandard2.0\OpenSilver.Samples.TelerikUI.dll"</StartArguments>
+		<OutputPath>bin/$(Configuration)_cs</OutputPath>
+		<IntermediateOutputPath>obj/$(Configuration)_cs</IntermediateOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="OpenSilver.Simulator" Version="2.0.0-private-09262023" />
+		<PackageReference Include="OpenSilver.Simulator" Version="1.2.0-preview-2023-10-05-100022-dbcb3462" />
 	</ItemGroup>
 
 	<ItemGroup>

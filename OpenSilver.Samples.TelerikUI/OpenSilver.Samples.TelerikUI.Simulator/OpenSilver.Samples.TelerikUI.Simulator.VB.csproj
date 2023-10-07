@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net472</TargetFramework>
+		<OutputPath>bin/$(Configuration)_vb</OutputPath>
+		<IntermediateOutputPath>obj/$(Configuration)_vb</IntermediateOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="OpenSilver.Simulator" Version="1.2.0-preview-2023-10-05-100022-dbcb3462" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.VB.vbproj" />
+	</ItemGroup>
+
+</Project>
