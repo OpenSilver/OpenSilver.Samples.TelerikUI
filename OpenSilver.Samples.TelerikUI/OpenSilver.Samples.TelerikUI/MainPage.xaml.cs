@@ -15,11 +15,11 @@ namespace OpenSilver.Samples.TelerikUI
 
         public MainPage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
 
-            MainPage.Current = this;
-            this.Loaded += MainPage_Loaded;
-            Window.Current.SizeChanged += Window_SizeChanged;
+            Current = this;
+            Loaded += MainPage_Loaded;
+            SizeChanged += MainPage_SizeChanged;
         }
 
         public static MainPage Current { get; private set; }
@@ -31,8 +31,6 @@ namespace OpenSilver.Samples.TelerikUI
             {
                 NavigateToPage("/Welcome");
             }
-
-            UpdateMenuDispositionBasedOnDisplaySize();
         }
 
         void ButtonControls_Click(object sender, RoutedEventArgs e)
@@ -186,7 +184,7 @@ namespace OpenSilver.Samples.TelerikUI
         }
 
 
-        private void Window_SizeChanged(object sender, WindowSizeChangedEventArgs e)
+        private void MainPage_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             UpdateMenuDispositionBasedOnDisplaySize();
         }

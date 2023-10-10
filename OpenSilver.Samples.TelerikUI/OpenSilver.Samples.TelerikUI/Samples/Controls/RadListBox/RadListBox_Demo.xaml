@@ -2,10 +2,9 @@
     x:Class="OpenSilver.Samples.TelerikUI.RadListBox_Demo"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controls="using:Telerik.Windows.Controls"
-    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+    xmlns:controls="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="210" Width="220">
+    <ContentControl Style="{StaticResource Card_Style}" Height="280" Width="220">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -14,7 +13,7 @@
             </Grid.RowDefinitions>
             <ContentControl Content="RadListBox" Foreground="#FF6F98FF" Background="#FF93A5D1" Style="{StaticResource HeaderControl_Style}"/>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <controls:RadListBox  Width="150" x:Name="radListBox">
+                <controls:RadListBox Width="150" x:Name="radListBox">
                     <controls:RadListBoxItem Content="Australia" />
                     <controls:RadListBoxItem Content="Brazil" />
                     <controls:RadListBoxItem Content="Canada" />

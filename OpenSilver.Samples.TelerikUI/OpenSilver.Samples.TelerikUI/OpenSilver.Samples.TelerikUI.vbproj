@@ -13,6 +13,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-10-10-085315-6295ca65" />
+    <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="1.2.0-private-2023-10-07-034435-1144f667" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="EmptyOpenSilverMigrationApplication.csproj.vspscc" />
     <None Remove="MyTemplate_rename_me_after_export.vstemplate" />
     <None Remove="Other\embed.js" />
@@ -302,10 +307,6 @@
     <Compile Update="MainPage.xaml.vb">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-10-05-100022-dbcb3462" />
-    <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="1.2.0-private-2023-09-01-125833-74d88314" />
   </ItemGroup>
   <ItemGroup>
     <UpToDateCheckInput Remove="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml" />

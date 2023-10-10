@@ -2,8 +2,7 @@
     x:Class="OpenSilver.Samples.TelerikUI.RadGallery_Demo"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controls="using:Telerik.Windows.Controls"
-    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+    xmlns:controls="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.RibbonView">
 
     <ContentControl Style="{StaticResource Card_Style}" Height="210" Width="220">
         <Grid>
@@ -14,7 +13,7 @@
             </Grid.RowDefinitions>
             <ContentControl Content="RadGallery" Foreground="#FFBF6CEE" Background="#FFB390CA" Style="{StaticResource HeaderControl_Style}"/>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <controls:RadGallery CustomLayout="True" Width="150" Height="140" x:Name="radGallery">
+                <controls:RadGallery Width="150" x:Name="radGallery">
                     <controls:RadGalleryItem>
                         <Border Width="50" Height="20" Background="Orange"/>
                     </controls:RadGalleryItem>

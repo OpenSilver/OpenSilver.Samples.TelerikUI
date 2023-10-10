@@ -12,11 +12,11 @@ Namespace OpenSilver.Samples.TelerikUI
         Private Shared _Current As OpenSilver.Samples.TelerikUI.MainPage
 
         Public Sub New()
-            Me.InitializeComponent()
+            InitializeComponent()
 
             Current = Me
             AddHandler Loaded, AddressOf MainPage_Loaded
-            AddHandler Window.Current.SizeChanged, AddressOf Window_SizeChanged
+            AddHandler SizeChanged, AddressOf MainPage_SizeChanged
         End Sub
 
         Public Shared Property Current As MainPage
@@ -33,8 +33,6 @@ Namespace OpenSilver.Samples.TelerikUI
             If Not HtmlPage.Document.DocumentUri.OriginalString.Contains("#") Then
                 NavigateToPage("/Welcome")
             End If
-
-            UpdateMenuDispositionBasedOnDisplaySize()
         End Sub
 
         Private Sub ButtonControls_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -166,7 +164,7 @@ Namespace OpenSilver.Samples.TelerikUI
         End Sub
 
 
-        Private Sub Window_SizeChanged(ByVal sender As Object, ByVal e As WindowSizeChangedEventArgs)
+        Private Sub MainPage_SizeChanged(ByVal sender As Object, ByVal e As SizeChangedEventArgs)
             UpdateMenuDispositionBasedOnDisplaySize()
         End Sub
 

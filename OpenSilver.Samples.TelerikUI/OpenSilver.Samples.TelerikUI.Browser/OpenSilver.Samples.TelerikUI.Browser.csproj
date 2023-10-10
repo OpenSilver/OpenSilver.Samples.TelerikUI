@@ -11,16 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="EmptyOpenSilverMigrationApplication.Browser.csproj.vspscc" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.4" PrivateAssets="all" />
+    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-10-10-085315-6295ca65" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.4" PrivateAssets="all" />
-    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-10-05-100022-dbcb3462" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="EmptyOpenSilverMigrationApplication.Browser.csproj.vspscc" />
   </ItemGroup>
 
 </Project>
