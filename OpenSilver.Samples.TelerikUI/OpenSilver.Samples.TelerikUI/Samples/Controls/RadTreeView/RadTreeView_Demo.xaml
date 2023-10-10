@@ -5,7 +5,7 @@
     xmlns:controls="using:Telerik.Windows.Controls"
     xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="150" Width="220">
+    <ContentControl Style="{StaticResource Card_Style}" Height="230" Width="220">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -14,7 +14,7 @@
             </Grid.RowDefinitions>
             <ContentControl Content="RadTreeView" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
             <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <controls:RadTreeView Height="250" Width="130" IsDragDropEnabled="True">
+                <controls:RadTreeView Width="130" IsDragDropEnabled="True">
                     <controls:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
                         <controls:RadTreeViewItem Header="Football" IsExpanded="True">
                             <controls:RadTreeViewItem Header="Futsal"/>

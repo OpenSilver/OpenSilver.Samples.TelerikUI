@@ -32,6 +32,11 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "GroupBox_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/GroupBox/GroupBox_Demo.xaml.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "GroupBox_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/GroupBox/GroupBox_Demo.xaml.vb"
                 }
             });
         }

@@ -13,7 +13,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="RadTreeListView" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadTreeListView x:Name="radTreeListView" CustomLayout="True" Grid.Row="1" AutoGenerateColumns="False" ItemsSource="{Binding WarehouseItems}" Width="380" Height="270">
+            <controls:RadTreeListView x:Name="radTreeListView" CustomLayout="True" Grid.Row="1" AutoGenerateColumns="False" ItemsSource="{Binding WarehouseItems}" Width="380" Height="250">
                 <controls:RadTreeListView.ChildTableDefinitions>
                     <controls:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
                 </controls:RadTreeListView.ChildTableDefinitions>

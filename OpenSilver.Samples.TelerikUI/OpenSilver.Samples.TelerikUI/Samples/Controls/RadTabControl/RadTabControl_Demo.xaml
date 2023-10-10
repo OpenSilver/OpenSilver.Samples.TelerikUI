@@ -16,8 +16,12 @@
             <ContentControl Content="RadTabControl" Foreground="#FFF78069" Background="#FFDCA59C" Style="{StaticResource HeaderControl_Style}"/>
             <controls:RadTabControl CustomLayout="True" Grid.Row="1" telerik:StyleManager.Theme="Windows8">
                 <controls:RadTabControl.Items>
-                    <controls:RadTabItem Header="Tab 1" Content="Item 1" />
-                    <controls:RadTabItem Header="Tab 2" Content="Item 2" />
+                    <controls:RadTabItem Header="Tab 1">
+                        <TextBlock Text="Item 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </controls:RadTabItem>
+                    <controls:RadTabItem Header="Tab 2">
+                        <TextBlock Text="Item 2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </controls:RadTabItem>
                 </controls:RadTabControl.Items>
             </controls:RadTabControl>
             <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF6F7DFF" Style="{StaticResource ButtonViewSource_Style}"/>

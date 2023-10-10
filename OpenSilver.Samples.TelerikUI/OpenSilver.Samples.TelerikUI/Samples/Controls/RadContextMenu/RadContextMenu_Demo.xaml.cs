@@ -33,6 +33,11 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "RadContextMenu_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadContextMenu/RadContextMenu_Demo.xaml.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadContextMenu_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadContextMenu/RadContextMenu_Demo.xaml.vb"
                 }
             });
         }

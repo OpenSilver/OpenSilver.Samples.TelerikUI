@@ -32,6 +32,11 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "RadDropDownButton_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDropDownButton/RadDropDownButton_Demo.xaml.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadDropDownButton_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDropDownButton/RadDropDownButton_Demo.xaml.vb"
                 }
             });
         }

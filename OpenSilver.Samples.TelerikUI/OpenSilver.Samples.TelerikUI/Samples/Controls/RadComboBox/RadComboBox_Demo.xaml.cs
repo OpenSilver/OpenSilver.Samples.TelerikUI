@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Data;
+using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Navigation;
@@ -14,6 +15,7 @@ namespace OpenSilver.Samples.TelerikUI
 {
     public partial class RadComboBox_Demo : UserControl
     {
+        bool isInitialized = false;
         public Language SelectedLanguage { get; set; }
         public Language[] Languages { get; set; }
 
@@ -44,13 +46,21 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "RadComboBox_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadComboBox/RadComboBox_Demo.xaml.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadComboBox_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadComboBox/RadComboBox_Demo.xaml.vb"
                 }
             });
         }
 
         private void LanguagesComboBox_SelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
         {
-            MessageBox.Show($"You have selected {this.SelectedLanguage.DisplayName}");
+            if (isInitialized)
+                MessageBox.Show($"You have selected {this.SelectedLanguage.DisplayName}");
+            else
+                isInitialized = true;
         }
 
         public class Language

@@ -21,12 +21,12 @@ namespace OpenSilver.Samples.TelerikUI
 
         public void decreaseProgress_Click(object sender, RoutedEventArgs e)
         {
-            //ProgressBar.Value--;
+            ProgressBar.Value--;
         }
 
         public void increaseProgress_Click(object sender, RoutedEventArgs e)
         {
-            //ProgressBar.Value++;
+            ProgressBar.Value++;
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
@@ -42,6 +42,11 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "RadProgressBar_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadProgressBar/RadProgressBar_Demo.xaml.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadProgressBar_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadProgressBar/RadProgressBar_Demo.xaml.vb"
                 }
             });
         }

@@ -16,7 +16,7 @@
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <telerik:RadComboBox x:Name="LanguagesComboBox" Margin="2"
 							DisplayMemberPath="DisplayName" ItemsSource="{Binding Languages}"
-							SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}"
+							SelectedItem="{Binding SelectedLanguage, Mode=TwoWay, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:RadComboBox_Demo}}"
                              SelectionChanged="LanguagesComboBox_SelectionChanged"
                              Width="150"
                              Height="40"

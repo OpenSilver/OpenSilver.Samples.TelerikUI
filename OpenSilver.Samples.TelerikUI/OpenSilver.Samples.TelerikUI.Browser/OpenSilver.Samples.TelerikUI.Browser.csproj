@@ -1,74 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
-  <PropertyGroup Label="Globals">
-    <SccProjectName>SAK</SccProjectName>
-    <SccProvider>SAK</SccProvider>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccLocalPath>SAK</SccLocalPath>
-    <Configurations>Debug;Release;</Configurations>
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
     <NoXamlPreprocessor>True</NoXamlPreprocessor>
     <OpenSilverType>4</OpenSilverType>
     <PublishTrimmed>true</PublishTrimmed>
     <!--<RunAOTCompilation Condition="'$(IsSecondPass)'=='True'">true</RunAOTCompilation>-->
+    <OutputPath>bin/$(Configuration)_cs</OutputPath>
+    <IntermediateOutputPath>obj/$(Configuration)_cs</IntermediateOutputPath>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;OPENSILVER</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoStdLib>true</NoStdLib>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-	  <!--<OutputPath>bin\Release\</OutputPath>-->
-	  <DefineConstants>TRACE;OPENSILVER</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoStdLib>true</NoStdLib>
-  </PropertyGroup>
-
-	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
-	</PropertyGroup>
-
-	<!-- Cshtml5 Part -->
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{c420e2da-1644-4a40-a0ae-153adbea531c}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenSilver.Samples.TelerikUI.Browser</RootNamespace>
-    <AssemblyName>OpenSilver.Samples.TelerikUI.Browser</AssemblyName>
-    <!--<TargetFrameworkVersion>v2.0</TargetFrameworkVersion>-->
-    <FileAlignment>512</FileAlignment>
-    <IsCSharpXamlForHtml5>true</IsCSharpXamlForHtml5>
-    <CSharpXamlForHtml5OutputType>Application</CSharpXamlForHtml5OutputType>
-    <IsCshtml5>true</IsCshtml5>
-    <Cshtml5OutputType>Application</Cshtml5OutputType>
-    <StartAction>Program</StartAction>
-    <StartProgram>
-    </StartProgram>
-    <StartArguments>"OpenSilver.dll"</StartArguments>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-  </PropertyGroup>
   <ItemGroup>
     <None Remove="EmptyOpenSilverMigrationApplication.Browser.csproj.vspscc" />
   </ItemGroup>
+
   <ItemGroup>
-	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.4" />
-	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.4" PrivateAssets="all" />
-	  <PackageReference Include="OpenSilver" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.4" PrivateAssets="all" />
+    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-10-05-100022-dbcb3462" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.csproj" />
