@@ -35,7 +35,7 @@ Namespace OpenSilver.Samples.TelerikUI
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadGanttView/RadGanttView_Demo.xaml.vb"
     },
                     New ViewSourceButtonInfo() With {
-         .TabHeader = "GanttViewModel.cs",
+         .TabHeader = "GanttViewModel.vb",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Other/GanttViewModel.vb"
     }
 })

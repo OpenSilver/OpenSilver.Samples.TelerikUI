@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSilver.Samples.TelerikUI.Browser", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.Browser\OpenSilver.Samples.TelerikUI.Browser.csproj", "{C420E2DA-1644-4A40-A0AE-153ADBEA531C}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "OpenSilver.Samples.TelerikUI.VB", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.VB.vbproj", "{E9750617-B56E-0B57-1017-60C2EB16222B}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "OpenSilver.Samples.TelerikUI", "OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.vbproj", "{E9750617-B56E-0B57-1017-60C2EB16222B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{A6101DA3-76C4-418F-9B6E-3AEAB0B891F3}"
 EndProject

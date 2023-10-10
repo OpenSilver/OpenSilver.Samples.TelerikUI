@@ -2,9 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <OutputPath>bin/$(Configuration)_cs</OutputPath>
-    <IntermediateOutputPath>obj/$(Configuration)/cs</IntermediateOutputPath>
-    <DefaultItemExcludes>$(DefaultItemExcludes);**\*.vb</DefaultItemExcludes>
+    <OutputPath>bin/$(Configuration)_vb</OutputPath>
+    <IntermediateOutputPath>obj/$(Configuration)/vb</IntermediateOutputPath>
+    <DefaultItemExcludes>$(DefaultItemExcludes);**\*.cs</DefaultItemExcludes>
+    <OptionExplicit>Off</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -78,13 +83,14 @@
     <None Remove="Samples\Scheduling.xaml" />
     <None Remove="Samples\Welcome.xaml" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Other\embed.js" />
+    <Content Include="Other\embed.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
     <Content Include="Other\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -289,23 +295,19 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-
   <ItemGroup>
-    <Compile Update="App.xaml.cs">
+    <Compile Update="App.xaml.vb">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Update="MainPage.xaml.cs">
+    <Compile Update="MainPage.xaml.vb">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-10-05-100022-dbcb3462" />
     <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="1.2.0-private-2023-09-01-125833-74d88314" />
   </ItemGroup>
-
   <ItemGroup>
     <UpToDateCheckInput Remove="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml" />
   </ItemGroup>
-
 </Project>

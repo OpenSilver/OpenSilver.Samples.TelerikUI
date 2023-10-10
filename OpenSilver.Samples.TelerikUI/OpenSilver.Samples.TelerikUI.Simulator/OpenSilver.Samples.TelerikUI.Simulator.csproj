@@ -1,18 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<OutputType>WinExe</OutputType>
-		<TargetFramework>net472</TargetFramework>
-		<OutputPath>bin/$(Configuration)_cs</OutputPath>
-		<IntermediateOutputPath>obj/$(Configuration)_cs</IntermediateOutputPath>
-	</PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <OutputPath>bin/$(Configuration)_cs</OutputPath>
+    <IntermediateOutputPath>obj/$(Configuration)_cs</IntermediateOutputPath>
+  </PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="OpenSilver.Simulator" Version="1.2.0-preview-2023-10-05-100022-dbcb3462" />
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="OpenSilver.Simulator" Version="1.2.0-preview-2023-10-05-100022-dbcb3462" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.csproj" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.csproj" />
+  </ItemGroup>
 
 </Project>
