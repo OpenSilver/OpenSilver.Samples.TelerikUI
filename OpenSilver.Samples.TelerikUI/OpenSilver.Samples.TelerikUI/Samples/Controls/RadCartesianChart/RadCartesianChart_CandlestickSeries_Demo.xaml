@@ -15,7 +15,7 @@
             </Grid.RowDefinitions>
             <ContentControl Content="Rad Cartesian chart - CandlestickSeries" Foreground="#FFFF7065" Background="#FFD5928F" Style="{StaticResource HeaderControl_Style}"/>
             <Grid Grid.Row="1" >
-                <telerik:RadCartesianChart >
+                <telerik:RadCartesianChart ClipToBounds="False">
                     <telerik:RadCartesianChart.HorizontalAxis>
                         <telerik:CategoricalAxis/>
                     </telerik:RadCartesianChart.HorizontalAxis>
