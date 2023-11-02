@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="OpenSilver" Version="2.0.1" />
     <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="2.0.0" />
+    <PackageReference Include="OpenSilver.ControlsKit" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>

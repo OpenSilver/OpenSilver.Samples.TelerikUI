@@ -2,11 +2,12 @@
     x:Class="OpenSilver.Samples.TelerikUI.Samples.Navigations"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controlskit="clr-namespace:OpenSilver.ControlsKit;assembly=OpenSilver.ControlsKit.Controls"
     xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
     <StackPanel>
         <TextBlock Text="Navigations" Style="{StaticResource PageHeader_Style}"/>
-        <local:WrapPanelWithProgressiveLoading Style="{StaticResource Panel_Style}">
+        <controlskit:StaggeredPanel DesiredColumnWidth="250" ProgressiveRenderingChunkSize="2">
             <local:RadTabControl_Demo HorizontalAlignment="Center"/>
             <local:RadExpander_Demo HorizontalAlignment="Center"/>
             <local:RadRibbonView_Demo HorizontalAlignment="Center"/>
@@ -20,7 +21,7 @@
             <local:RadTransitionControl_Demo HorizontalAlignment="Center"/>
             <local:RadPanelBar_Demo HorizontalAlignment="Center"/>
             <local:RadDocking_Demo HorizontalAlignment="Center"/>
-        </local:WrapPanelWithProgressiveLoading>
+        </controlskit:StaggeredPanel>
     </StackPanel>
     
 </UserControl>
