@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <NoXamlPreprocessor>True</NoXamlPreprocessor>
-    <OpenSilverType>4</OpenSilverType>
+    <OpenSilverType>5</OpenSilverType>
     <PublishTrimmed>true</PublishTrimmed>
     <!--<RunAOTCompilation Condition="'$(IsSecondPass)'=='True'">true</RunAOTCompilation>-->
     <OutputPath>bin/$(Configuration)_vb</OutputPath>
@@ -13,7 +13,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.4" PrivateAssets="all" />
-    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-10-10-085315-6295ca65" />
+    <PackageReference Include="OpenSilver" Version="2.0.1" />
   </ItemGroup>
   
   <ItemGroup>

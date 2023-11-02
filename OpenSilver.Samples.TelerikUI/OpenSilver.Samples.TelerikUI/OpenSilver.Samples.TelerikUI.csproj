@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-10-10-085315-6295ca65" />
-    <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="1.2.0-private-2023-10-07-034435-1144f667" />
+    <PackageReference Include="OpenSilver" Version="2.0.1" />
+    <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
