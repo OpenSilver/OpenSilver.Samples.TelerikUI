@@ -58,13 +58,5 @@ namespace OpenSilver.Samples.TelerikUI
         {
             ContextMenuBorder.Background = new SolidColorBrush(Colors.LightGray);
         }
-
-        private void ContextMenuBorder_Loaded(object sender, RoutedEventArgs e)
-        {
-            // We get rid of the default contextmenu that appears when right clicking on the element so it won't overlap on the RadContextMenu:
-            object div = CSHTML5.Interop.GetDiv(ContextMenuBorder);
-            CSHTML5.Internal.INTERNAL_HtmlDomManager.SetDomElementAttribute(div, "oncontextmenu", "return false");
-        }
-
     }
 }
