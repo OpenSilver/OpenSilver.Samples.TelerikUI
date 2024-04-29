@@ -13,7 +13,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="Rad Calendar" Foreground="#FFFF7065" Background="#FFD5928F" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadCalendar CustomLayout="True" Grid.Row="1" Height="180" />
+            <controls:RadCalendar Grid.Row="1" Height="180" />
             <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFFF7065" Style="{StaticResource ButtonViewSource_Style}"/>
         </Grid>
     </ContentControl>

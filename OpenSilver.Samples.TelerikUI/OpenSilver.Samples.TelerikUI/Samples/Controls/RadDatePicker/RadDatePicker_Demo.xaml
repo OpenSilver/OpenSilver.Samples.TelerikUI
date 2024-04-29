@@ -13,7 +13,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="RadDatePicker" Foreground="#FFFE7484" Background="#DAB6BB" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadDatePicker Width="150" CustomLayout="True" Grid.Row="1"/>
+            <controls:RadDatePicker Width="150" Grid.Row="1"/>
             <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFFE7484" Style="{StaticResource ButtonViewSource_Style}"/>
         </Grid>
     </ContentControl>

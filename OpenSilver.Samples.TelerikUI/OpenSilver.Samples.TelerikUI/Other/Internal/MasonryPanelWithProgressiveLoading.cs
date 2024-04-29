@@ -20,8 +20,7 @@ namespace OpenSilver.Samples.TelerikUI
         /// </summary>
         public MasonryPanelWithProgressiveLoading() : base()
         {
-            base.EnableProgressiveRendering = true;
-            //ProgressiveRenderingChunkSize = 1;
+            ProgressiveRenderingChunkSize = 1;
             Children.CollectionChanged += OnChildrenCollectionChanged;
         }
 

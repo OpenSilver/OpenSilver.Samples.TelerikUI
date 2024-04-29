@@ -14,7 +14,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="RadTabControl" Foreground="#FFF78069" Background="#FFDCA59C" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadTabControl CustomLayout="True" Grid.Row="1" telerik:StyleManager.Theme="Windows8">
+            <controls:RadTabControl Grid.Row="1">
                 <controls:RadTabControl.Items>
                     <controls:RadTabItem Header="Tab 1">
                         <TextBlock Text="Item 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
