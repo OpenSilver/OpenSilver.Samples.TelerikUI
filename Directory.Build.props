@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <OpenSilverVersion Condition=" '$(OpenSilverVersion)' == '' ">3.2.0</OpenSilverVersion>
+    <OpenSilverControlsKitVersion Condition=" '$(OpenSilverControlsKitVersion)' == '' ">3.2.0</OpenSilverControlsKitVersion>
+    <TelerikVersion Condition=" '$(TelerikVersion)' == '' ">3.2.0</TelerikVersion>
+  </PropertyGroup>
+</Project>
