@@ -16,8 +16,8 @@
             <local:Label_Demo HorizontalAlignment="Center"/>
             <local:RadBusyIndicator_Demo HorizontalAlignment="Center"/>
             <local:RadProgressBar_Demo HorizontalAlignment="Center"/>
-            <local:RadTickBar_Demo HorizontalAlignment="Center"/>
             <local:RadAlert_Demo HorizontalAlignment="Center"/>
+            <local:RadBook_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>

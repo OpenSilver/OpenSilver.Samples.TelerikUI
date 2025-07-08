@@ -11,8 +11,6 @@
             <local:RadRadioButton_Demo HorizontalAlignment="Center"/>
             <local:RadSlider_Demo HorizontalAlignment="Center"/>
             <local:RadDatePicker_Demo HorizontalAlignment="Center"/>
-            <local:RadRichTextBox_Demo HorizontalAlignment="Center"/>
-            <local:RadToggleSwitchButton_Demo HorizontalAlignment="Center"/>
             <local:RadTimePicker_Demo HorizontalAlignment="Center"/>
             <local:RadWatermarkTextBox_Demo HorizontalAlignment="Center"/>
             <local:RadComboBox_Demo HorizontalAlignment="Center"/>

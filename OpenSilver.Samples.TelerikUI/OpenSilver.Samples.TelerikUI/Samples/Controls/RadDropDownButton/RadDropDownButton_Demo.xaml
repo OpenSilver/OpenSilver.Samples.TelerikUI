@@ -1,31 +1,41 @@
-﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.RadDropDownButton_Demo"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
-    xmlns:controls="using:Telerik.Windows.Controls">
-    
-    <ContentControl Style="{StaticResource Card_Style}" Height="150" Width="220">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-            <ContentControl Content="RadDropDownButton" Foreground="#FF13D7E3" Background="#FF91C3C5" Style="{StaticResource HeaderControl_Style}"/>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <controls:RadDropDownButton Content="DropDown Button">
-                <controls:RadDropDownButton.DropDownContent>
-                    <ListBox>
-                        <ListBoxItem Content="Item 1" />
-                        <ListBoxItem Content="Item 2" />
-                        <ListBoxItem Content="Item 3" />
-                    </ListBox>
-                </controls:RadDropDownButton.DropDownContent>
-            </controls:RadDropDownButton>
-        </StackPanel>
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadDropDownButton_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF13D7E3" Style="{StaticResource ButtonViewSource_Style}"/>
-    </Grid>
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="150"
+                    Width="220">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadDropDownButton"
+                            Foreground="#FF13D7E3"
+                            Background="#FF91C3C5"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <StackPanel Grid.Row="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <telerik:RadDropDownButton Content="DropDown Button">
+                    <telerik:RadDropDownButton.DropDownContent>
+                        <ListBox>
+                            <ListBoxItem Content="Item 1" />
+                            <ListBoxItem Content="Item 2" />
+                            <ListBoxItem Content="Item 3" />
+                        </ListBox>
+                    </telerik:RadDropDownButton.DropDownContent>
+                </telerik:RadDropDownButton>
+            </StackPanel>
+
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FF13D7E3"
+                    Style="{StaticResource ButtonViewSource_Style}" />
+        </Grid>
     </ContentControl>
 </UserControl>

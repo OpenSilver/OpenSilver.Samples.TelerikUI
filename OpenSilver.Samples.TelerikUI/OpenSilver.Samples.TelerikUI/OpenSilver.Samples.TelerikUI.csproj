@@ -10,6 +10,8 @@
   <ItemGroup>
     <PackageReference Include="OpenSilver" Version="[$(OpenSilverVersion)]" />
     <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Controls.Pivot" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Controls.PivotFieldList" Version="[$(TelerikVersion)]" />
     <PackageReference Include="OpenSilver.ControlsKit" Version="[$(OpenSilverControlsKitVersion)]" />
   </ItemGroup>
 
@@ -29,6 +31,7 @@
     <Compile Include="Samples\Controls\Label\Label_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadBook\RadBook_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadBusyIndicator\RadBusyIndicator_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadButton\RadButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml.cs" />
@@ -62,18 +65,16 @@
     <Compile Include="Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadPathButton\RadPathButton_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadPivot\RadPivot_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadProgressBar\RadProgressBar_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadRadioButton\RadRadioButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadRibbonView\RadRibbonView_Demo.xaml.cs" />
-    <Compile Include="Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadSlider\RadSlider_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadSplitButton\RadSplitButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTabControl\RadTabControl_Demo.xaml.cs" />
-    <Compile Include="Samples\Controls\RadTickBar\RadTickBar_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml.cs" />
-    <Compile Include="Samples\Controls\RadToggleSwitchButton\RadToggleSwitchButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml.cs" />
@@ -104,6 +105,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadBook\RadBook_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml">
@@ -160,6 +164,9 @@
     <Page Include="Samples\Controls\RadMap\RadMap_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Samples\Controls\RadPivot\RadPivot_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -193,9 +200,6 @@
     <Page Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -217,9 +221,6 @@
     <Page Include="Samples\Controls\RadTabControl\RadTabControl_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Samples\Controls\RadToggleSwitchButton\RadToggleSwitchButton_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -233,9 +234,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadSlider\RadSlider_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Samples\Controls\RadTickBar\RadTickBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml">
