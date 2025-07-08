@@ -1,29 +1,39 @@
-﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.RadComboBox_Demo"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
-    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadComboBox_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="150" Width="220">
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="150"
+                    Width="220">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ContentControl Content="RadComboBox" Foreground="#FFFF65A3" Background="#FFC997AC" Style="{StaticResource HeaderControl_Style}"/>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <telerik:RadComboBox x:Name="LanguagesComboBox" Margin="2"
-							DisplayMemberPath="DisplayName" ItemsSource="{Binding Languages}"
-							SelectedItem="{Binding SelectedLanguage, Mode=TwoWay, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=local:RadComboBox_Demo}}"
-                             SelectionChanged="LanguagesComboBox_SelectionChanged"
-                             Width="150"
-                             Height="40"
-							/>
+            <ContentControl Content="RadComboBox"
+                            Foreground="#FFFF65A3"
+                            Background="#FFC997AC"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <StackPanel Grid.Row="1"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <telerik:RadComboBox x:Name="LanguagesComboBox"
+                                     Margin="2"
+                                     DisplayMemberPath="DisplayName"
+                                     ItemsSource="{Binding Languages}"
+                                     SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}"
+                                     Width="150"
+                                     Height="40" />
             </StackPanel>
 
-            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FFFF65A3" Style="{StaticResource ButtonViewSource_Style}"/>
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FFFF65A3"
+                    Style="{StaticResource ButtonViewSource_Style}" />
         </Grid>
     </ContentControl>
 </UserControl>

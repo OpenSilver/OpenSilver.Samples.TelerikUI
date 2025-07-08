@@ -7,10 +7,11 @@
 
     <StackPanel>
         <TextBlock Text="DataManagement" Style="{StaticResource PageHeader_Style}"/>
-        <controlskit:StaggeredPanel DesiredColumnWidth="230" ProgressiveRenderingChunkSize="2">
+        <WrapPanel>
             <local:RadListBox_Demo HorizontalAlignment="Center"/>
             <local:RadTreeListView_Demo HorizontalAlignment="Center"/>
             <local:RadGridView_Demo HorizontalAlignment="Center"/>
-        </controlskit:StaggeredPanel>
+            <local:RadPivot_Demo HorizontalAlignment="Center" />
+        </WrapPanel>
     </StackPanel>
 </UserControl>

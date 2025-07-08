@@ -8,6 +8,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Navigation;
 
 namespace OpenSilver.Samples.TelerikUI
@@ -16,17 +17,26 @@ namespace OpenSilver.Samples.TelerikUI
     {
         public RadProgressBar_Demo()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+
+            ProgressBar.Loaded += OnProgressBarLoaded;
+            ProgressBar.Unloaded += OnProgressBarUnloaded;
         }
 
-        public void decreaseProgress_Click(object sender, RoutedEventArgs e)
+        private void OnProgressBarLoaded(object sender, RoutedEventArgs e)
         {
-            ProgressBar.Value--;
+            ProgressBar.BeginAnimation(RangeBase.ValueProperty, new DoubleAnimation
+            {
+                Duration = new Duration(TimeSpan.FromSeconds(5)),
+                From = ProgressBar.Minimum,
+                To = ProgressBar.Maximum,
+                RepeatBehavior = RepeatBehavior.Forever,
+            });
         }
 
-        public void increaseProgress_Click(object sender, RoutedEventArgs e)
+        private void OnProgressBarUnloaded(object sender, RoutedEventArgs e)
         {
-            ProgressBar.Value++;
+            ProgressBar.BeginAnimation(RangeBase.ValueProperty, null);
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)

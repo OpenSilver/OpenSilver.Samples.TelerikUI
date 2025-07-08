@@ -1,25 +1,37 @@
-﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.RadProgressBar_Demo"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
-    xmlns:controls="using:Telerik.Windows.Controls">
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadProgressBar_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="150" Width="220">
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="150"
+                    Width="220">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ContentControl Content="RadProgressBar" Foreground="#FF6F98FF" Background="#FF93A5D1" Style="{StaticResource HeaderControl_Style}"/>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <controls:RadButton Content="--"  x:Name="DecreaseBtn2" Click="decreaseProgress_Click" />
-                <controls:RadProgressBar Minimum="0" Maximum="5" Width="70" Height="10" Orientation="Horizontal" x:Name="ProgressBar" Margin="0,5,0,5"/>
-                <controls:RadButton Content="++"  x:Name="IncreaseBtn2" Click="increaseProgress_Click" />
-            </StackPanel>
-
-            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF6F98FF" Style="{StaticResource ButtonViewSource_Style}"/>
+            <ContentControl Content="RadProgressBar"
+                            Foreground="#FF6F98FF"
+                            Background="#FF93A5D1"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <telerik:RadProgressBar x:Name="ProgressBar"
+                                    Grid.Row="1"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Minimum="0"
+                                    Maximum="5"
+                                    Width="70"
+                                    Height="10"
+                                    Orientation="Horizontal"
+                                    Margin="0,5,0,5" />
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FF6F98FF"
+                    Style="{StaticResource ButtonViewSource_Style}" />
         </Grid>
     </ContentControl>
 </UserControl>

@@ -24,7 +24,6 @@
             <local:RadDropDownButton_Demo HorizontalAlignment="Center"/>
             <local:RadProgressBar_Demo HorizontalAlignment="Center"/>
             <local:RadSlider_Demo HorizontalAlignment="Center"/>
-            <local:RadTickBar_Demo HorizontalAlignment="Center"/>
             <local:RadTransitionControl_Demo HorizontalAlignment="Center"/>
             <local:RadWatermarkTextBox_Demo HorizontalAlignment="Center"/>
             <local:RadWindow_demo HorizontalAlignment="Center"/>
@@ -41,10 +40,7 @@
             <local:RadSplitButton_Demo HorizontalAlignment="Center"/>
             <local:RadTabControl_Demo HorizontalAlignment="Center"/>
             <local:RadPanelBar_Demo HorizontalAlignment="Center"/>
-            <local:RadToggleSwitchButton_Demo HorizontalAlignment="Center"/>
             <local:RadDatePicker_Demo HorizontalAlignment="Center"/>
-
-            <local:RadRichTextBox_Demo HorizontalAlignment="Center"/>
 
             <local:RadScheduleView_Demo HorizontalAlignment="Center"/>
             <local:RadMap_Demo HorizontalAlignment="Center"/>

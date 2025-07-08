@@ -1,36 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Navigation;
 
 namespace OpenSilver.Samples.TelerikUI
 {
     public partial class RadComboBox_Demo : UserControl
     {
-        bool isInitialized = false;
         public Language SelectedLanguage { get; set; }
+
         public Language[] Languages { get; set; }
 
         public RadComboBox_Demo()
         {
-            this.InitializeComponent();
+            InitializeComponent();
 
-            this.Languages = new[]
+            Languages = new[]
             {
-                new Language { ID = 1, DisplayName = "English" },
-                new Language { ID = 2, DisplayName = "French" },
+                new Language { ID = 1, DisplayName = "Arabic" },
+                new Language { ID = 2, DisplayName = "English" },
+                new Language { ID = 3, DisplayName = "French" },
+                new Language { ID = 4, DisplayName = "German" },
+                new Language { ID = 5, DisplayName = "Hindi" },
+                new Language { ID = 6, DisplayName = "Indonesian" },
+                new Language { ID = 7, DisplayName = "Italian" },
+                new Language { ID = 8, DisplayName = "Japanese" },
+                new Language { ID = 9, DisplayName = "Korean" },
+                new Language { ID = 10, DisplayName = "Mandarin Chinese" },
+                new Language { ID = 11, DisplayName = "Portuguese" },
+                new Language { ID = 12, DisplayName = "Russian" },
+                new Language { ID = 13, DisplayName = "Spanish" },
+                new Language { ID = 14, DisplayName = "Turkish" },
             };
 
-            this.SelectedLanguage = this.Languages[0];
-            this.LanguagesComboBox.ItemsSource = this.Languages;
+            SelectedLanguage = Languages[0];
+
+            DataContext = this;
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
@@ -53,14 +57,6 @@ namespace OpenSilver.Samples.TelerikUI
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadComboBox/RadComboBox_Demo.xaml.vb"
                 }
             });
-        }
-
-        private void LanguagesComboBox_SelectionChanged(object sender, Telerik.Windows.Controls.SelectionChangedEventArgs e)
-        {
-            if (isInitialized)
-                MessageBox.Show($"You have selected {this.SelectedLanguage.DisplayName}");
-            else
-                isInitialized = true;
         }
 
         public class Language

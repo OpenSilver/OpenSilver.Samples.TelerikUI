@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Navigation;
 
 namespace OpenSilver.Samples.TelerikUI
 {
@@ -16,7 +10,9 @@ namespace OpenSilver.Samples.TelerikUI
     {
         public RadTransitionControl_Demo()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+
+            DataContext = new ViewModel();
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
@@ -39,6 +35,37 @@ namespace OpenSilver.Samples.TelerikUI
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTransitionControl/RadTransitionControl_Demo.xaml.vb"
                 }
             });
+        }
+
+        public class ViewModel
+        {
+            public ObservableCollection<ColorItem> ColorItems { get; set; }
+
+            public ViewModel()
+            {
+                ColorItems = new ObservableCollection<ColorItem>
+                {
+                    new ColorItem("Yellow", Colors.Yellow),
+                    new ColorItem("Orange", Colors.Orange),
+                    new ColorItem("Red", Colors.Red),
+                    new ColorItem("Blue", Colors.Blue),
+                    new ColorItem("Green", Colors.Green),
+                    new ColorItem("Purple", Colors.Purple),
+                };
+            }
+        }
+
+        public class ColorItem
+        {
+            public ColorItem(string name, Color color)
+            {
+                Name = name;
+                Color = color;
+            }
+
+            public string Name { get; set; }
+
+            public Color Color { get; set; }
         }
     }
 }

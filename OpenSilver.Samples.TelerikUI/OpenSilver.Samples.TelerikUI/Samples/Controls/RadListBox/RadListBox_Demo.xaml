@@ -1,29 +1,39 @@
-﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.RadListBox_Demo"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controls="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls">
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadListBox_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="280" Width="220">
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="280"
+                    Width="220">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ContentControl Content="RadListBox" Foreground="#FF6F98FF" Background="#FF93A5D1" Style="{StaticResource HeaderControl_Style}"/>
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <controls:RadListBox Width="150" x:Name="radListBox">
-                    <controls:RadListBoxItem Content="Australia" />
-                    <controls:RadListBoxItem Content="Brazil" />
-                    <controls:RadListBoxItem Content="Canada" />
-                    <controls:RadListBoxItem Content="China" />
-                    <controls:RadListBoxItem Content="England" />
-                    <controls:RadListBoxItem Content="Germany" />
-                </controls:RadListBox>
-            </StackPanel>
+            <ContentControl Content="RadListBox"
+                            Foreground="#FF6F98FF"
+                            Background="#FF93A5D1"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <telerik:RadListBox x:Name="radListBox"
+                                Grid.Row="1"
+                                HorizontalAlignment="Center"
+                                Width="150"
+                                IsScrollIntoViewEnabled="False">
+                <telerik:RadListBoxItem Content="Australia" />
+                <telerik:RadListBoxItem Content="Brazil" />
+                <telerik:RadListBoxItem Content="Canada" />
+                <telerik:RadListBoxItem Content="China" />
+                <telerik:RadListBoxItem Content="England" />
+                <telerik:RadListBoxItem Content="Germany" />
+            </telerik:RadListBox>
 
-            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF6F98FF" Style="{StaticResource ButtonViewSource_Style}"/>
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FF6F98FF"
+                    Style="{StaticResource ButtonViewSource_Style}" />
         </Grid>
     </ContentControl>
 </UserControl>
