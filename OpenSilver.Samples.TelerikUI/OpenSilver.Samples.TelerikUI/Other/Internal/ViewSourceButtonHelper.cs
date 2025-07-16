@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
+﻿using System.Collections.Generic;
+using Telerik.Windows.Controls;
 
 namespace OpenSilver.Samples.TelerikUI
 {
@@ -12,11 +9,11 @@ namespace OpenSilver.Samples.TelerikUI
         {
             if (sourcePaths.Count > 0)
             {
-                var tabControl = new TabControl();
+                var tabControl = new RadTabControl();
 
                 foreach (ViewSourceButtonInfo viewSourceButtonInfo in sourcePaths)
                 {
-                    var tabItem = new TabItem()
+                    var tabItem = new RadTabItem()
                     {
                         Header = viewSourceButtonInfo.TabHeader,
                         Content = new ControlToDisplayCodeHostedOnGitHub()
@@ -28,7 +25,7 @@ namespace OpenSilver.Samples.TelerikUI
                     tabControl.Items.Add(tabItem);
                 }
 
-                ((TabItem)tabControl.Items[0]).IsSelected = true;
+                ((RadTabItem)tabControl.Items[0]).IsSelected = true;
 
                 MainPage.Current.ViewSourceCode(tabControl);
             }
