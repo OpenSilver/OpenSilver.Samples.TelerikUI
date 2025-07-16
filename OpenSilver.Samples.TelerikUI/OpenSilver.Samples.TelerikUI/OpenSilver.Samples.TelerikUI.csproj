@@ -54,6 +54,7 @@
     <Compile Include="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadContextMenu\RadContextMenu_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadDiagram\RadDiagram_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDocking\RadDocking_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDockPanel\RadDockPanel_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDropDownButton\RadDropDownButton_Demo.xaml.cs" />
@@ -98,6 +99,13 @@
     <Content Include="Other\embed.js" />
     <Content Include="Other\Logo.png" />
     <Content Include="Other\MenuIcon.png" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Cycle3.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\FloorPlan.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Flow2.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Rolls.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\SimpleFlow.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Supply.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Stakeholder.xml" />
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,6 +167,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadCartesianChart\RadCartesianChart_CandlestickSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDiagram\RadDiagram_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadGallery\RadGallery_Demo.xaml">
