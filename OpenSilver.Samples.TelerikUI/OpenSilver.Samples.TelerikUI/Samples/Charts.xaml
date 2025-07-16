@@ -24,6 +24,7 @@
             <local:RadCartesianChart_StepAreaSeries_Demo HorizontalAlignment="Center" />
             <local:RadBulletGraph_Demo HorizontalAlignment="Center" />
             <local:RadBarcode_Demo HorizontalAlignment="Center" />
+            <local:RadHeatMap_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>
