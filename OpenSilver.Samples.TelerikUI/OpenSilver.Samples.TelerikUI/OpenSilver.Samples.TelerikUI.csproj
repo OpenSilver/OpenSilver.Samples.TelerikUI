@@ -80,6 +80,7 @@
     <Compile Include="Samples\Controls\RadSplitButton\RadSplitButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTabControl\RadTabControl_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTimeBar\RadTimeBar_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadTimeline\RadTimeline_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml.cs" />
@@ -204,6 +205,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadTimeBar\RadTimeBar_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadTimeline\RadTimeline_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml">
