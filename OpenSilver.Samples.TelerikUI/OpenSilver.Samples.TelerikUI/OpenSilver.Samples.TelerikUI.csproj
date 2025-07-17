@@ -84,6 +84,7 @@
     <Compile Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadTreeMap\RadTreeMap_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadWatermarkTextBox\RadWatermarkTextBox_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadWindow\RadWindow_demo.xaml.cs" />
@@ -205,6 +206,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadTreeMap\RadTreeMap_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml">
