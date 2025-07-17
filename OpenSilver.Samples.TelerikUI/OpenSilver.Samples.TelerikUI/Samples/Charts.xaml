@@ -26,6 +26,7 @@
             <local:RadBarcode_Demo HorizontalAlignment="Center" />
             <local:RadHeatMap_Demo HorizontalAlignment="Center" />
             <local:RadDiagram_Demo HorizontalAlignment="Center" />
+            <local:RadSparkline_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>

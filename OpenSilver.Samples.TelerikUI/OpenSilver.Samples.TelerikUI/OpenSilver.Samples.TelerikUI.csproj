@@ -75,6 +75,7 @@
     <Compile Include="Samples\Controls\RadRibbonView\RadRibbonView_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadSlider\RadSlider_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadSparklines\RadSparkline_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadSplitButton\RadSplitButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTabControl\RadTabControl_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml.cs" />
@@ -191,6 +192,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadSparklines\RadSparkline_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml">
