@@ -31,8 +31,9 @@
     <Compile Include="Samples\Controls\Label\Label_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml.cs" />
-    <Compile Include="Samples\Controls\RadBarCodes\RadBarcode_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadBarcodes\RadBarcode_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadBook\RadBook_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadBulletGraph\RadBulletGraph_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadBusyIndicator\RadBusyIndicator_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadButton\RadButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml.cs" />
@@ -108,10 +109,13 @@
     <Page Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Samples\Controls\RadBarCodes\RadBarcode_Demo.xaml">
+    <Page Include="Samples\Controls\RadBarcodes\RadBarcode_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadBook\RadBook_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadBulletGraph\RadBulletGraph_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml">
