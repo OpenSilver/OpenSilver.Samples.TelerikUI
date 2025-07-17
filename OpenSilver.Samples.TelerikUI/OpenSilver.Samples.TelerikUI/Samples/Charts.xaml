@@ -29,6 +29,7 @@
             <local:RadSparkline_Demo HorizontalAlignment="Center" />
             <local:RadTimeBar_Demo HorizontalAlignment="Center" />
             <local:RadTreeMap_Demo HorizontalAlignment="Center" />
+            <local:RadPivotMap_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>

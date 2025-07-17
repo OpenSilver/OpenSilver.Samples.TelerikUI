@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadPivotMap_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             xmlns:datavis="clr-namespace:Telerik.Windows.Controls.TreeMap;assembly=Telerik.Windows.Controls.DataVisualization">
+
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="430"
+                    Width="750">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadPivotMap"
+                            Foreground="#FFFCAB54"
+                            Background="#FFCCA376"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <Grid Grid.Row="1"
+                  Margin="15">
+                <telerik:RadPivotMap x:Name="radPivotMap"
+                                     ValuePath="GrossSales"
+                                     LabelPath="GrossSales"
+                                     LabelFormat="{}{0:C0}"
+                                     ItemsSource="{Binding}">
+                    <telerik:RadPivotMap.GroupDefinitions>
+                        <datavis:GroupDefinition Member="Genre" />
+                        <datavis:GroupDefinition Member="Title" />
+                    </telerik:RadPivotMap.GroupDefinitions>
+                </telerik:RadPivotMap>
+            </Grid>
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FCAB54"
+                    Style="{StaticResource ButtonViewSource_Style}" />
+        </Grid>
+    </ContentControl>
+
+</UserControl>

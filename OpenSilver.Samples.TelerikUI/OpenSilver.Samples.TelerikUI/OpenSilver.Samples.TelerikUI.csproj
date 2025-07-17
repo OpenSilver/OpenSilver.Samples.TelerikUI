@@ -69,6 +69,7 @@
     <Compile Include="Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadPathButton\RadPathButton_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadPivotMap\RadPivotMap_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadPivot\RadPivot_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadProgressBar\RadProgressBar_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadRadioButton\RadRadioButton_Demo.xaml.cs" />
@@ -188,6 +189,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadMap\RadMap_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadPivotMap\RadPivotMap_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadPivot\RadPivot_Demo.xaml">
