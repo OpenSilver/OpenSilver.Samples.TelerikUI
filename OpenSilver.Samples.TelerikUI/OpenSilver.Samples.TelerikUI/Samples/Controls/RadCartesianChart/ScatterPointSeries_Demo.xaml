@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.ScatterPointSeries_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <telerik:RadCartesianChart x:Name="chart"
+                                       MouseDown="RadCartesianChart_MouseDown"
+                                       MouseUp="RadCartesianChart_MouseUp">
+                <telerik:RadCartesianChart.HorizontalAxis>
+                    <telerik:LinearAxis Minimum="18" />
+                </telerik:RadCartesianChart.HorizontalAxis>
+                <telerik:RadCartesianChart.VerticalAxis>
+                    <telerik:LinearAxis Minimum="9000" />
+                </telerik:RadCartesianChart.VerticalAxis>
+                <telerik:RadCartesianChart.Series>
+                    <telerik:ScatterPointSeries XValueBinding="Age"
+                                                YValueBinding="Salary"
+                                                ItemsSource="{Binding}" />
+                </telerik:RadCartesianChart.Series>
+                <telerik:RadCartesianChart.Grid>
+                    <telerik:CartesianChartGrid MajorLinesVisibility="XY"
+                                                StripLinesVisibility="Y"
+                                                IsTabStop="False">
+                        <telerik:CartesianChartGrid.YStripeBrushes>
+                            <SolidColorBrush Color="#FFD7D7D7"
+                                             Opacity="0.3" />
+                            <SolidColorBrush Color="Transparent" />
+                        </telerik:CartesianChartGrid.YStripeBrushes>
+
+                        <telerik:CartesianChartGrid.XStripeBrushes>
+                            <SolidColorBrush Color="#FFD7D7D7"
+                                             Opacity="0.3" />
+                            <SolidColorBrush Color="Transparent" />
+                        </telerik:CartesianChartGrid.XStripeBrushes>
+                    </telerik:CartesianChartGrid>
+                </telerik:RadCartesianChart.Grid>
+                <telerik:RadCartesianChart.Behaviors>
+                    <telerik:ChartCrosshairBehavior>
+                        <telerik:ChartCrosshairBehavior.HorizontalLineLabelDefinition>
+                            <telerik:ChartAnnotationLabelDefinition Format="{}{0:0.0}"
+                                                                    Location="Right"
+                                                                    HorizontalAlignment="Right"
+                                                                    VerticalAlignment="Center" />
+                        </telerik:ChartCrosshairBehavior.HorizontalLineLabelDefinition>
+                        <telerik:ChartCrosshairBehavior.VerticalLineLabelDefinition>
+                            <telerik:ChartAnnotationLabelDefinition Format="{}{0:0.0}"
+                                                                    Location="Top"
+                                                                    HorizontalAlignment="Center"
+                                                                    VerticalAlignment="Top" />
+                        </telerik:ChartCrosshairBehavior.VerticalLineLabelDefinition>
+                    </telerik:ChartCrosshairBehavior>
+                    <telerik:ChartPanAndZoomBehavior x:Name="panZoomBehavior"
+                                                     ZoomMode="Both"
+                                                     DragToZoomThreshold="10" />
+                </telerik:RadCartesianChart.Behaviors>
+            </telerik:RadCartesianChart>
+        </Grid>
+
+        <Button Grid.Row="1"
+                Content="VIEW SOURCE..."
+                Click="ButtonViewSource_Click"
+                Background="#FFFF7065"
+                Style="{StaticResource ButtonViewSource_Style}" />
+    </Grid>
+
+</UserControl>

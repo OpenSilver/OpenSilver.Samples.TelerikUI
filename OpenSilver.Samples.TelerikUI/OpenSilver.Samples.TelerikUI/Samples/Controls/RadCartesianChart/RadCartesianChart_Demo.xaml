@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadCartesianChart_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="430"
+                    Width="750">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadCartesianChart"
+                            Foreground="#FFFCAB54"
+                            Background="#FFCCA376"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <Grid Grid.Row="1"
+                  Margin="15">
+                <telerik:RadTabControl BorderThickness="0">
+                    <telerik:RadTabItem Header="Scatter">
+                        <local:ScatterPointSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Line">
+                        <local:LineSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="StepLine">
+                        <local:StepLineSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Area">
+                        <local:AreaSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="StepArea">
+                        <local:StepAreaSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="SplineArea">
+                        <local:SplineAreaSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Spline">
+                        <local:SplineSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Bar">
+                        <local:BarSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Bubble">
+                        <local:BubbleSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Candlestick">
+                        <local:CandlestickSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Ohlc">
+                        <local:OhlcSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Range">
+                        <local:RangeSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="RangeSpline">
+                        <local:RangeSplineSeries_Demo />
+                    </telerik:RadTabItem>
+                </telerik:RadTabControl>
+            </Grid>
+        </Grid>
+    </ContentControl>
+
+</UserControl>

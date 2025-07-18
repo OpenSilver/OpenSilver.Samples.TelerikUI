@@ -53,19 +53,7 @@
             <local:RadTreeListView_Demo HorizontalAlignment="Center"/>
 
             <!--Charts Part-->
-            <local:RadCartesianChart_AreaSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_BarSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_BubbleSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_LineSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_OhlcSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_ScatterPointSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_SplineSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_StepLineSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_CandlestickSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_RangeSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_RangeSplineSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_SplineAreaSeries_Demo HorizontalAlignment="Center"/>
-            <local:RadCartesianChart_StepAreaSeries_Demo HorizontalAlignment="Center"/>
+            <local:RadCartesianChart_Demo HorizontalAlignment="Center"/>
             <!--End Charts Part-->
         </controlskit:StaggeredPanel>
     </StackPanel>

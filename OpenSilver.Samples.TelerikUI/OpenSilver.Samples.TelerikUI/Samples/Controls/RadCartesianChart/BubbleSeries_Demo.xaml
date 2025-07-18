@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.BubbleSeries_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <telerik:RadCartesianChart>
+                <telerik:RadCartesianChart.HorizontalAxis>
+                    <telerik:CategoricalAxis />
+                </telerik:RadCartesianChart.HorizontalAxis>
+                <telerik:RadCartesianChart.VerticalAxis>
+                    <telerik:LinearAxis />
+                </telerik:RadCartesianChart.VerticalAxis>
+                <telerik:RadCartesianChart.Series>
+                    <telerik:BubbleSeries ShowLabels="True">
+                        <telerik:BubbleSeries.DataPoints>
+                            <telerik:BubbleDataPoint BubbleSize="50"
+                                                     Category="Mexico"
+                                                     Value="20" />
+                            <telerik:BubbleDataPoint BubbleSize="100"
+                                                     Category="USA"
+                                                     Value="8" />
+                            <telerik:BubbleDataPoint BubbleSize="70"
+                                                     Category="UK"
+                                                     Value="13" />
+                            <telerik:BubbleDataPoint BubbleSize="50"
+                                                     Category="France"
+                                                     Value="20" />
+                            <telerik:BubbleDataPoint BubbleSize="42"
+                                                     Category="Germany"
+                                                     Value="5" />
+                        </telerik:BubbleSeries.DataPoints>
+                    </telerik:BubbleSeries>
+                </telerik:RadCartesianChart.Series>
+            </telerik:RadCartesianChart>
+        </Grid>
+
+        <Button Grid.Row="1"
+                Content="VIEW SOURCE..."
+                Click="ButtonViewSource_Click"
+                Background="#FFFF7065"
+                Style="{StaticResource ButtonViewSource_Style}" />
+    </Grid>
+
+</UserControl>
