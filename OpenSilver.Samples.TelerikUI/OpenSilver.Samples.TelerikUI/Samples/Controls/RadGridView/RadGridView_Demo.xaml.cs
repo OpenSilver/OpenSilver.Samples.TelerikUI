@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Navigation;
-using Telerik.Windows.Controls;
 
 namespace OpenSilver.Samples.TelerikUI
 {
@@ -17,14 +8,13 @@ namespace OpenSilver.Samples.TelerikUI
     {
         public RadGridView_Demo()
         {
-            this.InitializeComponent();
-            this.Loaded += RadGridView_Demo_Loaded;
+            InitializeComponent();
+            Loaded += RadGridView_Demo_Loaded;
         }
 
         private void RadGridView_Demo_Loaded(object sender, RoutedEventArgs e)
         {
             RadGridView1.ItemsSource = Planet.GetListOfPlanets();
-            RadGridView1.AutoGenerateColumns = true;
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
@@ -57,6 +47,14 @@ namespace OpenSilver.Samples.TelerikUI
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Other/Planets.vb"
                 }
             });
+        }
+
+        private void RadGridView1_AutoGeneratingColumn(object sender, Telerik.Windows.Controls.GridViewAutoGeneratingColumnEventArgs e)
+        {
+            if (e.Column.UniqueName == "ImagePath")
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

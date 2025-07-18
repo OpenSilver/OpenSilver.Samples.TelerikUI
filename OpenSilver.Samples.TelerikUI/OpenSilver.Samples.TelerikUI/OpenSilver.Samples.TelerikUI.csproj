@@ -108,6 +108,14 @@
     <Content Include="Other\embed.js" />
     <Content Include="Other\Logo.png" />
     <Content Include="Other\MenuIcon.png" />
+    <Resource Include="Other\Planets\Earth.png" />
+    <Resource Include="Other\Planets\Jupiter.png" />
+    <Resource Include="Other\Planets\Mars.png" />
+    <Resource Include="Other\Planets\Mercury.png" />
+    <Resource Include="Other\Planets\Neptune.png" />
+    <Resource Include="Other\Planets\Saturn.png" />
+    <Resource Include="Other\Planets\Uranus.png" />
+    <Resource Include="Other\Planets\Venus.png" />
     <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Cycle3.xml" />
     <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\FloorPlan.xml" />
     <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Flow2.xml" />

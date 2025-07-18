@@ -1,27 +1,41 @@
-﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.RadTreeListView_Demo"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controls="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView">
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadTreeListView_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="310" Width="400">
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="500"
+                    Width="750">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ContentControl Content="RadTreeListView" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadTreeListView x:Name="radTreeListView" Grid.Row="1" AutoGenerateColumns="False" ItemsSource="{Binding WarehouseItems}" Width="380">
-                <controls:RadTreeListView.ChildTableDefinitions>
-                    <controls:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
-                </controls:RadTreeListView.ChildTableDefinitions>
-                <controls:RadTreeListView.Columns>
-                    <controls:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" />
-                    <controls:GridViewDataColumn DataMemberBinding="{Binding Count}" Header="Count" />
-                </controls:RadTreeListView.Columns>
-            </controls:RadTreeListView>
-            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF6F7DFF" Style="{StaticResource ButtonViewSource_Style}"/>
+            <ContentControl Content="RadTreeListView"
+                            Foreground="#FFD59851"
+                            Background="#FFBFA383"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <telerik:RadTreeListView x:Name="radTreeListView"
+                                      Grid.Row="1"
+                                      AutoGenerateColumns="False"
+                                      ItemsSource="{Binding WarehouseItems}"
+                                      Width="380">
+                <telerik:RadTreeListView.ChildTableDefinitions>
+                    <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
+                </telerik:RadTreeListView.ChildTableDefinitions>
+                <telerik:RadTreeListView.Columns>
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}"
+                                                 Header="Name" />
+                    <telerik:GridViewDataColumn DataMemberBinding="{Binding Count}"
+                                                 Header="Count" />
+                </telerik:RadTreeListView.Columns>
+            </telerik:RadTreeListView>
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FF6F7DFF"
+                    Style="{StaticResource ButtonViewSource_Style}" />
         </Grid>
     </ContentControl>
 </UserControl>

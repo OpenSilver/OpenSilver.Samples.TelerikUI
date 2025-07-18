@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Navigation;
 
 namespace OpenSilver.Samples.TelerikUI
 {
@@ -16,7 +8,8 @@ namespace OpenSilver.Samples.TelerikUI
     {
         public RadListBox_Demo()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+            DataContext = Planet.GetListOfPlanets();
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
