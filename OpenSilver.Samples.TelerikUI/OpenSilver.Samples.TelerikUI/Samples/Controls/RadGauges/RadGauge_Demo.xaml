@@ -4,7 +4,7 @@
              xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
     <ContentControl Style="{StaticResource Card_Style}"
-                    Height="430"
+                    Height="500"
                     Width="750">
         <Grid>
             <Grid.RowDefinitions>

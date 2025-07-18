@@ -5,7 +5,7 @@
              xmlns:datavis="clr-namespace:Telerik.Windows.Controls.TreeMap;assembly=Telerik.Windows.Controls.DataVisualization">
 
     <ContentControl Style="{StaticResource Card_Style}"
-                    Height="430"
+                    Height="500"
                     Width="750">
         <Grid>
             <Grid.RowDefinitions>

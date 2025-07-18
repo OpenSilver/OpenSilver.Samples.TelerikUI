@@ -38,9 +38,9 @@ namespace OpenSilver.Samples.TelerikUI
             NavigateToPage("/Controls");
         }
 
-        void ButtonCharts_Click(object sender, RoutedEventArgs e)
+        private void ButtonDataVisualization_Click(object sender, RoutedEventArgs e)
         {
-            NavigateToPage("/Charts");
+            NavigateToPage("/DataVisualization");
         }
 
         private void ButtonEditors_Click(object sender, RoutedEventArgs e)
@@ -225,10 +225,9 @@ namespace OpenSilver.Samples.TelerikUI
 
 
 
+
+
+
         #endregion
-
-
-
-
     }
 }

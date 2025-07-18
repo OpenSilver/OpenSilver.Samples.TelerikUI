@@ -10,7 +10,6 @@
         <controlskit:StaggeredPanel DesiredColumnWidth="760" ProgressiveRenderingChunkSize="2">
             <local:RadScheduleView_Demo HorizontalAlignment="Center"/>
             <local:RadCalendar_Demo HorizontalAlignment="Center"/>
-            <local:RadGanttView_Demo HorizontalAlignment="Center"/>
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>

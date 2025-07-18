@@ -1,26 +1,27 @@
-﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.Charts"
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.DataVisualization"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:controlskit="clr-namespace:OpenSilver.ControlsKit;assembly=OpenSilver.ControlsKit.Controls"
              xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
     <StackPanel>
-        <TextBlock Text="Charts"
+        <TextBlock Text="Data Visualization"
                    Style="{StaticResource PageHeader_Style}" />
         <controlskit:StaggeredPanel DesiredColumnWidth="800"
                                     ProgressiveRenderingChunkSize="2">
             <local:RadCartesianChart_Demo HorizontalAlignment="Center" />
             <local:RadPolarChart_Demo HorizontalAlignment="Center" />
-            <local:RadBulletGraph_Demo HorizontalAlignment="Center" />
-            <local:RadBarcode_Demo HorizontalAlignment="Center" />
-            <local:RadHeatMap_Demo HorizontalAlignment="Center" />
-            <local:RadDiagram_Demo HorizontalAlignment="Center" />
             <local:RadSparkline_Demo HorizontalAlignment="Center" />
             <local:RadTimeBar_Demo HorizontalAlignment="Center" />
+            <local:RadHeatMap_Demo HorizontalAlignment="Center" />
+            <local:RadBarcode_Demo HorizontalAlignment="Center" />
             <local:RadTreeMap_Demo HorizontalAlignment="Center" />
             <local:RadPivotMap_Demo HorizontalAlignment="Center" />
-            <local:RadTimeline_Demo HorizontalAlignment="Center" />
             <local:RadGauge_Demo HorizontalAlignment="Center" />
+            <local:RadBulletGraph_Demo HorizontalAlignment="Center" />
+            <local:RadGanttView_Demo HorizontalAlignment="Center" />
+            <local:RadDiagram_Demo HorizontalAlignment="Center" />
+            <local:RadTimeline_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>

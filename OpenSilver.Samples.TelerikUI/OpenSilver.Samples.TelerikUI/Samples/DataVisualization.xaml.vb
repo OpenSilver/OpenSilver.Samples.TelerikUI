@@ -1,7 +1,7 @@
 ﻿Imports System.Windows.Controls
 
 Namespace OpenSilver.Samples.TelerikUI
-    Public Partial Class Charts
+    Partial Public Class DataVisualization
         Inherits UserControl
         Public Sub New()
             Me.InitializeComponent()
