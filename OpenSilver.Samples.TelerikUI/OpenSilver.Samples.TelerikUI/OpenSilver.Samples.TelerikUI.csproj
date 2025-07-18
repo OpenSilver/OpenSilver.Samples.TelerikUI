@@ -26,6 +26,7 @@
     <Compile Include="Other\Internal\ViewSourceButtonInfo.cs" />
     <Compile Include="Other\Internal\WrapPanelWithProgressiveLoading.cs" />
     <Compile Include="Other\Planets.cs" />
+    <Compile Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml.cs" />
     <Compile Include="Samples\DataVisualization.xaml.cs" />
     <Compile Include="Samples\Controls\Controls.xaml.cs" />
     <Compile Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml.cs" />
@@ -127,6 +128,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Other\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\DataVisualization.xaml">

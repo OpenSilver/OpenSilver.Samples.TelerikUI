@@ -12,6 +12,7 @@
             <local:RadTreeListView_Demo HorizontalAlignment="Center"/>
             <local:RadGridView_Demo HorizontalAlignment="Center"/>
             <local:RadPivot_Demo HorizontalAlignment="Center" />
+            <local:RadPropertyGrid_Demo HorizontalAlignment="Center" />
         </WrapPanel>
     </StackPanel>
 </UserControl>
