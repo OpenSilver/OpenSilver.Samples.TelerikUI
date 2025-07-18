@@ -37,6 +37,7 @@
     <Compile Include="Samples\Controls\RadBusyIndicator\RadBusyIndicator_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadButton\RadButton_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadPolarChart\RadPolarChart_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_AreaSeries_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_BarSeries_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_BubbleSeries_Demo.xaml.cs" />
@@ -134,6 +135,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadPolarChart\RadPolarChart_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineAreaSeries_Demo.xaml">

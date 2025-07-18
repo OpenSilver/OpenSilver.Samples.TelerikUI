@@ -9,6 +9,7 @@
                    Style="{StaticResource PageHeader_Style}" />
         <controlskit:StaggeredPanel DesiredColumnWidth="800"
                                     ProgressiveRenderingChunkSize="2">
+            <local:RadPolarChart_Demo HorizontalAlignment="Center" />
             <local:RadCartesianChart_AreaSeries_Demo HorizontalAlignment="Center" />
             <local:RadCartesianChart_BarSeries_Demo HorizontalAlignment="Center" />
             <local:RadCartesianChart_BubbleSeries_Demo HorizontalAlignment="Center" />
