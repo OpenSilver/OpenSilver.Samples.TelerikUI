@@ -61,6 +61,7 @@
     <Compile Include="Samples\Controls\RadExpander\RadExpander_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadGallery\RadGallery_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadGauges\RadGauge_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadGridView\RadGridView_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadHeatMap\RadHeatMap_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml.cs" />
@@ -181,6 +182,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadGauges\RadGauge_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadHeatMap\RadHeatMap_Demo.xaml">

@@ -31,6 +31,7 @@
             <local:RadTreeMap_Demo HorizontalAlignment="Center" />
             <local:RadPivotMap_Demo HorizontalAlignment="Center" />
             <local:RadTimeline_Demo HorizontalAlignment="Center" />
+            <local:RadGauge_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>
