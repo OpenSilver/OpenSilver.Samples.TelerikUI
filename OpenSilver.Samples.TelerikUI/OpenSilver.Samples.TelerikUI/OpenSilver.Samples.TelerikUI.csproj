@@ -27,6 +27,7 @@
     <Compile Include="Other\Internal\WrapPanelWithProgressiveLoading.cs" />
     <Compile Include="Other\Planets.cs" />
     <Compile Include="Samples\Controls\RadDataFilter\RadDataFilter_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadDataForm\RadDataForm_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml.cs" />
     <Compile Include="Samples\DataVisualization.xaml.cs" />
     <Compile Include="Samples\Controls\Controls.xaml.cs" />
@@ -132,6 +133,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadDataFilter\RadDataFilter_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDataForm\RadDataForm_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml">

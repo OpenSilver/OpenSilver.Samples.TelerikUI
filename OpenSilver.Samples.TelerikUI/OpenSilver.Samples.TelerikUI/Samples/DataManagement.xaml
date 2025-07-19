@@ -14,6 +14,7 @@
             <local:RadPivot_Demo HorizontalAlignment="Center" />
             <local:RadPropertyGrid_Demo HorizontalAlignment="Center" />
             <local:RadDataFilter_Demo HorizontalAlignment="Center" />
+            <local:RadDataForm_Demo HorizontalAlignment="Center" />
         </WrapPanel>
     </StackPanel>
 </UserControl>
