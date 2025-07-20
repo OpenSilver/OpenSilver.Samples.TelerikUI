@@ -28,6 +28,9 @@
     <Compile Include="Other\Planets.cs" />
     <Compile Include="Samples\Controls\RadDataFilter\RadDataFilter_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDataForm\RadDataForm_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadOutlookBar\MenuItems.cs" />
+    <Compile Include="Samples\Controls\RadOutlookBar\OutlookBarContentTemplateSelector.cs" />
+    <Compile Include="Samples\Controls\RadOutlookBar\RadOutlookBar_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadRadialMenu\RadRadialMenu_Demo.xaml.cs" />
     <Compile Include="Samples\DataVisualization.xaml.cs" />
@@ -110,6 +113,29 @@
   <ItemGroup>
     <EmbeddedResource Include="OpenSilver.Compatibility.TelerikUI.license.json" />
     <Content Include="Other\embed.js" />
+    <Resource Include="Other\Images\1PersonalFolders.png" />
+    <Resource Include="Other\Images\2DeletedItems.png" />
+    <Resource Include="Other\Images\3Drafts.png" />
+    <Resource Include="Other\Images\4Inbox.png" />
+    <Resource Include="Other\Images\calendarBig.png" />
+    <Resource Include="Other\Images\calendarSmall.png" />
+    <Resource Include="Other\Images\Computer.png" />
+    <Resource Include="Other\Images\contact.png" />
+    <Resource Include="Other\Images\contactsBig.png" />
+    <Resource Include="Other\Images\contactsSmall.png" />
+    <Resource Include="Other\Images\Desktop.png" />
+    <Resource Include="Other\Images\folder.png" />
+    <Resource Include="Other\Images\folder2.png" />
+    <Resource Include="Other\Images\HardDrive16.png" />
+    <Resource Include="Other\Images\junk.png" />
+    <Resource Include="Other\Images\letter.png" />
+    <Resource Include="Other\Images\mailBig.png" />
+    <Resource Include="Other\Images\mailSmall.png" />
+    <Resource Include="Other\Images\outbox.png" />
+    <Resource Include="Other\Images\search.png" />
+    <Resource Include="Other\Images\searchFolder.png" />
+    <Resource Include="Other\Images\sent.png" />
+    <Resource Include="Other\Images\tasksBig.png" />
     <Content Include="Other\Logo.png" />
     <Content Include="Other\MenuIcon.png" />
     <Resource Include="Other\Planets\Earth.png" />
@@ -137,6 +163,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadDataForm\RadDataForm_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadOutlookBar\RadOutlookBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml">
