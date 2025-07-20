@@ -24,6 +24,7 @@
             <local:RadDocking_Demo HorizontalAlignment="Center" />
             <local:RadRadialMenu_Demo HorizontalAlignment="Center" />
             <local:RadOutlookBar_Demo HorizontalAlignment="Center" />
+            <local:RadBreadcrumb_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 
