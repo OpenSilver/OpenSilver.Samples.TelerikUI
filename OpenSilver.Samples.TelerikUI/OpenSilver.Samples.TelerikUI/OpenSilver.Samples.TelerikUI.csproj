@@ -36,6 +36,8 @@
     <Compile Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadRadialMenu\RadRadialMenu_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadRating\RadRating_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadWizard\ProgressPageBehavior.cs" />
+    <Compile Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml.cs" />
     <Compile Include="Samples\DataVisualization.xaml.cs" />
     <Compile Include="Samples\Controls\Controls.xaml.cs" />
     <Compile Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml.cs" />
@@ -116,6 +118,8 @@
   <ItemGroup>
     <EmbeddedResource Include="OpenSilver.Compatibility.TelerikUI.license.json" />
     <Content Include="Other\embed.js" />
+    <Resource Include="Samples\Controls\RadWizard\Images\BrandMark_Telerik_Black.png" />
+    <Resource Include="Samples\Controls\RadWizard\Images\BrandMark_Telerik_White.png" />
     <Resource Include="Other\Images\1PersonalFolders.png" />
     <Resource Include="Other\Images\2DeletedItems.png" />
     <Resource Include="Other\Images\3Drafts.png" />
@@ -184,6 +188,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadRating\RadRating_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\DataVisualization.xaml">
