@@ -20,6 +20,7 @@
             <local:RadNumericUpDown_Demo HorizontalAlignment="Center" />
             <local:RadColorPicker_Demo HorizontalAlignment="Center" />
             <local:RadCalculator_Demo HorizontalAlignment="Center" />
+            <local:RadRating_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 
