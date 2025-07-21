@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadCalculator_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="400"
+                    Width="500">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadCalculator &amp; RadCalculatorPicker"
+                            Foreground="#FF6F98FF"
+                            Background="#FF93A5D1"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <Grid Grid.Row="1"
+                  Margin="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <telerik:RadCalculator Grid.Column="0"
+                                       VerticalAlignment="Top" />
+                <telerik:RadCalculatorPicker Grid.Column="1"
+                                             VerticalAlignment="Top"/>
+            </Grid>
+
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FF6F98FF"
+                    Style="{StaticResource ButtonViewSource_Style}" />
+        </Grid>
+    </ContentControl>
+
+</UserControl>
