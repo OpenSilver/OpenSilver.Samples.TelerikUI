@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using Telerik.Windows.Controls.GridView;
 
 namespace OpenSilver.Samples.TelerikUI
 {
@@ -10,11 +13,49 @@ namespace OpenSilver.Samples.TelerikUI
         {
             InitializeComponent();
             Loaded += RadGridView_Demo_Loaded;
+            rowDetailsVisibilityModeCB.ItemsSource = new GridViewRowDetailsVisibilityMode[]
+            {
+                GridViewRowDetailsVisibilityMode.Collapsed,
+                GridViewRowDetailsVisibilityMode.Visible,
+                GridViewRowDetailsVisibilityMode.VisibleWhenSelected,
+            };
+            selectionModeCB.ItemsSource = new SelectionMode[]
+            {
+                SelectionMode.Single,
+                SelectionMode.Multiple,
+                SelectionMode.Extended,
+            };
+            gridLinesVisibilityCB.ItemsSource = new GridLinesVisibility[]
+            {
+                GridLinesVisibility.None,
+                GridLinesVisibility.Horizontal,
+                GridLinesVisibility.Vertical,
+                GridLinesVisibility.Both,
+            };
+            selectionUnitCB.ItemsSource = new GridViewSelectionUnit[]
+            {
+                GridViewSelectionUnit.Cell,
+                GridViewSelectionUnit.FullRow,
+                GridViewSelectionUnit.Mixed,
+            };
+            filteringModeCB.ItemsSource = new FilteringMode[]
+            {
+                FilteringMode.Popup,
+                FilteringMode.FilterRow,
+            };
         }
 
         private void RadGridView_Demo_Loaded(object sender, RoutedEventArgs e)
         {
-            RadGridView1.ItemsSource = Planet.GetListOfPlanets();
+            radGridView.ItemsSource = Planet.GetListOfPlanets();
+        }
+
+        private void radGridView_AutoGeneratingColumn(object sender, Telerik.Windows.Controls.GridViewAutoGeneratingColumnEventArgs e)
+        {
+            if (e.Column.UniqueName == "ImagePath")
+            {
+                e.Cancel = true;
+            }
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
@@ -47,14 +88,6 @@ namespace OpenSilver.Samples.TelerikUI
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Other/Planets.vb"
                 }
             });
-        }
-
-        private void RadGridView1_AutoGeneratingColumn(object sender, Telerik.Windows.Controls.GridViewAutoGeneratingColumnEventArgs e)
-        {
-            if (e.Column.UniqueName == "ImagePath")
-            {
-                e.Cancel = true;
-            }
         }
     }
 }
