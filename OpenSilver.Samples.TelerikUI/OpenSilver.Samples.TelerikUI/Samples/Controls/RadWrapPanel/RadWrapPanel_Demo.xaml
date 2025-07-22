@@ -1,26 +1,110 @@
-﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.RadWrapPanel_Demo"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controls="using:Telerik.Windows.Controls"
-    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadWrapPanel_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
-    <ContentControl Style="{StaticResource Card_Style}" Height="210" Width="220">
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="350"
+                    Width="500">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ContentControl Content="RadWrapPanel" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadWrapPanel Grid.Row="1" Width="150" Height="140" ItemWidth="44" ItemHeight="24">
-                <Border Width="40" Height="20" Margin="2" Background="LightBlue"/>
-                <Border Width="40" Height="20" Margin="2" Background="LightBlue"/>
-                <Border Width="40" Height="20" Margin="2" Background="LightBlue"/>
-                <Border Width="40" Height="20" Margin="2" Background="LightBlue"/>
-                <Border Width="40" Height="20" Margin="2" Background="LightBlue"/>
-            </controls:RadWrapPanel>
-            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF6F7DFF" Style="{StaticResource ButtonViewSource_Style}"/>
+            <ContentControl Content="RadWrapPanel &amp; VirtualizingWrapPanel"
+                            Foreground="#FFD59851"
+                            Background="#FFBFA383"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <Grid Grid.Row="1"
+                  Margin="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0"
+                               Text="RadWrapPanel"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="0,0,0,10" />
+                    <StackPanel Grid.Row="1"
+                                Orientation="Horizontal">
+                        <TextBlock FontWeight="Bold"
+                                   Text="Number of items:" />
+                        <telerik:RadWatermarkTextBox x:Name="radWrapPanelTextbox"
+                                                     WatermarkContent="10"
+                                                     WatermarkBehavior="HideOnTextEntered"
+                                                     MinWidth="20" />
+                    </StackPanel>
+                    <telerik:RadButton Grid.Row="2"
+                                       Content="Load items"
+                                       Click="RadWrapPanelButton_Click" />
+                    <telerik:RadListBox Grid.Row="3"
+                                        x:Name="radWrapPanelListBox"
+                                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                        IsSynchronizedWithCurrentItem="False">
+                        <telerik:RadListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <telerik:RadWrapPanel ItemWidth="44"
+                                                      ItemHeight="24" />
+                            </ItemsPanelTemplate>
+                        </telerik:RadListBox.ItemsPanel>
+                    </telerik:RadListBox>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0"
+                               Text="VirtualizingWrapPanel"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="0,0,0,10" />
+                    <StackPanel Grid.Row="1"
+                                Orientation="Horizontal">
+                        <TextBlock FontWeight="Bold"
+                                   Text="Number of items:" />
+                        <telerik:RadWatermarkTextBox x:Name="virtualizingWrapPanelTextBox"
+                                                     WatermarkContent="10"
+                                                     WatermarkBehavior="HideOnTextEntered"
+                                                     MinWidth="20" />
+                    </StackPanel>
+                    <telerik:RadButton Grid.Row="2"
+                                       Content="Load items"
+                                       Click="VirtualizingWrapPanelButton_Click" />
+                    <telerik:RadListBox Grid.Row="3"
+                                        x:Name="virtualizingWrapPanelListBox"
+                                        ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                        IsSynchronizedWithCurrentItem="False">
+                        <telerik:RadListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <telerik:VirtualizingWrapPanel ItemWidth="44"
+                                                               ItemHeight="24" />
+                            </ItemsPanelTemplate>
+                        </telerik:RadListBox.ItemsPanel>
+                    </telerik:RadListBox>
+                </Grid>
+            </Grid>
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FF6F7DFF"
+                    Style="{StaticResource ButtonViewSource_Style}" />
         </Grid>
     </ContentControl>
 </UserControl>
