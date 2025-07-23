@@ -9,6 +9,8 @@
                    Style="{StaticResource PageHeader_Style}" />
         <controlskit:StaggeredPanel DesiredColumnWidth="250"
                                     ProgressiveRenderingChunkSize="2">
+            <local:RadTileView_Demo HorizontalAlignment="Center" />
+            <local:RadTileList_Demo HorizontalAlignment="Center" />
             <local:GroupBox_Demo HorizontalAlignment="Center" />
             <local:RadExpander_Demo HorizontalAlignment="Center" />
             <local:RadDockPanel_Demo HorizontalAlignment="Center" />
@@ -23,7 +25,6 @@
             <local:RadWizard_Demo HorizontalAlignment="Center" />
             <local:RadDocking_Demo HorizontalAlignment="Center" />
             <local:RadTransitionControl_Demo HorizontalAlignment="Center" />
-            <local:RadTileView_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>
