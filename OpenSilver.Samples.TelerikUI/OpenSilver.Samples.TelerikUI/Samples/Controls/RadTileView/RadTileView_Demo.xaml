@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadTileView_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <UserControl.Resources>
+        <DataTemplate x:Key="headerTemplate">
+            <TextBlock Text="{Binding Name}" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="contentTemplate">
+            <telerik:RadFluidContentControl ContentChangeMode="Manual"
+                                            State="Normal"
+                                            TransitionDuration="0:0:.5">
+                <telerik:RadFluidContentControl.Content>
+                    <Grid>
+                        <StackPanel VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding RotationPeriod, StringFormat='Rotation: {0}'}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding OrbitalPeriod, StringFormat='Orbit: {0}'}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Radius, StringFormat='Radius: {0} km'}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </telerik:RadFluidContentControl.Content>
+                <telerik:RadFluidContentControl.LargeContent>
+                    <Grid Background="Black"
+                          TextElement.Foreground="White"
+                          TextElement.FontSize="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0"
+                               Source="{Binding ImagePath}"
+                               Stretch="Uniform"
+                               Margin="10" />
+                        <StackPanel Grid.Column="1"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center">
+                            <StackPanel Orientation="Horizontal"
+                                        Margin="5,15,0,0">
+                                <TextBlock Text="Name: " />
+                                <TextBlock Text="{Binding Name}"
+                                           Margin="4,0,0,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        Margin="5,15,0,0">
+                                <TextBlock Text="Rotation: " />
+                                <TextBlock Text="{Binding RotationPeriod}"
+                                           Margin="4,0,0,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        Margin="5,15,0,0">
+                                <TextBlock Text="Orbit: " />
+                                <TextBlock Text="{Binding OrbitalPeriod}"
+                                           Margin="4,0,0,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal"
+                                        Margin="5,15,0,0">
+                                <TextBlock Text="Radius: " />
+                                <TextBlock Text="{Binding Radius}"
+                                           Margin="4,0,0,0" />
+                                <TextBlock Text="km"
+                                           Margin="2,0,0,0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </telerik:RadFluidContentControl.LargeContent>
+            </telerik:RadFluidContentControl>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="500"
+                    Width="750">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadTileView"
+                            Foreground="#FFFE7484"
+                            Background="#DAB6BB"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <Grid Grid.Row="1"
+                  Margin="15">
+                <telerik:RadTileView ItemsSource="{Binding}"
+                                     MaximizeMode="ZeroOrOne"
+                                     ItemTemplate="{StaticResource headerTemplate}"
+                                     ContentTemplate="{StaticResource contentTemplate}"
+                                     TileStateChanged="tileView1_TileStateChanged"
+                                     TileStateChangeTrigger="DoubleClick"
+                                     MinimizedRowHeight="120"
+                                     MinimizedColumnWidth="140"
+                                     IsDockingEnabled="True"/>
+            </Grid>
+            <Button Grid.Row="2"
+                    Content="VIEW SOURCE..."
+                    Click="ButtonViewSource_Click"
+                    Background="#FFFE7484"
+                    Style="{StaticResource ButtonViewSource_Style}" />
+        </Grid>
+    </ContentControl>
+
+</UserControl>

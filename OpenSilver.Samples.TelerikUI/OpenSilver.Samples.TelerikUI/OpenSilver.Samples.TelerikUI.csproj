@@ -37,6 +37,7 @@
     <Compile Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadRadialMenu\RadRadialMenu_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadRating\RadRating_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadTileView\RadTileView_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadWizard\ProgressPageBehavior.cs" />
     <Compile Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml.cs" />
     <Compile Include="Samples\DataVisualization.xaml.cs" />
@@ -192,6 +193,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadRating\RadRating_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadTileView\RadTileView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml">
