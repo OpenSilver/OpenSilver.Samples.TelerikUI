@@ -1,19 +1,19 @@
-﻿<UserControl
-    x:Class="OpenSilver.Samples.TelerikUI.Samples.DataManagement"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controlskit="clr-namespace:OpenSilver.ControlsKit;assembly=OpenSilver.ControlsKit.Controls"
-    xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.Samples.DataManagement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controlskit="clr-namespace:OpenSilver.ControlsKit;assembly=OpenSilver.ControlsKit.Controls"
+             xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
     <StackPanel>
-        <TextBlock Text="DataManagement" Style="{StaticResource PageHeader_Style}"/>
+        <TextBlock Text="Data Management"
+                   Style="{StaticResource PageHeader_Style}" />
         <WrapPanel>
-            <local:RadListBox_Demo HorizontalAlignment="Center"/>
-            <local:RadGridView_Demo HorizontalAlignment="Center"/>
+            <local:RadListBox_Demo HorizontalAlignment="Center" />
+            <local:RadGridView_Demo HorizontalAlignment="Center" />
             <local:RadDataPager_Demo HorizontalAlignment="Center" />
             <local:RadDataFilter_Demo HorizontalAlignment="Center" />
             <local:RadPivot_Demo HorizontalAlignment="Center" />
-            <local:RadTreeListView_Demo HorizontalAlignment="Center"/>
+            <local:RadTreeListView_Demo HorizontalAlignment="Center" />
             <local:RadPropertyGrid_Demo HorizontalAlignment="Center" />
             <local:RadDataForm_Demo HorizontalAlignment="Center" />
         </WrapPanel>

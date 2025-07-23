@@ -37,8 +37,8 @@
                         <Button Content="Editors" Click="ButtonEditors_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
                         <Button Content="Navigations" Click="ButtonNavigations_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
                         <Button Content="Scheduling" Click="ButtonScheduling_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
-                        <Button Content="DataManagement" Click="ButtonDataManagement_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
-                        <Button Content="Layouts" Click="ButtonLayouts_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
+                        <Button Content="Data Management" Click="ButtonDataManagement_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
+                        <Button Content="Layout" Click="ButtonLayouts_Click" Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
                         <Button Content="Home" Click="ButtonHome_Click"  Style="{StaticResource FlatButtonStyle}" Background="{x:Null}" Foreground="#FFDDDDDD" HorizontalContentAlignment="Left" FontSize="16" Margin="0,10,0,0" Padding="20,3,3,3"/>
                     </StackPanel>
                 </ScrollViewer>

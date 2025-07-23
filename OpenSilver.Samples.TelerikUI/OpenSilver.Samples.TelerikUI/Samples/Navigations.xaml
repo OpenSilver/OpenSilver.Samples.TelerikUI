@@ -10,7 +10,6 @@
         <controlskit:StaggeredPanel DesiredColumnWidth="250"
                                     ProgressiveRenderingChunkSize="2">
             <local:RadTabControl_Demo HorizontalAlignment="Center" />
-            <local:RadExpander_Demo HorizontalAlignment="Center" />
             <local:RadRibbonView_Demo HorizontalAlignment="Center" />
             <local:RadButton_Demo HorizontalAlignment="Center" />
             <local:RadPathButton_Demo HorizontalAlignment="Center" />
@@ -19,9 +18,7 @@
             <local:RadToolBar_Demo HorizontalAlignment="Center" />
             <local:RadSplitButton_Demo HorizontalAlignment="Center" />
             <local:RadContextMenu_Demo HorizontalAlignment="Center" />
-            <local:RadTransitionControl_Demo HorizontalAlignment="Center" />
             <local:RadPanelBar_Demo HorizontalAlignment="Center" />
-            <local:RadDocking_Demo HorizontalAlignment="Center" />
             <local:RadRadialMenu_Demo HorizontalAlignment="Center" />
             <local:RadOutlookBar_Demo HorizontalAlignment="Center" />
             <local:RadBreadcrumb_Demo HorizontalAlignment="Center" />
