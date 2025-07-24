@@ -7,15 +7,16 @@
     <StackPanel>
         <TextBlock Text="Data Management"
                    Style="{StaticResource PageHeader_Style}" />
-        <WrapPanel>
-            <local:RadListBox_Demo HorizontalAlignment="Center" />
+        <controlskit:StaggeredPanel DesiredColumnWidth="800"
+                                    ProgressiveRenderingChunkSize="2">
             <local:RadGridView_Demo HorizontalAlignment="Center" />
             <local:RadDataPager_Demo HorizontalAlignment="Center" />
+            <local:RadTreeListView_Demo HorizontalAlignment="Center" />
             <local:RadDataFilter_Demo HorizontalAlignment="Center" />
             <local:RadPivot_Demo HorizontalAlignment="Center" />
-            <local:RadTreeListView_Demo HorizontalAlignment="Center" />
-            <local:RadPropertyGrid_Demo HorizontalAlignment="Center" />
             <local:RadDataForm_Demo HorizontalAlignment="Center" />
-        </WrapPanel>
+            <local:RadPropertyGrid_Demo HorizontalAlignment="Center" />
+            <local:RadListBox_Demo HorizontalAlignment="Center" />
+        </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>
