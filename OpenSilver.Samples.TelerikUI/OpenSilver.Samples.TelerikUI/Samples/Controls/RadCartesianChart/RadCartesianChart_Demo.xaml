@@ -5,8 +5,8 @@
              xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
     <ContentControl Style="{StaticResource Card_Style}"
-                    Height="500"
-                    Width="750">
+                    Height="550"
+                    Width="800">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
