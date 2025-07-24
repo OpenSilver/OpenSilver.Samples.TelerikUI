@@ -78,7 +78,7 @@
 
     <ContentControl Style="{StaticResource Card_Style}"
                     Height="500"
-                    Width="750">
+                    Width="800">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />

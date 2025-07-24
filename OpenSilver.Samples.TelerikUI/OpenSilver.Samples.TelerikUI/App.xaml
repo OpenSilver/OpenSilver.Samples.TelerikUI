@@ -1,12 +1,13 @@
-﻿<Application
-    x:Class="OpenSilver.Samples.TelerikUI.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<Application x:Class="OpenSilver.Samples.TelerikUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Other/Styles.xaml"/>
+                <ResourceDictionary Source="Other/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <telerik:Office_BlackTheme x:Key="ApplicationTheme" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

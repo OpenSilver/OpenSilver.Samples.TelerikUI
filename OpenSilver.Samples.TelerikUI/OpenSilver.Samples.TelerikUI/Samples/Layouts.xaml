@@ -11,20 +11,20 @@
                                     ProgressiveRenderingChunkSize="2">
             <local:RadTileView_Demo HorizontalAlignment="Center" />
             <local:RadTileList_Demo HorizontalAlignment="Center" />
+            <local:RadDocking_Demo HorizontalAlignment="Center" />
+            <local:RadWizard_Demo HorizontalAlignment="Center" />
+            <local:RadWrapPanel_Demo HorizontalAlignment="Center" />
+            <local:RadBook_Demo HorizontalAlignment="Center" />
+            <local:RadDockPanel_Demo HorizontalAlignment="Center" />
+            <local:RadTransitionControl_Demo HorizontalAlignment="Center" />
             <local:GroupBox_Demo HorizontalAlignment="Center" />
             <local:RadExpander_Demo HorizontalAlignment="Center" />
-            <local:RadDockPanel_Demo HorizontalAlignment="Center" />
             <local:RadGallery_Demo HorizontalAlignment="Center" />
             <local:RadWindow_demo HorizontalAlignment="Center" />
-            <local:RadWrapPanel_Demo HorizontalAlignment="Center" />
-            <local:Label_Demo HorizontalAlignment="Center" />
             <local:RadBusyIndicator_Demo HorizontalAlignment="Center" />
             <local:RadProgressBar_Demo HorizontalAlignment="Center" />
             <local:RadAlert_Demo HorizontalAlignment="Center" />
-            <local:RadBook_Demo HorizontalAlignment="Center" />
-            <local:RadWizard_Demo HorizontalAlignment="Center" />
-            <local:RadDocking_Demo HorizontalAlignment="Center" />
-            <local:RadTransitionControl_Demo HorizontalAlignment="Center" />
+            <local:Label_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 </UserControl>

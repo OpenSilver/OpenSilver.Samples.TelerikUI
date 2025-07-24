@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -25,7 +26,7 @@
                 <Border.Effect>
                     <DropShadowEffect ShadowDepth="3" Color="Black" BlurRadius="14" Opacity="0.2" />
                 </Border.Effect>
-                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" telerik:StyleManager.Theme="{StaticResource ApplicationTheme}">
                     <StackPanel Margin="0,20,0,0">
                         <StackPanel Orientation="Vertical" Margin="1">
                             <TextBlock x:Name="TitleTextBlock" FontFamily="Segoe UI" TextAlignment="Center" VerticalAlignment="Center" Foreground="#FF00C6D2" FontSize="17">
@@ -51,7 +52,7 @@
                     <Image Source="other/MenuIcon.png" Width="50" Height="50" Stretch="Fill"/>
                 </Button>
             </Border>
-            <ScrollViewer Grid.Row="1" x:Name="ScrollViewer1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible">
+            <ScrollViewer Grid.Row="1" x:Name="ScrollViewer1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" telerik:StyleManager.Theme="{StaticResource ApplicationTheme}">
                 <Frame x:Name="PageContainer" JournalOwnership="Automatic" Margin="5,0,0,30" HorizontalContentAlignment="Stretch">
                     <Frame.UriMapper>
                         <UriMapper>
