@@ -31,6 +31,16 @@
     <Compile Include="Samples\Controls\RadDataFilter\RadDataFilter_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDataForm\RadDataForm_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDataPager\RadDataPager_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadDocking\Helpers\CustomDockingPanesFactory.cs" />
+    <Compile Include="Samples\Controls\RadDocking\Helpers\CustomSaveLoadLayoutHelper.cs" />
+    <Compile Include="Samples\Controls\RadDocking\ViewModel\PaneViewModel.cs" />
+    <Compile Include="Samples\Controls\RadDocking\ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="Samples\Controls\RadDocking\Views\ErrorList.xaml.cs" />
+    <Compile Include="Samples\Controls\RadDocking\Views\Output.xaml.cs" />
+    <Compile Include="Samples\Controls\RadDocking\Views\PropertiesPane.xaml.cs" />
+    <Compile Include="Samples\Controls\RadDocking\Views\ServerExplorer.xaml.cs" />
+    <Compile Include="Samples\Controls\RadDocking\Views\SolutionExplorer.xaml.cs" />
+    <Compile Include="Samples\Controls\RadDocking\Views\ToolBox.xaml.cs" />
     <Compile Include="Samples\Controls\RadOutlookBar\MenuItems.cs" />
     <Compile Include="Samples\Controls\RadOutlookBar\OutlookBarContentTemplateSelector.cs" />
     <Compile Include="Samples\Controls\RadOutlookBar\RadOutlookBar_Demo.xaml.cs" />
@@ -121,6 +131,115 @@
   <ItemGroup>
     <EmbeddedResource Include="OpenSilver.Compatibility.TelerikUI.license.json" />
     <Content Include="Other\embed.js" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\bullet_toggle_minus.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\bullet_toggle_plus.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\connect_to_database.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\connect_to_server.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\data.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\data_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ErrorList\delete.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ErrorList\information.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ErrorList\warning.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\icon1.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\icon2.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\lightning.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\01.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\02.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\03.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\04.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\05.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Products\Big\Docking.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\properties_icon.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\refresh.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\server.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\database_connect.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\database_connect_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\event_log.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\event_log_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\folder.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\folder_open_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\folder_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\hristov.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\hristov_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\management_classes.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\management_classes_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\management_events.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\message_queues.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\message_queues_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\performance_counters.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\references.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\references_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\servers.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\servers_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\services.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\services_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\servers.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\assembly.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\assembly_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\bin.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\data.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\data_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\description.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\enumeration.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\enumeration_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\folder.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\folder_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon1.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon11.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon2.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon3.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon4.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon5.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon6.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon7.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon8.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon9.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\image.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\image_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\namespace.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\namespace_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\properties.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\properties_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\references.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\references_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\usercontrol.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\_image.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\sortasc.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\stop_refresh.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\chartview.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\datafilter.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\dataform.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\datapager.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\imageeditor.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\map.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\pdfviewer.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\pivotgrid.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radbook_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radcontextmenu_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radcoverflow_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radcube_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radmenu_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radoutlookbar_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radpanelbar_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radribbonbar_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radribboncontextualgroupcontainer_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radribbonwindow_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radrichtextboxribbonui_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radrichtextbox_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radscheduler_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radslider_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtabcontrol_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtileview_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtoolbar_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtreelist_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtreeview_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radwindow_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\richtextbox.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\sparklines.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\timebar.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\timeline.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\treemapandpivotmap.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\_data.png" />
     <Resource Include="Samples\Controls\RadTileList\Images\0001.png" />
     <Resource Include="Samples\Controls\RadTileList\Images\0002.png" />
     <Resource Include="Samples\Controls\RadTileList\Images\0004.png" />
@@ -187,6 +306,24 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadDataPager\RadDataPager_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\ErrorList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\Output.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\PropertiesPane.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\ServerExplorer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\SolutionExplorer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\ToolBox.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadOutlookBar\RadOutlookBar_Demo.xaml">
