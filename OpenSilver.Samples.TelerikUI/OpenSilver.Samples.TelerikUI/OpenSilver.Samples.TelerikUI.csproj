@@ -49,13 +49,13 @@
     <Compile Include="Samples\Controls\RadRating\RadRating_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTileList\RadTileList_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTileView\RadTileView_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadWindow\ExampleWindow.xaml.cs" />
     <Compile Include="Samples\Controls\RadWizard\ProgressPageBehavior.cs" />
     <Compile Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml.cs" />
     <Compile Include="Samples\DataVisualization.xaml.cs" />
     <Compile Include="Samples\Controls\Controls.xaml.cs" />
     <Compile Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\Label\Label_Demo.xaml.cs" />
-    <Compile Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadBarcodes\RadBarcode_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadBook\RadBook_Demo.xaml.cs" />
@@ -118,7 +118,7 @@
     <Compile Include="Samples\Controls\RadTreeMap\RadTreeMap_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadWatermarkTextBox\RadWatermarkTextBox_Demo.xaml.cs" />
-    <Compile Include="Samples\Controls\RadWindow\RadWindow_demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadWindow\RadWindow_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml.cs" />
     <Compile Include="Samples\DataManagement.xaml.cs" />
     <Compile Include="Samples\Editors.xaml.cs" />
@@ -344,6 +344,9 @@
     <Page Include="Samples\Controls\RadTileView\RadTileView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Samples\Controls\RadWindow\ExampleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -479,9 +482,6 @@
     <Page Include="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -548,7 +548,7 @@
     <Page Include="Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Samples\Controls\RadWindow\RadWindow_demo.xaml">
+    <Page Include="Samples\Controls\RadWindow\RadWindow_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\Controls.xaml">

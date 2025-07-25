@@ -1,0 +1,21 @@
+﻿<telerik:RadWindow x:Class="OpenSilver.Samples.TelerikUI.Window.ExampleWindow"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                   Left="{Binding Left, Mode=TwoWay}"
+                   Top="{Binding Top, Mode=TwoWay}"
+                   Height="{Binding Height, Mode=TwoWay}"
+                   Width="{Binding Width, Mode=TwoWay}"
+                   CanMove="{Binding CanMove, Mode=TwoWay}"
+                   CanClose="{Binding CanClose, Mode=TwoWay}"
+                   WindowStartupLocation="{Binding StartupLocation, Mode=TwoWay}"
+                   WindowState="{Binding State, Mode=TwoWay}"
+                   RestoreMinimizedLocation="{Binding RestoreMinimizedLocation, Mode=TwoWay}"
+                   ResizeMode="{Binding ResizeMode, Mode=TwoWay}"
+                   Header="{Binding Title}">
+
+    <Image x:Name="image"
+           Source="{Binding Picture}"
+           Stretch="Fill" />
+
+</telerik:RadWindow>

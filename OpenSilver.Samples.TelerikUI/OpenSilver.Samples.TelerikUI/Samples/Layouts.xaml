@@ -20,10 +20,9 @@
             <local:GroupBox_Demo HorizontalAlignment="Center" />
             <local:RadExpander_Demo HorizontalAlignment="Center" />
             <local:RadGallery_Demo HorizontalAlignment="Center" />
-            <local:RadWindow_demo HorizontalAlignment="Center" />
+            <local:RadWindow_Demo HorizontalAlignment="Center" />
             <local:RadBusyIndicator_Demo HorizontalAlignment="Center" />
             <local:RadProgressBar_Demo HorizontalAlignment="Center" />
-            <local:RadAlert_Demo HorizontalAlignment="Center" />
             <local:Label_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
