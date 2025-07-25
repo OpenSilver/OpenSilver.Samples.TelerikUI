@@ -5,19 +5,82 @@
              xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
     <UserControl.Resources>
-        <local:RadBookPageCollection x:Key="Pages" />
-        <DataTemplate x:Key="PageTemplate">
-            <Border BorderBrush="#B2ADBDD1"
-                    BorderThickness="1">
-                <Grid Width="150"
-                      Height="210"
-                      Background="LightBlue">
+        <Style x:Key="ApiName"
+               TargetType="TextBlock">
+            <Setter Property="Margin"
+                    Value="5 0 0 0" />
+            <Setter Property="FontSize"
+                    Value="10" />
+            <Setter Property="FontFamily"
+                    Value="Verdana" />
+            <Setter Property="FontWeight"
+                    Value="Bold" />
+            <Setter Property="Foreground"
+                    Value="#FF555555" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Left" />
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+        </Style>
+        <DataTemplate x:Key="LeftPageTemplate">
+            <Border BorderBrush="#FFADBDD1"
+                    BorderThickness="3"
+                    Background="#F6F6F6">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
                     <TextBlock HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               FontSize="28"
+                               FontSize="20"
                                FontWeight="Bold"
-                               Foreground="White"
-                               Text="{Binding Content}" />
+                               Foreground="#1BA1E2"
+                               Text="{Binding Title}"
+                               Margin="0 5" />
+                    <TextBlock Grid.Row="1"
+                               Text="{Binding Content}"
+                               FontSize="11"
+                               Foreground="Black"
+                               TextWrapping="Wrap"
+                               Margin="5 0" />
+                    <TextBlock Grid.Row="2"
+                               Text="{Binding PageNumber}"
+                               FontSize="11"
+                               Foreground="#1BA1E2"
+                               Margin="5 0 0 5"
+                               HorizontalAlignment="Left" />
+                </Grid>
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="RightPageTemplate">
+            <Border BorderBrush="#B2ADBDD1"
+                    BorderThickness="3"
+                    Background="#F6F6F6">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock HorizontalAlignment="Center"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               Foreground="#1BA1E2"
+                               Text="{Binding Title}"
+                               Margin="0 5" />
+                    <TextBlock Grid.Row="1"
+                               Text="{Binding Content}"
+                               FontSize="11"
+                               Foreground="Black"
+                               TextWrapping="Wrap"
+                               Margin="5 0" />
+                    <TextBlock Grid.Row="2"
+                               Text="{Binding PageNumber}"
+                               FontSize="11"
+                               Foreground="#1BA1E2"
+                               Margin="0 0 5 5"
+                               HorizontalAlignment="Right" />
                 </Grid>
             </Border>
         </DataTemplate>
@@ -34,18 +97,51 @@
                             Foreground="#FFFF657F"
                             Background="#FFCB8591"
                             Style="{StaticResource HeaderControl_Style}" />
-            <Grid Grid.Row="1"
-                  Width="300"
-                  Height="210"
-                  Background="White">
-                <Border CornerRadius="5">
-                    <telerik:RadBook x:Name="RadBook1"
-                                     FirstPagePosition="Right"
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0"
+                            Margin="0 0 10 0">
+                    <TextBlock Style="{StaticResource ApiName}"
+                               Text="FirstPagePosition" />
+                    <telerik:RadComboBox x:Name="firstPagePositionCB"
+                                         SelectedItem="{Binding FirstPagePosition, ElementName=book, Mode=TwoWay}" />
+                    <TextBlock Style="{StaticResource ApiName}"
+                               Text="HardPages" />
+                    <telerik:RadComboBox x:Name="hardPagesCB"
+                                         SelectedItem="{Binding HardPages, ElementName=book, Mode=TwoWay}" />
+                    <TextBlock Style="{StaticResource ApiName}"
+                               Text="PageFlipMode" />
+                    <telerik:RadComboBox x:Name="pageFlipModeCB"
+                                         SelectedItem="{Binding PageFlipMode, ElementName=book, Mode=TwoWay}" />
+                    <TextBlock Style="{StaticResource ApiName}"
+                               Text="ShowPageFold" />
+                    <telerik:RadComboBox x:Name="showPageFoldCB"
+                                         SelectedItem="{Binding ShowPageFold, ElementName=book, Mode=TwoWay}" />
+                    <TextBlock Style="{StaticResource ApiName}"
+                               Text="FoldHintPosition" />
+                    <telerik:RadComboBox x:Name="foldHintPositionCB"
+                                         SelectedItem="{Binding FoldHintPosition, ElementName=book, Mode=TwoWay}" />
+                </StackPanel>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <telerik:RadBook x:Name="book"
                                      IsKeyboardNavigationEnabled="True"
-                                     ItemTemplate="{StaticResource PageTemplate}"
-                                     ItemsSource="{StaticResource Pages}"
-                                     RightPageIndex="0" />
-                </Border>
+                                     LeftPageTemplate="{StaticResource LeftPageTemplate}"
+                                     RightPageTemplate="{StaticResource RightPageTemplate}"
+                                     FoldSize="75,75"
+                                     Width="300"
+                                     Height="210" />
+                    <telerik:RadDataPager Grid.Row="1"
+                                          Margin="0 5"
+                                          Source="{Binding PagedItems, ElementName=book}"
+                                          DisplayMode="First,Last,Previous,Next" />
+                </Grid>
             </Grid>
 
             <Button Grid.Row="2"
