@@ -1,9 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using OpenSilver.Samples.TelerikUI.TreeListView;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
+using System.Globalization;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using Telerik.Windows.Controls;
+using System.Xml.Linq;
+using Telerik.Windows.Controls.TreeListView;
 
 namespace OpenSilver.Samples.TelerikUI
 {
@@ -12,7 +16,28 @@ namespace OpenSilver.Samples.TelerikUI
         public RadTreeListView_Demo()
         {
             InitializeComponent();
-            radTreeListView.DataContext = new WarehouseViewModel();
+
+            treeLinesVisibilityCB.ItemsSource = new TreeLinesVisibility[]
+            {
+                TreeLinesVisibility.Hidden,
+                TreeLinesVisibility.Visible,
+            };
+            treeLinesVisibilityCB.SelectedItem = TreeLinesVisibility.Visible;
+
+            var stream = Application.GetResourceStream(
+                new Uri("/OpenSilver.Samples.TelerikUI;component/Samples/Controls/RadTreeListView/Folders.xml", UriKind.RelativeOrAbsolute))
+                .Result.Stream;
+
+            var data = XDocument.Load(stream)
+                .Element("folders")
+                .Elements("folder")
+                .Select(f => new FolderViewModel(
+                    f.Attribute("Name").Value,
+                    bool.Parse(f.Attribute("IsEmpty").Value),
+                    DateTime.Parse(f.Attribute("CreationTime").Value, CultureInfo.InvariantCulture),
+                    f));
+
+            DataContext = new ObservableCollection<FolderViewModel>(data);
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
@@ -33,127 +58,18 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "RadTreeListView_Demo.xaml.vb",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/RadTreeListView_Demo.xaml.vb"
-                }
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "FolderViewModel.cs",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ViewModel/FolderViewModel.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "ColorToBrushConverter.cs",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ColorToBrushConverter.cs"
+                },
             });
-        }
-
-        public class WarehouseItem : INotifyPropertyChanged
-        {
-            private string name;
-            private int count;
-            private ObservableCollection<WarehouseItem> items;
-
-            public WarehouseItem(string name, int count)
-            {
-                this.Name = name;
-                this.Count = count;
-                this.Items = new ObservableCollection<WarehouseItem>();
-            }
-            public string Name
-            {
-                get
-                {
-                    return this.name;
-                }
-                set
-                {
-                    if (value != this.name)
-                    {
-                        this.name = value;
-                        this.OnPropertyChanged("Name");
-                    }
-                }
-            }
-            public ObservableCollection<WarehouseItem> Items
-            {
-                get
-                {
-                    return this.items;
-                }
-                set
-                {
-                    if (value != this.items)
-                    {
-                        this.items = value;
-                        this.OnPropertyChanged("Items");
-                    }
-                }
-            }
-            public int Count
-            {
-                get
-                {
-                    return this.count;
-                }
-                set
-                {
-                    if (value != this.count)
-                    {
-                        this.count = value;
-                        this.OnPropertyChanged("Count");
-                    }
-                }
-            }
-
-            protected virtual void OnPropertyChanged(PropertyChangedEventArgs args)
-            {
-                PropertyChangedEventHandler handler = this.PropertyChanged;
-                if (handler != null)
-                {
-                    handler(this, args);
-                }
-            }
-
-            private void OnPropertyChanged(string propertyName)
-            {
-                this.OnPropertyChanged(new PropertyChangedEventArgs(propertyName));
-            }
-
-            public event PropertyChangedEventHandler PropertyChanged;
-        }
-
-        public class WarehouseService
-        {
-            public static ObservableCollection<WarehouseItem> GetWarehouseData()
-            {
-                ObservableCollection<WarehouseItem> data = new ObservableCollection<WarehouseItem>();
-                WarehouseItem drinks = new WarehouseItem("Drinks", 35);
-                drinks.Items.Add(new WarehouseItem("Water", 10));
-                WarehouseItem tea = new WarehouseItem("Tea", 20);
-                tea.Items.Add(new WarehouseItem("Black", 10));
-                tea.Items.Add(new WarehouseItem("Green", 10));
-                drinks.Items.Add(tea);
-                drinks.Items.Add(new WarehouseItem("Coffee", 5));
-                data.Add(drinks);
-                WarehouseItem vegetables = new WarehouseItem("Vegeatbles", 75);
-                vegetables.Items.Add(new WarehouseItem("Tomato", 40));
-                vegetables.Items.Add(new WarehouseItem("Carrot", 25));
-                vegetables.Items.Add(new WarehouseItem("Onion", 10));
-                data.Add(vegetables);
-                WarehouseItem fruits = new WarehouseItem("Fruits", 55);
-                fruits.Items.Add(new WarehouseItem("Cherry", 30));
-                fruits.Items.Add(new WarehouseItem("Apple", 20));
-                fruits.Items.Add(new WarehouseItem("Melon", 5));
-                data.Add(fruits);
-                return data;
-            }
-        }
-        public class WarehouseViewModel : ViewModelBase
-        {
-            private ObservableCollection<WarehouseItem> warehouseItems;
-
-            public ObservableCollection<WarehouseItem> WarehouseItems
-            {
-                get
-                {
-                    if (this.warehouseItems == null)
-                    {
-                        this.warehouseItems = WarehouseService.GetWarehouseData();
-                    }
-
-                    return this.warehouseItems;
-                }
-            }
         }
     }
 }
