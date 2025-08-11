@@ -21,6 +21,7 @@
             <local:RadColorPicker_Demo HorizontalAlignment="Center" />
             <local:RadCalculator_Demo HorizontalAlignment="Center" />
             <local:RadRating_Demo HorizontalAlignment="Center" />
+            <local:RadColorEditor_Demo HorizontalAlignment="Center" />
         </controlskit:StaggeredPanel>
     </StackPanel>
 

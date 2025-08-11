@@ -28,6 +28,7 @@
     <Compile Include="Other\Planets.cs" />
     <Compile Include="Samples\Controls\RadBreadcrumb\RadBreadcrumb_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadCalculator\RadCalculator_Demo.xaml.cs" />
+    <Compile Include="Samples\Controls\RadColorEditor\RadColorEditor_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDataFilter\RadDataFilter_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDataForm\RadDataForm_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadDataPager\RadDataPager_Demo.xaml.cs" />
@@ -300,6 +301,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadCalculator\RadCalculator_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadColorEditor\RadColorEditor_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadDataFilter\RadDataFilter_Demo.xaml">
