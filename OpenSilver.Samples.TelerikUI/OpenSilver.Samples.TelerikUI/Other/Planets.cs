@@ -58,8 +58,6 @@ namespace OpenSilver.Samples.TelerikUI
             set { _imagePath = value; OnPropertyChanged("ImagePath"); }
         }
 
-        public static ObservableCollection<Planet> Planets { get; set; } = GetListOfPlanets();
-
         public static ObservableCollection<Planet> GetListOfPlanets()
         {
             return new ObservableCollection<Planet>()

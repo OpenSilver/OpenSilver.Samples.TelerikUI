@@ -18,7 +18,7 @@ namespace OpenSilver.Samples.TelerikUI
         public RadAutoCompleteBox_Demo()
         {
             this.InitializeComponent();
-            this.autoComplete.ItemsSource = Planet.Planets;
+            this.autoComplete.ItemsSource = Planet.GetListOfPlanets();
         }
 
         private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
