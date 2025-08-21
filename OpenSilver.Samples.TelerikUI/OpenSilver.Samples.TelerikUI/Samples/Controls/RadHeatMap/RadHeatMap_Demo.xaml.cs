@@ -60,6 +60,11 @@ namespace OpenSilver.Samples.TelerikUI
                      TabHeader = "RadHeatMap_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadHeatMap/RadHeatMap_Demo.xaml.cs"
                 },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadHeatMap_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadHeatMap/RadHeatMap_Demo.xaml.vb"
+                },
             });
         }
 

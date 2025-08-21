@@ -9,7 +9,7 @@ Namespace OpenSilver.Samples.TelerikUI
             ' Enter construction logic here...
 
             Dim mainPage = New MainPage()
-            Window.Current.Content = mainPage
+            System.Windows.Window.Current.Content = mainPage
         End Sub
     End Class
 End Namespace

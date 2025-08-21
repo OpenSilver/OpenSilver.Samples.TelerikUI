@@ -8,12 +8,36 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="[$(OpenSilverVersion)]" />
-    <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="[$(TelerikVersion)]" />
-    <PackageReference Include="OpenSilver.TelerikUI.Controls.Pivot" Version="[$(TelerikVersion)]" />
-    <PackageReference Include="OpenSilver.TelerikUI.Controls.PivotFieldList" Version="[$(TelerikVersion)]" />
-    <PackageReference Include="OpenSilver.ControlsKit" Version="[$(OpenSilverControlsKitVersion)]" />
-    <PackageReference Include="Bogus" Version="35.6.3" />
+	  <PackageReference Include="OpenSilver" Version="[$(OpenSilverVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Chart" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Charting" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Data" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.DataVisualization" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Diagrams.Extensions" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Docking" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.FixedDocumentViewersUI" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.GanttView" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.GridView" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.MediaPlayer" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.RichTextBoxUI" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.ScheduleView" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Spreadsheet" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Pivot" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.PivotFieldList" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Fixed" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Html" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.MsRichTextBoxXaml" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.OpenXml" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Pdf" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Proofing" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Proofing.Dictionaries.En-US" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Rtf" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Xaml" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Spreadsheet.OpenXml" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Spreadsheet.Pdf" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.PersistenceFramework" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.ControlsKit" Version="[$(OpenSilverControlsKitVersion)]" />
+	  <PackageReference Include="Bogus" Version="35.6.3" />
   </ItemGroup>
 
   <ItemGroup>

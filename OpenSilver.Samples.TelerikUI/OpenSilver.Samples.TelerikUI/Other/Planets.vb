@@ -82,8 +82,6 @@ Namespace OpenSilver.Samples.TelerikUI
             End Set
         End Property
 
-        Public Shared Property Planets As ObservableCollection(Of Planet) = GetListOfPlanets()
-
         Public Shared Function GetListOfPlanets() As ObservableCollection(Of Planet)
             Return New ObservableCollection(Of Planet)() From {
     New Planet() With {

@@ -118,6 +118,21 @@ namespace OpenSilver.Samples.TelerikUI
                      TabHeader = "OutlookBarContentTemplateSelector.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadOutlookBar/OutlookBarContentTemplateSelector.cs"
                 },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadOutlookBar_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadOutlookBar/RadOutlookBar_Demo.xaml.vb"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "MenuItems.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadOutlookBar/MenuItems.vb"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "OutlookBarContentTemplateSelector.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadOutlookBar/OutlookBarContentTemplateSelector.vb"
+                },
             });
         }
     }

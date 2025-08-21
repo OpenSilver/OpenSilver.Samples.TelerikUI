@@ -6,13 +6,13 @@ Imports System.Windows.Browser
 
 
 Namespace OpenSilver.Samples.TelerikUI
-    Partial Public Class MainPage
+    Public Partial Class MainPage
         Inherits Page
 
         Private Shared _Current As OpenSilver.Samples.TelerikUI.MainPage
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
 
             Current = Me
             AddHandler Loaded, AddressOf MainPage_Loaded
@@ -23,50 +23,50 @@ Namespace OpenSilver.Samples.TelerikUI
             Get
                 Return _Current
             End Get
-            Private Set(ByVal value As MainPage)
+            Private Set(value As MainPage)
                 _Current = value
             End Set
         End Property
 
-        Private Sub MainPage_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub MainPage_Loaded(sender As Object, e As RoutedEventArgs)
             ' Navigate to the "Welcome" page by default:
             If Not HtmlPage.Document.DocumentUri.OriginalString.Contains("#") Then
                 NavigateToPage("/Welcome")
             End If
         End Sub
 
-        Private Sub ButtonControls_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonControls_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/Controls")
         End Sub
 
-        Private Sub ButtonCharts_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            NavigateToPage("/Charts")
+        Private Sub ButtonDataVisualization_Click(sender As Object, e As RoutedEventArgs)
+            NavigateToPage("/DataVisualization")
         End Sub
 
-        Private Sub ButtonEditors_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonEditors_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/Editors")
         End Sub
 
-        Private Sub ButtonLayouts_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonLayouts_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/Layouts")
         End Sub
 
-        Private Sub ButtonNavigations_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonNavigations_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/Navigations")
         End Sub
 
-        Private Sub ButtonScheduling_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonScheduling_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/Scheduling")
         End Sub
 
-        Private Sub ButtonDataManagement_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonDataManagement_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/DataManagement")
         End Sub
-        Private Sub ButtonHome_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonHome_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/Welcome")
         End Sub
 
-        Public Sub NavigateToPage(ByVal targetUri As String)
+        Public Sub NavigateToPage(targetUri As String)
             'Hide the menu:
             If _currentState = CurrentState.SmallResolution_ShowMenu Then GoToState(CurrentState.SmallResolution_HideMenu)
 
@@ -80,11 +80,11 @@ Namespace OpenSilver.Samples.TelerikUI
 
 #Region "Show/hide source code"
 
-        Public Sub ViewSourceCode(ByVal controlThatDisplaysTheSourceCode As UIElement)
+        Public Sub ViewSourceCode(controlThatDisplaysTheSourceCode As UIElement)
             ' Open the Source Code Pane, which is the place where the source code will be displayed:
             If Me.SourceCodePane.Visibility = Visibility.Collapsed Then
                 Me.RowThatContainsThePage.Height = New GridLength(0.5R, GridUnitType.Star)
-                Me.RowThatContainsTheGridSplitter.Height = New GridLength(5.0R)
+                Me.RowThatContainsTheGridSplitter.Height = New GridLength(5R)
                 Me.RowThatContainsTheSourceCodePane.Height = New GridLength(0.5R, GridUnitType.Star)
                 Me.GridSplitter1.Visibility = Visibility.Visible
                 Me.SourceCodePane.Visibility = Visibility.Visible
@@ -94,12 +94,12 @@ Namespace OpenSilver.Samples.TelerikUI
             Me.PlaceWhereSourceCodeWillBeDisplayed.Child = controlThatDisplaysTheSourceCode
         End Sub
 
-        Private Sub ButtonToCloseSourceCode_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonToCloseSourceCode_Click(sender As Object, e As RoutedEventArgs)
             ' Close the Source Code Pane, which is the place where the source code is displayed:
             Me.PlaceWhereSourceCodeWillBeDisplayed.Child = Nothing
             Me.GridSplitter1.Visibility = Visibility.Collapsed
             Me.SourceCodePane.Visibility = Visibility.Collapsed
-            Me.RowThatContainsThePage.Height = New GridLength(1.0R, GridUnitType.Star)
+            Me.RowThatContainsThePage.Height = New GridLength(1R, GridUnitType.Star)
             Me.RowThatContainsTheGridSplitter.Height = New GridLength(0R)
             Me.RowThatContainsTheSourceCodePane.Height = New GridLength(0R)
         End Sub
@@ -119,7 +119,7 @@ Namespace OpenSilver.Samples.TelerikUI
 
         Private _currentState As CurrentState
 
-        Private Sub GoToState(ByVal newState As CurrentState)
+        Private Sub GoToState(newState As CurrentState)
             If newState <> _currentState Then
                 If newState = CurrentState.LargeResolution_SeeBothMenuAndPage Then
                     ' Hide the button to hide/show the menu:
@@ -164,7 +164,7 @@ Namespace OpenSilver.Samples.TelerikUI
         End Sub
 
 
-        Private Sub MainPage_SizeChanged(ByVal sender As Object, ByVal e As SizeChangedEventArgs)
+        Private Sub MainPage_SizeChanged(sender As Object, e As SizeChangedEventArgs)
             UpdateMenuDispositionBasedOnDisplaySize()
         End Sub
 
@@ -174,14 +174,14 @@ Namespace OpenSilver.Samples.TelerikUI
             'double displayWidth = windowBounds.Width;
 
             Dim actualWidth = Me.ActualWidth
-            If Not Double.IsNaN(actualWidth) AndAlso actualWidth > 560.0R Then
+            If Not Double.IsNaN(actualWidth) AndAlso actualWidth > 560R Then
                 GoToState(CurrentState.LargeResolution_SeeBothMenuAndPage)
             ElseIf _currentState = CurrentState.LargeResolution_SeeBothMenuAndPage OrElse _currentState = CurrentState.Unset Then
                 GoToState(CurrentState.SmallResolution_HideMenu)
             End If
         End Sub
 
-        Private Sub ButtonToHideOrShowMenu_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub ButtonToHideOrShowMenu_Click(sender As Object, e As RoutedEventArgs)
             If _currentState = CurrentState.SmallResolution_ShowMenu Then
                 GoToState(CurrentState.SmallResolution_HideMenu)
             ElseIf _currentState = CurrentState.SmallResolution_HideMenu Then
@@ -193,10 +193,9 @@ Namespace OpenSilver.Samples.TelerikUI
 
 
 
+
+
+
 #End Region
-
-
-
-
     End Class
 End Namespace

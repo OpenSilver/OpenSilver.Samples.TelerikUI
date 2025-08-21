@@ -7,19 +7,20 @@ Namespace OpenSilver.Samples.TelerikUI
         Inherits UserControl
         Public Sub New()
             Me.InitializeComponent()
+            DataContext = TelerikUI.Planet.GetListOfPlanets()
         End Sub
 
-        Private Sub ButtonViewSource_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            Call ViewSource(New List(Of ViewSourceButtonInfo)() From {
-                    New ViewSourceButtonInfo() With {
+        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
+            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
+                    New TelerikUI.ViewSourceButtonInfo() With {
         .TabHeader = "RadListBox_Demo.xaml",
         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadListBox/RadListBox_Demo.xaml"
     },
-                    New ViewSourceButtonInfo() With {
+                    New TelerikUI.ViewSourceButtonInfo() With {
          .TabHeader = "RadListBox_Demo.xaml.cs",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadListBox/RadListBox_Demo.xaml.cs"
     },
-                    New ViewSourceButtonInfo() With {
+                    New TelerikUI.ViewSourceButtonInfo() With {
          .TabHeader = "RadListBox_Demo.xaml.vb",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadListBox/RadListBox_Demo.xaml.vb"
     }

@@ -14,9 +14,36 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="[$(OpenSilverVersion)]" />
-    <PackageReference Include="OpenSilver.Compatibility.TelerikUI.4.6" Version="[$(TelerikVersion)]" />
-    <PackageReference Include="OpenSilver.ControlsKit" Version="[$(OpenSilverControlsKitVersion)]" />
+	  <PackageReference Include="OpenSilver" Version="[$(OpenSilverVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Chart" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Charting" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Data" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.DataVisualization" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Diagrams.Extensions" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Docking" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.FixedDocumentViewersUI" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.GanttView" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.GridView" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.MediaPlayer" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.RichTextBoxUI" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.ScheduleView" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Spreadsheet" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.Pivot" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Controls.PivotFieldList" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Fixed" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Html" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.MsRichTextBoxXaml" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.OpenXml" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Pdf" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Proofing" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Proofing.Dictionaries.En-US" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Rtf" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Xaml" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Spreadsheet.OpenXml" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Spreadsheet.Pdf" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.TelerikUI.PersistenceFramework" Version="[$(TelerikVersion)]" />
+	  <PackageReference Include="OpenSilver.ControlsKit" Version="[$(OpenSilverControlsKitVersion)]" />
+	  <PackageReference Include="Bogus" Version="35.6.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,65 +56,104 @@
     <Compile Include="Other\Internal\ViewSourceButtonInfo.vb" />
     <Compile Include="Other\Internal\WrapPanelWithProgressiveLoading.vb" />
     <Compile Include="Other\Planets.vb" />
-    <Compile Include="Samples\Charts.xaml.vb" />
     <Compile Include="Samples\Controls\Controls.xaml.vb" />
     <Compile Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\Label\Label_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadBarCodes\RadBarcode_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadBook\RadBook_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadBreadcrumb\RadBreadcrumb_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadBulletGraph\RadBulletGraph_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadBusyIndicator\RadBusyIndicator_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadButton\RadButton_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCalculator\RadCalculator_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_AreaSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_BarSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_BubbleSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_CandlestickSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_LineSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_OhlcSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSplineSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_ScatterPointSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineAreaSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_StepAreaSeries_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_StepLineSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\AreaSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\BarSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\BubbleSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\CandlestickSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\LineSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\OhlcSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\RadCartesianChart_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\RangeSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\RangeSplineSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\ScatterPointSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\SplineAreaSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\SplineSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\StepAreaSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadCartesianChart\StepLineSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadColorEditor\RadColorEditor_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadContextMenu\RadContextMenu_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDataFilter\RadDataFilter_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDataForm\RadDataForm_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDataPager\RadDataPager_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadDatePicker\RadDatePicker_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDiagram\RadDiagram_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDocking\Helpers\CustomDockingPanesFactory.vb" />
+    <Compile Include="Samples\Controls\RadDocking\Helpers\CustomSaveLoadLayoutHelper.vb" />
     <Compile Include="Samples\Controls\RadDocking\RadDocking_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDocking\ViewModel\MainWindowViewModel.vb" />
+    <Compile Include="Samples\Controls\RadDocking\ViewModel\PaneViewModel.vb" />
+    <Compile Include="Samples\Controls\RadDocking\Views\ErrorList.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDocking\Views\Output.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDocking\Views\PropertiesPane.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDocking\Views\ServerExplorer.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDocking\Views\SolutionExplorer.xaml.vb" />
+    <Compile Include="Samples\Controls\RadDocking\Views\ToolBox.xaml.vb" />
     <Compile Include="Samples\Controls\RadDockPanel\RadDockPanel_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadDropDownButton\RadDropDownButton_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadExpander\RadExpander_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadGallery\RadGallery_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadGanttView\RadGanttView_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadGauges\RadGauge_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadGridView\RadGridView_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadHeatMap\RadHeatMap_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadMap\RadMap_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadMenu\RadMenu_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadOutlookBar\MenuItems.vb" />
+    <Compile Include="Samples\Controls\RadOutlookBar\OutlookBarContentTemplateSelector.vb" />
+    <Compile Include="Samples\Controls\RadOutlookBar\RadOutlookBar_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadPathButton\RadPathButton_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadPivotMap\RadPivotMap_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadPivot\RadPivot_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadPolarChart\RadPolarChart_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadProgressBar\RadProgressBar_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadRadialMenu\RadRadialMenu_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadRadioButton\RadRadioButton_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadRating\RadRating_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadRibbonView\RadRibbonView_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadSlider\RadSlider_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadSparklines\RadSparkline_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadSplitButton\RadSplitButton_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadTabControl\RadTabControl_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadTickBar\RadTickBar_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadTileList\RadTileList_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadTileView\RadTileView_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadTimeBar\RadTimeBar_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadTimeline\RadTimeline_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadTimePicker\RadTimePicker_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadToggleButton\RadToggleButton_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadToggleSwitchButton\RadToggleSwitchButton_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadTreeListView\ColorToBrushConverter.vb" />
     <Compile Include="Samples\Controls\RadTreeListView\RadTreeListView_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadTreeListView\ViewModel\FolderViewModel.vb" />
+    <Compile Include="Samples\Controls\RadTreeMap\RadTreeMap_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadWatermarkTextBox\RadWatermarkTextBox_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadWindow\ExampleWindow.xaml.vb" />
     <Compile Include="Samples\Controls\RadWindow\RadWindow_demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadWizard\ProgressPageBehavior.vb" />
+    <Compile Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadWrapPanel\RadWrapPanel_Demo.xaml.vb" />
     <Compile Include="Samples\DataManagement.xaml.vb" />
+    <Compile Include="Samples\DataVisualization.xaml.vb" />
     <Compile Include="Samples\Editors.xaml.vb" />
     <Compile Include="Samples\Layouts.xaml.vb" />
     <Compile Include="Samples\Navigations.xaml.vb" />
@@ -96,6 +162,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="OpenSilver.Compatibility.TelerikUI.license.json" />
     <Content Include="Other\embed.js" />
     <Content Include="Other\Logo.png" />
     <Content Include="Other\MenuIcon.png" />
@@ -105,54 +172,135 @@
     <Content Include="Other\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Charts.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
     <Content Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\RadCalendar\RadCalendar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineAreaSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSplineSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_StepAreaSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_RangeSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_AreaSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_BarSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_BubbleSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_StepLineSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_SplineSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_LineSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_ScatterPointSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_OhlcSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadCartesianChart\RadCartesianChart_CandlestickSeries_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
+    <Resource Include="Samples\Controls\RadWizard\Images\BrandMark_Telerik_Black.png" />
+    <Resource Include="Samples\Controls\RadWizard\Images\BrandMark_Telerik_White.png" />
+    <Resource Include="Samples\Controls\RadTileList\Images\0001.png" />
+    <Resource Include="Samples\Controls\RadTileList\Images\0002.png" />
+    <Resource Include="Samples\Controls\RadTileList\Images\0004.png" />
+    <Resource Include="Samples\Controls\RadTileList\Images\0005.png" />
+    <Resource Include="Samples\Controls\RadTileList\Images\0006.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\bullet_toggle_minus.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\bullet_toggle_plus.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\connect_to_database.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\connect_to_server.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\data.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\data_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ErrorList\delete.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ErrorList\information.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ErrorList\warning.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\icon1.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\icon2.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\lightning.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\01.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\02.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\03.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\04.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Output\05.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Products\Big\Docking.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\properties_icon.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\refresh.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\server.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\database_connect.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\database_connect_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\event_log.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\event_log_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\folder.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\folder_open_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\folder_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\hristov.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\hristov_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\management_classes.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\management_classes_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\management_events.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\message_queues.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\message_queues_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\performance_counters.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\references.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\references_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\servers.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\servers_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\services.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\ServerExplorer\services_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\servers.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\assembly.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\assembly_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\bin.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\data.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\data_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\description.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\enumeration.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\enumeration_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\folder.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\folder_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon1.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon11.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon2.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon3.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon4.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon5.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon6.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon7.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon8.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\icon9.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\image.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\image_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\namespace.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\namespace_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\properties.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\properties_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\references.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\references_white.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\usercontrol.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\SolutionExplorer\_image.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\sortasc.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\stop_refresh.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\chartview.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\datafilter.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\dataform.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\datapager.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\imageeditor.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\map.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\pdfviewer.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\pivotgrid.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radbook_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radcontextmenu_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radcoverflow_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radcube_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radmenu_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radoutlookbar_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radpanelbar_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radribbonbar_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radribboncontextualgroupcontainer_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radribbonwindow_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radrichtextboxribbonui_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radrichtextbox_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radscheduler_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radslider_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtabcontrol_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtileview_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtoolbar_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtreelist_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radtreeview_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\radwindow_sl.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\richtextbox.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\sparklines.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\timebar.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\timeline.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\Toolbox\treemapandpivotmap.png" />
+    <Resource Include="Samples\Controls\RadDocking\Images\Docking\_data.png" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Cycle3.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\FloorPlan.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Flow2.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Rolls.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\SimpleFlow.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Stakeholder.xml" />
+    <Resource Include="Samples\Controls\RadDiagram\SampleDiagrams\Supply.xml" />
     <Content Include="Samples\Controls\RadGallery\RadGallery_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -174,6 +322,7 @@
     <Content Include="Samples\Controls\RadToolBar\RadToolBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
+    <Resource Include="Samples\Controls\RadTreeListView\Folders.xml" />
     <Content Include="Samples\Controls\RadTreeView\RadTreeView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -193,12 +342,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadAlert\RadAlert_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadRichTextBox\RadRichTextBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml">
@@ -222,9 +365,6 @@
     <Content Include="Samples\Controls\RadTabControl\RadTabControl_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadToggleSwitchButton\RadToggleSwitchButton_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
     <Content Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -238,9 +378,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\RadSlider\RadSlider_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\RadTickBar\RadTickBar_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\RadTransitionControl\RadTransitionControl_Demo.xaml">
@@ -298,6 +435,150 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadBarCodes\RadBarcode_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadBook\RadBook_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadBreadcrumb\RadBreadcrumb_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadBulletGraph\RadBulletGraph_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCalculator\RadCalculator_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\AreaSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\BarSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\BubbleSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\CandlestickSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\LineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\OhlcSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\RadCartesianChart_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\RangeSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\RangeSplineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\ScatterPointSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\SplineAreaSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\SplineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\StepAreaSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadCartesianChart\StepLineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadColorEditor\RadColorEditor_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDataFilter\RadDataFilter_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDataForm\RadDataForm_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDataPager\RadDataPager_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDiagram\RadDiagram_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\ErrorList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\Output.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\PropertiesPane.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\ServerExplorer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\SolutionExplorer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadDocking\Views\ToolBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadGauges\RadGauge_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadHeatMap\RadHeatMap_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadOutlookBar\RadOutlookBar_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadPivotMap\RadPivotMap_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadPivot\RadPivot_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadPolarChart\RadPolarChart_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadPropertyGrid\RadPropertyGrid_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadRadialMenu\RadRadialMenu_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadRating\RadRating_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadSparklines\RadSparkline_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadTileList\RadTileList_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadTileView\RadTileView_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadTimeBar\RadTimeBar_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadTimeline\RadTimeline_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadTreeMap\RadTreeMap_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadWindow\ExampleWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\DataVisualization.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

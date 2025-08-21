@@ -4,16 +4,15 @@ Imports System.Windows.Controls
 Imports Telerik.Windows.Controls.ScheduleView
 
 Namespace OpenSilver.Samples.TelerikUI
-    Partial Public Class RadScheduleView_Demo
+    Public Partial Class RadScheduleView_Demo
         Inherits UserControl
-        Private _Appointments As Telerik.Windows.Controls.ScheduleView.ObservableAppointmentCollection = New ObservableAppointmentCollection()
-        Private _SpecialSlots As System.Collections.Generic.IEnumerable(Of Telerik.Windows.Controls.ScheduleView.Slot)
+        Private _Appointments As Telerik.Windows.Controls.ScheduleView.ObservableAppointmentCollection = New ObservableAppointmentCollection(), _SpecialSlots As System.Collections.Generic.IEnumerable(Of Telerik.Windows.Controls.ScheduleView.Slot)
 
         Public Property Appointments As ObservableAppointmentCollection
             Get
                 Return _Appointments
             End Get
-            Private Set(ByVal value As ObservableAppointmentCollection)
+            Private Set(value As ObservableAppointmentCollection)
                 _Appointments = value
             End Set
         End Property
@@ -22,7 +21,7 @@ Namespace OpenSilver.Samples.TelerikUI
             Get
                 Return _SpecialSlots
             End Get
-            Private Set(ByVal value As IEnumerable(Of Slot))
+            Private Set(value As IEnumerable(Of Slot))
                 _SpecialSlots = value
             End Set
         End Property
@@ -66,17 +65,17 @@ Namespace OpenSilver.Samples.TelerikUI
             Me.scheduleView.SpecialSlotsSource = SpecialSlots
         End Sub
 
-        Private Sub ButtonViewSource_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            Call ViewSource(New List(Of ViewSourceButtonInfo)() From {
-                    New ViewSourceButtonInfo() With {
+        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
+            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
+                    New TelerikUI.ViewSourceButtonInfo() With {
         .TabHeader = "RadScheduleView_Demo.xaml",
         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadScheduleView/RadScheduleView_Demo.xaml"
     },
-                    New ViewSourceButtonInfo() With {
+                    New TelerikUI.ViewSourceButtonInfo() With {
          .TabHeader = "RadScheduleView_Demo.xaml.cs",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadScheduleView/RadScheduleView_Demo.xaml.cs"
     },
-                    New ViewSourceButtonInfo() With {
+                    New TelerikUI.ViewSourceButtonInfo() With {
          .TabHeader = "RadScheduleView_Demo.xaml.vb",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadScheduleView/RadScheduleView_Demo.xaml.vb"
     }

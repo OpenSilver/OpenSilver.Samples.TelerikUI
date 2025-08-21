@@ -5,39 +5,39 @@ Imports System.Windows.Media
 Imports Telerik.Windows
 
 Namespace OpenSilver.Samples.TelerikUI
-    Partial Public Class RadContextMenu_Demo
+    Public Partial Class RadContextMenu_Demo
         Inherits UserControl
         Public Sub New()
             Me.InitializeComponent()
         End Sub
 
-        Private Sub ButtonViewSource_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            Call ViewSource(New List(Of ViewSourceButtonInfo)() From {
-                    New ViewSourceButtonInfo() With {
+        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
+            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
+                    New TelerikUI.ViewSourceButtonInfo() With {
         .TabHeader = "RadContextMenu_Demo.xaml",
         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadContextMenu/RadContextMenu_Demo.xaml"
     },
-                    New ViewSourceButtonInfo() With {
+                    New TelerikUI.ViewSourceButtonInfo() With {
          .TabHeader = "RadContextMenu_Demo.xaml.cs",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadContextMenu/RadContextMenu_Demo.xaml.cs"
     },
-                    New ViewSourceButtonInfo() With {
+                    New TelerikUI.ViewSourceButtonInfo() With {
          .TabHeader = "RadContextMenu_Demo.xaml.vb",
          .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadContextMenu/RadContextMenu_Demo.xaml.vb"
     }
 })
         End Sub
 
-        Private Sub RadMenuItemRed_Click(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
+        Private Sub RadMenuItemRed_Click(sender As Object, e As RadRoutedEventArgs)
             Me.ContextMenuBorder.Background = New SolidColorBrush(Colors.Red)
         End Sub
-        Private Sub RadMenuItemGreen_Click(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
+        Private Sub RadMenuItemGreen_Click(sender As Object, e As RadRoutedEventArgs)
             Me.ContextMenuBorder.Background = New SolidColorBrush(Colors.Green)
         End Sub
-        Private Sub RadMenuItemBlue_Click(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
+        Private Sub RadMenuItemBlue_Click(sender As Object, e As RadRoutedEventArgs)
             Me.ContextMenuBorder.Background = New SolidColorBrush(Colors.Blue)
         End Sub
-        Private Sub RadMenuItemReset_Click(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
+        Private Sub RadMenuItemReset_Click(sender As Object, e As RadRoutedEventArgs)
             Me.ContextMenuBorder.Background = New SolidColorBrush(Colors.LightGray)
         End Sub
     End Class

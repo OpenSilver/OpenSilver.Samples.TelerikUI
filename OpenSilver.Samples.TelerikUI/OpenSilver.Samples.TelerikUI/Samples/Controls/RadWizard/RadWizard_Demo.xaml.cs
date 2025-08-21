@@ -82,8 +82,18 @@ namespace OpenSilver.Samples.TelerikUI
                 },
                 new ViewSourceButtonInfo()
                 {
+                     TabHeader = "RadWizard_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWizard/RadWizard_Demo.xaml.vb"
+                },
+                new ViewSourceButtonInfo()
+                {
                      TabHeader = "ProgressPageBehavior.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWizard/ProgressPageBehavior.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "ProgressPageBehavior.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWizard/ProgressPageBehavior.vb"
                 },
             });
         }

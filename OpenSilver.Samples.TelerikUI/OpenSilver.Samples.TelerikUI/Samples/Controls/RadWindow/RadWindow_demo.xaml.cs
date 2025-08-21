@@ -16,7 +16,8 @@ namespace OpenSilver.Samples.TelerikUI
 
         public RadWindow_Demo()
         {
-            DataContext = viewModel = new WindowConfigurationViewModel();
+            viewModel = new WindowConfigurationViewModel();
+            DataContext = viewModel;
 
             InitializeComponent();
 
@@ -418,6 +419,11 @@ namespace OpenSilver.Samples.TelerikUI
                 {
                      TabHeader = "ExampleWindow.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/ExampleWindow.xaml.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "ExampleWindow.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/ExampleWindow.xaml.vb"
                 },
             });
         }

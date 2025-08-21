@@ -25,6 +25,11 @@ namespace OpenSilver.Samples.TelerikUI
                      TabHeader = "RadBulletGraph_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadBulletGraph/RadBulletGraph_Demo.xaml.cs"
                 },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadBulletGraph_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadBulletGraph/RadBulletGraph_Demo.xaml.vb"
+                },
             });
         }
     }

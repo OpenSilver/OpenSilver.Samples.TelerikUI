@@ -126,8 +126,18 @@ namespace OpenSilver.Samples.TelerikUI
                 },
                 new ViewSourceButtonInfo()
                 {
+                     TabHeader = "MainWindowViewModel.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/ViewModel/MainWindowViewModel.vb"
+                },
+                new ViewSourceButtonInfo()
+                {
                      TabHeader = "PaneViewModel.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/ViewModel/PaneViewModel.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "PaneViewModel.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/ViewModel/PaneViewModel.vb"
                 },
                 new ViewSourceButtonInfo()
                 {
@@ -136,8 +146,18 @@ namespace OpenSilver.Samples.TelerikUI
                 },
                 new ViewSourceButtonInfo()
                 {
+                     TabHeader = "CustomDockingPanesFactory.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Helpers/CustomDockingPanesFactory.vb"
+                },
+                new ViewSourceButtonInfo()
+                {
                      TabHeader = "CustomSaveLoadLayoutHelper.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Helpers/CustomSaveLoadLayoutHelper.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "CustomSaveLoadLayoutHelper.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Helpers/CustomSaveLoadLayoutHelper.vb"
                 },
             });
         }

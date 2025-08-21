@@ -66,8 +66,18 @@ namespace OpenSilver.Samples.TelerikUI
                 },
                 new ViewSourceButtonInfo()
                 {
+                     TabHeader = "FolderViewModel.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ViewModel/FolderViewModel.vb"
+                },
+                new ViewSourceButtonInfo()
+                {
                      TabHeader = "ColorToBrushConverter.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ColorToBrushConverter.cs"
+                },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "ColorToBrushConverter.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ColorToBrushConverter.vb"
                 },
             });
         }

@@ -55,6 +55,11 @@ namespace OpenSilver.Samples.TelerikUI
                      TabHeader = "RadSparkline_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadSparklines/RadSparkline_Demo.xaml.cs"
                 },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadSparkline_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadSparklines/RadSparkline_Demo.xaml.vb"
+                },
             });
         }
     }

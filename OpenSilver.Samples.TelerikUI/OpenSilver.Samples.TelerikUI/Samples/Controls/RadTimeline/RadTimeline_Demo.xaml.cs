@@ -119,6 +119,11 @@ namespace OpenSilver.Samples.TelerikUI
                      TabHeader = "RadTimeline_Demo.xaml.cs",
                      FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTimeline/RadTimeline_Demo.xaml.cs"
                 },
+                new ViewSourceButtonInfo()
+                {
+                     TabHeader = "RadTimeline_Demo.xaml.vb",
+                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTimeline/RadTimeline_Demo.xaml.vb"
+                },
             });
         }
     }
