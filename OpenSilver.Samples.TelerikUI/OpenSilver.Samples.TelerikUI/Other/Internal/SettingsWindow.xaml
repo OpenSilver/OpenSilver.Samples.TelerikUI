@@ -1,0 +1,44 @@
+﻿<telerik:RadWindow x:Class="OpenSilver.Samples.TelerikUI.SettingsWindow"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
+                   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+                   ResizeMode="NoResize"
+                   CanClose="False"
+                   CanMove="False"
+                   HideMaximizeButton="True"
+                   HideMinimizeButton="True"
+                   WindowStartupLocation="CenterScreen"
+                   Header="Settings"
+                   Width="250">
+
+    <StackPanel Margin="5">
+        <TextBlock Margin="0 0 0 2">
+            <Run Text="Select a theme"
+                 FontSize="16"
+                 FontWeight="Bold" />
+            <LineBreak />
+            <Run Text=" (restart required)"
+                 FontStyle="Italic" />
+        </TextBlock>
+        <telerik:RadListBox x:Name="listbox" />
+        <CheckBox x:Name="choice"
+                  Content="Remember my choice"
+                  IsThreeState="False"
+                  Margin="0 5"
+                  telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
+        <telerik:RadButton Content="Reset theme"
+                           Click="ResetTheme_Click"
+                           Margin="0 0 0 5"/>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="0 15 0 0">
+            <telerik:RadButton Content="Cancel"
+                               Click="Cancel_Click"
+                               Margin="0 0 5 0"/>
+            <telerik:RadButton Content="Save"
+                               Click="Save_Click" />
+        </StackPanel>
+    </StackPanel>
+
+</telerik:RadWindow>

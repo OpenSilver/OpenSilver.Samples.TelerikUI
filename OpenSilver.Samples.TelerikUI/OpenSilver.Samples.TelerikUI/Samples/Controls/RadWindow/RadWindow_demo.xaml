@@ -22,21 +22,6 @@
             <Setter Property="TextWrapping"
                     Value="Wrap" />
         </Style>
-        <Style x:Key="ApiCheckBox"
-               TargetType="CheckBox">
-            <Setter Property="Margin"
-                    Value="0 2" />
-            <Setter Property="FontSize"
-                    Value="10" />
-            <Setter Property="FontFamily"
-                    Value="Verdana" />
-            <Setter Property="FontWeight"
-                    Value="Bold" />
-            <Setter Property="Foreground"
-                    Value="#FF555555" />
-            <Setter Property="HorizontalAlignment"
-                    Value="Left" />
-        </Style>
     </UserControl.Resources>
 
     <ContentControl Style="{StaticResource Card_Style}"
@@ -77,12 +62,16 @@
                                            Content="Open Modal"
                                            IsEnabled="{Binding IsClosed}" />
                     </Grid>
-                    <CheckBox Style="{StaticResource ApiCheckBox}"
-                              IsChecked="{Binding CanMove, Mode=TwoWay}"
-                              Content="CanMove" />
-                    <CheckBox Style="{StaticResource ApiCheckBox}"
-                              IsChecked="{Binding CanClose, Mode=TwoWay}"
-                              Content="CanClose" />
+                    <CheckBox IsChecked="{Binding CanMove, Mode=TwoWay}"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}">
+                        <TextBlock Text="CanMove"
+                                   Style="{StaticResource ApiName}" />
+                    </CheckBox>
+                    <CheckBox IsChecked="{Binding CanClose, Mode=TwoWay}"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}">
+                        <TextBlock Text="CanClose"
+                                   Style="{StaticResource ApiName}" />
+                    </CheckBox>
                     <TextBlock Style="{StaticResource ApiName}"
                                Text="ResizeMode" />
                     <telerik:RadComboBox x:Name="resizeModeCB"
@@ -127,9 +116,11 @@
                     <telerik:RadComboBox x:Name="windowStateCB"
                                          SelectedItem="{Binding State, Mode=TwoWay}"
                                          Margin="0 2" />
-                    <CheckBox Style="{StaticResource ApiCheckBox}"
-                              IsChecked="{Binding RestoreMinimizedLocation, Mode=TwoWay}"
-                              Content="Restore Minimized Location" />
+                    <CheckBox IsChecked="{Binding RestoreMinimizedLocation, Mode=TwoWay}"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}">
+                        <TextBlock Text="Restore Minimized Location"
+                                   Style="{StaticResource ApiName}" />
+                    </CheckBox>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Style="{StaticResource ApiName}"
                                    Text="Width" />

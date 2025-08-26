@@ -373,7 +373,8 @@
                                                       Width="110"
                                                       Margin="0 0 20 0"
                                                       Foreground="{telerik:Windows8Resource ResourceKey=StrongBrush}"
-                                                      VerticalAlignment="Center" />
+                                                      VerticalAlignment="Center"
+                                                      telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                                             <telerik:RadDropDownButton Width="80"
                                                                        DropDownWidth="210"
                                                                        HorizontalContentAlignment="Right"
@@ -402,12 +403,14 @@
                                                        Margin="20 0"
                                                        VerticalAlignment="Center" />
                                             <TextBox Width="80"
-                                                     Text="{Binding CellSize, Mode=TwoWay}" />
+                                                     Text="{Binding CellSize, Mode=TwoWay}"
+                                                     telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                                         </StackPanel>
                                         <CheckBox Content="Snap to Grid"
                                                   Margin="10 7 10 0"
                                                   Foreground="{telerik:Windows8Resource ResourceKey=StrongBrush}"
-                                                  IsChecked="{Binding IsSnapEnabled, Mode=TwoWay}" />
+                                                  IsChecked="{Binding IsSnapEnabled, Mode=TwoWay}"
+                                                  telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
 
                                         <StackPanel Orientation="Horizontal"
                                                     Margin="10 7 10 0">
@@ -416,7 +419,8 @@
                                                        Margin="20 0"
                                                        VerticalAlignment="Center" />
                                             <TextBox Width="80"
-                                                     Text="{Binding SnapValue, Mode=TwoWay}" />
+                                                     Text="{Binding SnapValue, Mode=TwoWay}"
+                                                     telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                                         </StackPanel>
 
                                         <TextBlock Text="PAGES"
@@ -429,7 +433,8 @@
                                                       Foreground="{telerik:Windows8Resource ResourceKey=StrongBrush}"
                                                       Width="110"
                                                       Margin="0 0 20 0"
-                                                      VerticalAlignment="Center" />
+                                                      VerticalAlignment="Center"
+                                                      telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                                             <telerik:RadDropDownButton Width="80"
                                                                        DropDownWidth="210"
                                                                        HorizontalContentAlignment="Right"

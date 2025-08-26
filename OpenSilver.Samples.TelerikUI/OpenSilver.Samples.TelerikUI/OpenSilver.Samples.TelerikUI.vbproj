@@ -42,6 +42,15 @@
 	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Spreadsheet.OpenXml" Version="[$(TelerikVersion)]" />
 	  <PackageReference Include="OpenSilver.TelerikUI.Documents.Spreadsheet.Pdf" Version="[$(TelerikVersion)]" />
 	  <PackageReference Include="OpenSilver.TelerikUI.PersistenceFramework" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Office_Black" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Office_Blue" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Office_Silver" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Expression_Dark" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Summer" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Transparent" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Vista" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Windows7" Version="[$(TelerikVersion)]" />
+    <PackageReference Include="OpenSilver.TelerikUI.Themes.Windows8" Version="[$(TelerikVersion)]" />
 	  <PackageReference Include="OpenSilver.ControlsKit" Version="[$(OpenSilverControlsKitVersion)]" />
 	  <PackageReference Include="Bogus" Version="35.6.3" />
   </ItemGroup>
@@ -51,6 +60,9 @@
     <Compile Include="MainPage.xaml.vb" />
     <Compile Include="Other\GanttViewModel.vb" />
     <Compile Include="Other\Internal\ControlToDisplayCodeHostedOnGitHub.vb" />
+    <Compile Include="Other\Internal\SettingsWindow.xaml.vb" />
+    <Compile Include="Other\Internal\StartupWizard.xaml.vb" />
+    <Compile Include="Other\Internal\ThemeHelper.vb" />
     <Compile Include="Other\Internal\ViewSourceButton.vb" />
     <Compile Include="Other\Internal\ViewSourceButtonInfo.vb" />
     <Compile Include="Other\Internal\ViewSourcePanel.xaml.vb" />
@@ -431,6 +443,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Other\Internal\SettingsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Other\Internal\StartupWizard.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Other\Internal\ViewSourcePanel.xaml">

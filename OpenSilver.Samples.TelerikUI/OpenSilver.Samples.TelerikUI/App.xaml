@@ -7,7 +7,6 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Other/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            <telerik:Office_BlackTheme x:Key="ApplicationTheme" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

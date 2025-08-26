@@ -67,9 +67,16 @@ namespace OpenSilver.Samples.TelerikUI
         {
             NavigateToPage("/DataManagement");
         }
-        void ButtonHome_Click(object sender, RoutedEventArgs e)
+
+        private void ButtonHome_Click(object sender, RoutedEventArgs e)
         {
             NavigateToPage("/Welcome");
+        }
+
+        private void ButtonThemeSettings_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new SettingsWindow();
+            window.ShowDialog();
         }
 
         public void NavigateToPage(string targetUri)

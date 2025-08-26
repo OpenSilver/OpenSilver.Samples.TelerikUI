@@ -251,11 +251,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="ChildWindowScrollViewer_Style" TargetType="ScrollViewer">
-        <Setter Property="Width" Value="300"/>
-        <Setter Property="HorizontalScrollBarVisibility" Value="Disabled"/>
-        <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
-    </Style>
     <Style x:Key="MainMenuExpander_Style" TargetType="Expander">
         <Setter Property="Template">
             <Setter.Value>

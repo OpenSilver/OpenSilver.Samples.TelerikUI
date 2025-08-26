@@ -62,8 +62,14 @@ Namespace OpenSilver.Samples.TelerikUI
         Private Sub ButtonDataManagement_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/DataManagement")
         End Sub
+
         Private Sub ButtonHome_Click(sender As Object, e As RoutedEventArgs)
             NavigateToPage("/Welcome")
+        End Sub
+
+        Private Sub ButtonThemeSettings_Click(sender As Object, e As RoutedEventArgs)
+            Dim window = New OpenSilver.Samples.TelerikUI.SettingsWindow()
+            window.ShowDialog()
         End Sub
 
         Public Sub NavigateToPage(targetUri As String)

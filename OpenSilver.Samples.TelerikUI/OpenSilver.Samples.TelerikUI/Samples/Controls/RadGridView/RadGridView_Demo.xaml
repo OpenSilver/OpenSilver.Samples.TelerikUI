@@ -48,37 +48,48 @@
                 <StackPanel Grid.Column="0">
                     <CheckBox Content="AreRowDetailsFrozen"
                               IsChecked="{Binding AreRowDetailsFrozen, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="CanUserGroupColumns"
                               IsChecked="{Binding CanUserGroupColumns, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="CanUserReorderColumns"
                               IsChecked="{Binding CanUserReorderColumns, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="CanUserResizeColumns"
                               IsChecked="{Binding CanUserResizeColumns, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="CanUserSortColumns"
                               IsChecked="{Binding CanUserSortColumns, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="CanUserResizeRows"
                               IsChecked="{Binding CanUserResizeRows, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="IsFilteringAllowed"
                               IsChecked="{Binding IsFilteringAllowed, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="ShowColumnHeaders"
                               IsChecked="{Binding ShowColumnHeaders, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="ShowGroupPanel"
                               IsChecked="{Binding ShowGroupPanel, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="IsReadOnly"
                               IsChecked="{Binding IsReadOnly, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <CheckBox Content="IsBusy"
                               IsChecked="{Binding IsBusy, ElementName=radGridView, Mode=TwoWay}"
-                              Margin="0" />
+                              Margin="0"
+                              telerik:StyleManager.Theme="{StaticResource ApplicationTheme}" />
                     <TextBlock Style="{StaticResource ApiName}"
                                Text="FrozenColumnCount"
                                Margin="0" />
