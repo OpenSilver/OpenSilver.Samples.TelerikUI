@@ -4,7 +4,7 @@ Imports System.Windows
 Imports System.Windows.Controls
 
 Namespace OpenSilver.Samples.TelerikUI
-    Public Partial Class RadPivotMap_Demo
+    Partial Public Class RadPivotMap_Demo
         Inherits UserControl
         Public Sub New()
             Me.InitializeComponent()
@@ -87,22 +87,5 @@ Namespace OpenSilver.Samples.TelerikUI
             Public Property Title As String
             Public Property GrossSales As Double
         End Class
-
-        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
-            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
-                    New TelerikUI.ViewSourceButtonInfo() With {
-        .TabHeader = "RadPivotMap_Demo.xaml",
-        .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadPivotMap/RadPivotMap_Demo.xaml"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadPivotMap_Demo.xaml.cs",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadPivotMap/RadPivotMap_Demo.xaml.cs"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadPivotMap_Demo.xaml.vb",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadPivotMap/RadPivotMap_Demo.xaml.vb"
-    }
-})
-        End Sub
     End Class
 End Namespace

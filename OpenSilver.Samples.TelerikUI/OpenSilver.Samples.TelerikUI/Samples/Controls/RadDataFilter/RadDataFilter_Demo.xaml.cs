@@ -1,7 +1,5 @@
 ﻿using Bogus;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Windows;
 using System.Windows.Controls;
 using Telerik.Windows.Data;
 
@@ -39,28 +37,6 @@ namespace OpenSilver.Samples.TelerikUI
             public string Name { get; set; }
             public string CompanyName { get; set; }
             public string Title { get; set; }
-        }
-
-        private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
-        {
-            ViewSourceButtonHelper.ViewSource(new List<ViewSourceButtonInfo>()
-            {
-                new ViewSourceButtonInfo()
-                {
-                    TabHeader = "RadDataFilter_Demo.xaml",
-                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDataFilter/RadDataFilter_Demo.xaml"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadDataFilter_Demo.xaml.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDataFilter/RadDataFilter_Demo.xaml.cs"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadDataFilter_Demo.xaml.vb",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDataFilter/RadDataFilter_Demo.xaml.vb"
-                },
-            });
         }
     }
 }

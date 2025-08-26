@@ -51,9 +51,9 @@
     <Compile Include="MainPage.xaml.vb" />
     <Compile Include="Other\GanttViewModel.vb" />
     <Compile Include="Other\Internal\ControlToDisplayCodeHostedOnGitHub.vb" />
-    <Compile Include="Other\Internal\MasonryPanelWithProgressiveLoading.vb" />
-    <Compile Include="Other\Internal\ViewSourceButtonHelper.vb" />
+    <Compile Include="Other\Internal\ViewSourceButton.vb" />
     <Compile Include="Other\Internal\ViewSourceButtonInfo.vb" />
+    <Compile Include="Other\Internal\ViewSourcePanel.xaml.vb" />
     <Compile Include="Other\Internal\WrapPanelWithProgressiveLoading.vb" />
     <Compile Include="Other\Planets.vb" />
     <Compile Include="Samples\Controls\Controls.xaml.vb" />
@@ -111,7 +111,6 @@
     <Compile Include="Samples\Controls\RadGridView\RadGridView_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadHeatMap\RadHeatMap_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml.vb" />
-    <Compile Include="Samples\Controls\RadMap\RadMap_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadMenu\RadMenu_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadOutlookBar\MenuItems.vb" />
@@ -310,9 +309,6 @@
     <Content Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Samples\Controls\RadMap\RadMap_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
     <Content Include="Samples\Controls\RadScheduleView\RadScheduleView_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
@@ -435,6 +431,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Other\Internal\ViewSourcePanel.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadBarCodes\RadBarcode_Demo.xaml">

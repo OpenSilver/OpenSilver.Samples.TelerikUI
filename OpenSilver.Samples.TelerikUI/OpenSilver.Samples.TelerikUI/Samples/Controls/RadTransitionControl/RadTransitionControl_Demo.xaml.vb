@@ -13,23 +13,6 @@ Namespace OpenSilver.Samples.TelerikUI
             DataContext = New ViewModel()
         End Sub
 
-        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
-            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
-                    New TelerikUI.ViewSourceButtonInfo() With {
-        .TabHeader = "RadTransitionControl_Demo.xaml",
-        .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTransitionControl/RadTransitionControl_Demo.xaml"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadTransitionControl_Demo.xaml.cs",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTransitionControl/RadTransitionControl_Demo.xaml.cs"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadTransitionControl_Demo.xaml.vb",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTransitionControl/RadTransitionControl_Demo.xaml.vb"
-    }
-})
-        End Sub
-
         Public Class ViewModel
             Public Property ColorItems As ObservableCollection(Of ColorItem)
 

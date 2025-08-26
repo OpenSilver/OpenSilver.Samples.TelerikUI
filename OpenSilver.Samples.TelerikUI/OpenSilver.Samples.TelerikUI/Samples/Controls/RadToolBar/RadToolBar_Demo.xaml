@@ -148,11 +148,18 @@
                                     ItemsSource="{Binding Items}"
                                     ItemTemplateSelector="{StaticResource TemplateSelector}" />
             </Grid>
-            <Button Grid.Row="2"
-                    Content="VIEW SOURCE..."
-                    Click="ButtonViewSource_Click"
-                    Background="#FF6F7DFF"
-                    Style="{StaticResource ButtonViewSource_Style}" />
+            <local:ViewSourceButton Grid.Row="2"
+                                    Margin="0,10,0,0"
+                                    Background="#FF6F7DFF">
+                <local:ViewSourceButton.Sources>
+                    <local:ViewSourceButtonInfo FileName="RadToolBar_Demo.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadToolBar" />
+                    <local:ViewSourceButtonInfo FileName="RadToolBar_Demo.xaml.cs"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadToolBar" />
+                    <local:ViewSourceButtonInfo FileName="RadToolBar_Demo.xaml.vb"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadToolBar" />
+                </local:ViewSourceButton.Sources>
+            </local:ViewSourceButton>
         </Grid>
     </ContentControl>
 </UserControl>

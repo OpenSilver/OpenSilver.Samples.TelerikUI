@@ -4,7 +4,7 @@ Imports System.Windows.Controls
 Imports Telerik.Windows.Controls.GridView
 
 Namespace OpenSilver.Samples.TelerikUI
-    Public Partial Class RadGridView_Demo
+    Partial Public Class RadGridView_Demo
         Inherits UserControl
         Public Sub New()
             Me.InitializeComponent()
@@ -24,23 +24,6 @@ Namespace OpenSilver.Samples.TelerikUI
             If Equals(e.Column.UniqueName, "ImagePath") Then
                 e.Cancel = True
             End If
-        End Sub
-
-        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
-            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
-                    New TelerikUI.ViewSourceButtonInfo() With {
-        .TabHeader = "RadGridView_Demo.xaml",
-        .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadGridView/RadGridView_Demo.xaml"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadGridView_Demo.xaml.cs",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadGridView/RadGridView_Demo.xaml.cs"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadGridView_Demo.xaml.vb",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadGridView/RadGridView_Demo.xaml.vb"
-    }
-})
         End Sub
     End Class
 End Namespace

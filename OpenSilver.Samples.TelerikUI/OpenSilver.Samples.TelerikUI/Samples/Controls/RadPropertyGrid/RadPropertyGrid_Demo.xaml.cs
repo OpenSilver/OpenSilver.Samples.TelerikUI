@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using Telerik.Windows.Controls.Data.PropertyGrid;
 
@@ -42,28 +41,6 @@ namespace OpenSilver.Samples.TelerikUI
             image.SizeChanged -= image_SizeChanged;
             rpg.Item = image;
 
-        }
-
-        private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
-        {
-            ViewSourceButtonHelper.ViewSource(new List<ViewSourceButtonInfo>()
-            {
-                new ViewSourceButtonInfo()
-                {
-                    TabHeader = "RadPropertyGrid_Demo.xaml",
-                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadPropertyGrid/RadPropertyGrid_Demo.xaml"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadPropertyGrid_Demo.xaml.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadPropertyGrid/RadPropertyGrid_Demo.xaml.cs"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadPropertyGrid_Demo.xaml.vb",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadPropertyGrid/RadPropertyGrid_Demo.xaml.vb"
-                },
-            });
         }
     }
 }

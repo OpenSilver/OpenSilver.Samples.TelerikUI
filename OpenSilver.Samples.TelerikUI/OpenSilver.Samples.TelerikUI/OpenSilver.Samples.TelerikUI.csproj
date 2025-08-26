@@ -45,9 +45,9 @@
     <Compile Include="MainPage.xaml.cs" />
     <Compile Include="Other\GanttViewModel.cs" />
     <Compile Include="Other\Internal\ControlToDisplayCodeHostedOnGitHub.cs" />
-    <Compile Include="Other\Internal\MasonryPanelWithProgressiveLoading.cs" />
-    <Compile Include="Other\Internal\ViewSourceButtonHelper.cs" />
+    <Compile Include="Other\Internal\ViewSourceButton.cs" />
     <Compile Include="Other\Internal\ViewSourceButtonInfo.cs" />
+    <Compile Include="Other\Internal\ViewSourcePanel.xaml.cs" />
     <Compile Include="Other\Internal\WrapPanelWithProgressiveLoading.cs" />
     <Compile Include="Other\Planets.cs" />
     <Compile Include="Samples\Controls\RadBreadcrumb\RadBreadcrumb_Demo.xaml.cs" />
@@ -120,7 +120,6 @@
     <Compile Include="Samples\Controls\RadGridView\RadGridView_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadHeatMap\RadHeatMap_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml.cs" />
-    <Compile Include="Samples\Controls\RadMap\RadMap_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadMenu\RadMenu_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadNumericUpDown\RadNumericUpDown_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadPanelBar\RadPanelBar_Demo.xaml.cs" />
@@ -318,6 +317,9 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Other\Internal\ViewSourcePanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Other\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -460,9 +462,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadListBox\RadListBox_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Samples\Controls\RadMap\RadMap_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadPivotMap\RadPivotMap_Demo.xaml">

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Windows;
+﻿using System.Linq;
 using System.Windows.Controls;
 using Telerik.Windows;
 using Telerik.Windows.Controls;
@@ -40,28 +38,6 @@ namespace OpenSilver.Samples.TelerikUI
                     }
                 }
             }
-        }
-
-        private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
-        {
-            ViewSourceButtonHelper.ViewSource(new List<ViewSourceButtonInfo>()
-            {
-                new ViewSourceButtonInfo()
-                {
-                    TabHeader = "RadTileView_Demo.xaml",
-                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTileView/RadTileView_Demo.xaml"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadTileView_Demo.xaml.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTileView/RadTileView_Demo.xaml.cs"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadTileView_Demo.xaml.vb",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTileView/RadTileView_Demo.xaml.vb"
-                },
-            });
         }
     }
 }

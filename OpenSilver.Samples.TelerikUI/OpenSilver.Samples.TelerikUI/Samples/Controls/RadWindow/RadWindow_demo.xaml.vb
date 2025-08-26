@@ -8,7 +8,7 @@ Imports Telerik.Windows.Controls
 Imports WindowStartupLocation = Telerik.Windows.Controls.WindowStartupLocation
 
 Namespace OpenSilver.Samples.TelerikUI
-    Public Partial Class RadWindow_Demo
+    Partial Public Class RadWindow_Demo
         Inherits UserControl
         Private ReadOnly viewModel As WindowConfigurationViewModel
         Private windowField As RadWindow
@@ -322,34 +322,5 @@ Namespace OpenSilver.Samples.TelerikUI
                 End Set
             End Property
         End Class
-
-        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
-            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
-                    New TelerikUI.ViewSourceButtonInfo() With {
-        .TabHeader = "RadWindow_demo.xaml",
-        .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/RadWindow_demo.xaml"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadWindow_demo.xaml.cs",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/RadWindow_demo.xaml.cs"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadWindow_demo.xaml.vb",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/RadWindow_demo.xaml.vb"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "ExampleWindow.xaml",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/ExampleWindow.xaml"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "ExampleWindow.xaml.cs",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/ExampleWindow.xaml.cs"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "ExampleWindow.xaml.vb",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadWindow/ExampleWindow.xaml.vb"
-    }
-})
-        End Sub
     End Class
 End Namespace

@@ -50,23 +50,6 @@ Namespace OpenSilver.Samples.TelerikUI
             SamplesFactory.BezierSample(Me.diagram)
         End Sub
 
-        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
-            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
-                    New TelerikUI.ViewSourceButtonInfo() With {
-        .TabHeader = "RadDiagram_Demo.xaml",
-        .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDiagram/RadDiagram_Demo.xaml"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadDiagram_Demo.xaml.cs",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDiagram/RadDiagram_Demo.xaml.cs"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadDiagram_Demo.xaml.vb",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDiagram/RadDiagram_Demo.xaml.vb"
-    }
-})
-        End Sub
-
         Public Class MainViewModel
             Inherits ViewModelBase
             Private zoomLevelField As Double
@@ -76,7 +59,7 @@ Namespace OpenSilver.Samples.TelerikUI
             Private ReadOnly itemsField As IEnumerable
 
             Public Sub New()
-                zoomLevelField = 1R
+                zoomLevelField = 1.0R
                 itemsField = New HierarchicalGalleryItemsCollection()
             End Sub
 

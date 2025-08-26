@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
@@ -169,28 +168,6 @@ namespace OpenSilver.Samples.TelerikUI
             }
 
             public event NotifyCollectionChangedEventHandler CollectionChanged;
-        }
-
-        private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
-        {
-            ViewSourceButtonHelper.ViewSource(new List<ViewSourceButtonInfo>()
-            {
-                new ViewSourceButtonInfo()
-                {
-                    TabHeader = "RadDataPager_Demo.xaml",
-                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDataPager/RadDataPager_Demo.xaml"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadDataPager_Demo.xaml.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDataPager/RadDataPager_Demo.xaml.cs"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadDataPager_Demo.xaml.vb",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDataPager/RadDataPager_Demo.xaml.vb"
-                },
-            });
         }
     }
 }

@@ -6,7 +6,7 @@ Imports System.Windows.Controls
 Imports System.Windows.Threading
 
 Namespace OpenSilver.Samples.TelerikUI
-    Public Partial Class RadTileList_Demo
+    Partial Public Class RadTileList_Demo
         Inherits UserControl
         Private ReadOnly _viewModel As NASDAQViewModel
         Private ReadOnly _timer As DispatcherTimer
@@ -72,22 +72,5 @@ Namespace OpenSilver.Samples.TelerikUI
 
             Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
         End Class
-
-        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
-            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
-                    New TelerikUI.ViewSourceButtonInfo() With {
-        .TabHeader = "RadTileList_Demo.xaml",
-        .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTileList/RadTileList_Demo.xaml"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadTileList_Demo.xaml.cs",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTileList/RadTileList_Demo.xaml.cs"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadTileList_Demo.xaml.vb",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTileList/RadTileList_Demo.xaml.vb"
-    }
-})
-        End Sub
     End Class
 End Namespace

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Browser;
 using System.Windows.Controls;
 using CSHTML5.Internal;
@@ -13,21 +10,19 @@ namespace OpenSilver.Samples.TelerikUI
         string _filePathOnGitHub;
         string _displayedHtmlString;
 
-        public ControlToDisplayCodeHostedOnGitHub()
+        public ControlToDisplayCodeHostedOnGitHub(string absolutePath)
         {
-            this.Loaded += OnLoaded;
+            Loaded += OnLoaded;
 
             VerticalContentAlignment = VerticalAlignment.Stretch;
             HorizontalContentAlignment = HorizontalAlignment.Stretch;
+            FilePathOnGitHub = absolutePath;
         }
 
         string GetHtmlString(string filePath)
         {
-            var embedJs =
-                INTERNAL_UriHelper.ConvertToHtml5Path("ms-appx:/Other/embed.js");
-            return string.Format(
-                "<script src=\"{0}?target={1}&style=github&showBorder=on&showLineNumbers=on&showCopy=on\"></script>",
-                embedJs, HttpUtility.UrlEncode("https://github.com" + filePath.Substring(6)));
+            var embedJs = INTERNAL_UriHelper.ConvertToHtml5Path("ms-appx:/Other/embed.js");
+            return $"<script src=\"{embedJs}?target={HttpUtility.UrlEncode(filePath)}&style=github&showBorder=on&showLineNumbers=on&showCopy=on\"></script>";
         }
 
         void OnLoaded(object sender, RoutedEventArgs e)
@@ -43,7 +38,7 @@ namespace OpenSilver.Samples.TelerikUI
         {
             var webView = new WebBrowser();
             webView.NavigateToString(htmlString);
-            this.Content = webView;
+            Content = webView;
             _displayedHtmlString = htmlString;
         }
 
@@ -57,7 +52,7 @@ namespace OpenSilver.Samples.TelerikUI
             {
                 _filePathOnGitHub = value;
 
-                if (this.IsLoaded)
+                if (IsLoaded)
                 {
                     string htmlString = GetHtmlString(FilePathOnGitHub);
                     if (htmlString != _displayedHtmlString)

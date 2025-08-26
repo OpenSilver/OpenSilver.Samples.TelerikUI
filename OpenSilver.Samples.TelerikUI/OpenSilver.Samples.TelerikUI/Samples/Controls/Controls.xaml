@@ -43,7 +43,6 @@
             <local:RadDatePicker_Demo HorizontalAlignment="Center"/>
 
             <local:RadScheduleView_Demo HorizontalAlignment="Center"/>
-            <local:RadMap_Demo HorizontalAlignment="Center"/>
 
             <local:RadCalendar_Demo HorizontalAlignment="Center"/>
             <local:RadGridView_Demo HorizontalAlignment="Center"/>

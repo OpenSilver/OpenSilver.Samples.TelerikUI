@@ -1,0 +1,33 @@
+﻿<Grid x:Class="OpenSilver.Samples.TelerikUI.ViewSourcePanel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+    <telerik:RadTabControl Name="TabControl"/>
+
+    <StackPanel Grid.Row="1"
+                Margin="20,5,0,5"
+                Orientation="Horizontal">
+        <Border Padding="3"
+                CornerRadius="7">
+            <StackPanel Orientation="Horizontal">
+                <telerik:RadRadioButton Name="cSharpButton"
+                                        Checked="OnCSharpRadioButtonChecked"
+                                        Content="C#"/>
+                <telerik:RadRadioButton Checked="OnVBNETRadioButtonChecked"
+                                        Content="VB.NET"
+                                        Margin="15,0,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <telerik:RadTransitionControl Margin="10,0,0,0"
+                                      VerticalAlignment="Center"
+                                      Content="{Binding ElementName=TabControl, Path=SelectedItem.DataContext.Notes}"
+                                      FontSize="14" />
+    </StackPanel>
+</Grid>

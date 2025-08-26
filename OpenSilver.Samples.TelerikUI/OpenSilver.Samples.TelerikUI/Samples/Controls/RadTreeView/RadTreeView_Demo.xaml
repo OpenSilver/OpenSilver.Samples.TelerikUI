@@ -2,7 +2,7 @@
     x:Class="OpenSilver.Samples.TelerikUI.RadTreeView_Demo"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:controls="using:Telerik.Windows.Controls"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
     xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
     <ContentControl Style="{StaticResource Card_Style}" Height="230" Width="220">
@@ -14,19 +14,28 @@
             </Grid.RowDefinitions>
             <ContentControl Content="RadTreeView" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
             <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <controls:RadTreeView Width="130" IsDragDropEnabled="True">
-                    <controls:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
-                        <controls:RadTreeViewItem Header="Football" IsExpanded="True">
-                            <controls:RadTreeViewItem Header="Futsal"/>
-                            <controls:RadTreeViewItem Header="Soccer"/>
-                        </controls:RadTreeViewItem>
-                        <controls:RadTreeViewItem Header="Tennis"/>
-                        <controls:RadTreeViewItem Header="Cycling"/>
-                    </controls:RadTreeViewItem>
-                </controls:RadTreeView>
+                <telerik:RadTreeView Width="130" IsDragDropEnabled="True">
+                    <telerik:RadTreeViewItem Header="Sport Categories" IsExpanded="True">
+                        <telerik:RadTreeViewItem Header="Football" IsExpanded="True">
+                            <telerik:RadTreeViewItem Header="Futsal"/>
+                            <telerik:RadTreeViewItem Header="Soccer"/>
+                        </telerik:RadTreeViewItem>
+                        <telerik:RadTreeViewItem Header="Tennis"/>
+                        <telerik:RadTreeViewItem Header="Cycling"/>
+                    </telerik:RadTreeViewItem>
+                </telerik:RadTreeView>
             </StackPanel>
 
-            <Button Grid.Row="2" Content="VIEW SOURCE..." Click="ButtonViewSource_Click" Background="#FF6F7DFF" Style="{StaticResource ButtonViewSource_Style}"/>
+            <local:ViewSourceButton Grid.Row="2" Margin="0,10,0,0" Background="#FF6F7DFF">
+                <local:ViewSourceButton.Sources>
+                    <local:ViewSourceButtonInfo FileName="RadTreeView_Demo.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeView" />
+                    <local:ViewSourceButtonInfo FileName="RadTreeView_Demo.xaml.cs"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeView" />
+                    <local:ViewSourceButtonInfo FileName="RadTreeView_Demo.xaml.vb"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeView" />
+                </local:ViewSourceButton.Sources>
+            </local:ViewSourceButton>
         </Grid>
     </ContentControl>
 </UserControl>

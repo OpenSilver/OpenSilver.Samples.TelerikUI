@@ -1,6 +1,7 @@
 ﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadCalculator_Demo"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
              xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
 
     <ContentControl Style="{StaticResource Card_Style}"
@@ -28,11 +29,18 @@
                                              VerticalAlignment="Top"/>
             </Grid>
 
-            <Button Grid.Row="2"
-                    Content="VIEW SOURCE..."
-                    Click="ButtonViewSource_Click"
-                    Background="#FF6F98FF"
-                    Style="{StaticResource ButtonViewSource_Style}" />
+            <local:ViewSourceButton Grid.Row="2"
+                                    Margin="0,10,0,0"
+                                    Background="#FF6F98FF">
+                <local:ViewSourceButton.Sources>
+                    <local:ViewSourceButtonInfo FileName="RadCalculator_Demo.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadCalculator" />
+                    <local:ViewSourceButtonInfo FileName="RadCalculator_Demo.xaml.cs"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadCalculator" />
+                    <local:ViewSourceButtonInfo FileName="RadCalculator_Demo.xaml.vb"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadCalculator" />
+                </local:ViewSourceButton.Sources>
+            </local:ViewSourceButton>
         </Grid>
     </ContentControl>
 

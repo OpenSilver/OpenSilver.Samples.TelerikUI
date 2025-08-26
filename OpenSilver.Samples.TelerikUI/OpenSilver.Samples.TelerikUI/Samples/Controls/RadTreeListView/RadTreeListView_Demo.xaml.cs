@@ -1,6 +1,5 @@
 ﻿using OpenSilver.Samples.TelerikUI.TreeListView;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Linq;
@@ -38,48 +37,6 @@ namespace OpenSilver.Samples.TelerikUI
                     f));
 
             DataContext = new ObservableCollection<FolderViewModel>(data);
-        }
-
-        private void ButtonViewSource_Click(object sender, RoutedEventArgs e)
-        {
-            ViewSourceButtonHelper.ViewSource(new List<ViewSourceButtonInfo>()
-            {
-                new ViewSourceButtonInfo()
-                {
-                    TabHeader = "RadTreeListView_Demo.xaml",
-                    FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/RadTreeListView_Demo.xaml"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadTreeListView_Demo.xaml.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/RadTreeListView_Demo.xaml.cs"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "RadTreeListView_Demo.xaml.vb",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/RadTreeListView_Demo.xaml.vb"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "FolderViewModel.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ViewModel/FolderViewModel.cs"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "FolderViewModel.vb",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ViewModel/FolderViewModel.vb"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "ColorToBrushConverter.cs",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ColorToBrushConverter.cs"
-                },
-                new ViewSourceButtonInfo()
-                {
-                     TabHeader = "ColorToBrushConverter.vb",
-                     FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadTreeListView/ColorToBrushConverter.vb"
-                },
-            });
         }
     }
 }

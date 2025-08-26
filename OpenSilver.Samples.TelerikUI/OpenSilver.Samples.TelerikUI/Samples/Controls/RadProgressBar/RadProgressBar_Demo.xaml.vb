@@ -6,7 +6,7 @@ Imports System.Windows.Controls.Primitives
 Imports System.Windows.Media.Animation
 
 Namespace OpenSilver.Samples.TelerikUI
-    Public Partial Class RadProgressBar_Demo
+    Partial Public Class RadProgressBar_Demo
         Inherits UserControl
         Public Sub New()
             Me.InitializeComponent()
@@ -26,23 +26,6 @@ Namespace OpenSilver.Samples.TelerikUI
 
         Private Sub OnProgressBarUnloaded(sender As Object, e As RoutedEventArgs)
             Me.ProgressBar.BeginAnimation(RangeBase.ValueProperty, Nothing)
-        End Sub
-
-        Private Sub ButtonViewSource_Click(sender As Object, e As RoutedEventArgs)
-            Call TelerikUI.ViewSourceButtonHelper.ViewSource(New List(Of OpenSilver.Samples.TelerikUI.ViewSourceButtonInfo)() From {
-                    New TelerikUI.ViewSourceButtonInfo() With {
-        .TabHeader = "RadProgressBar_Demo.xaml",
-        .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadProgressBar/RadProgressBar_Demo.xaml"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadProgressBar_Demo.xaml.cs",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadProgressBar/RadProgressBar_Demo.xaml.cs"
-    },
-                    New TelerikUI.ViewSourceButtonInfo() With {
-         .TabHeader = "RadProgressBar_Demo.xaml.vb",
-         .FilePathOnGitHub = "github/OpenSilver/OpenSilver.Samples.TelerikUI/blob/master/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadProgressBar/RadProgressBar_Demo.xaml.vb"
-    }
-})
         End Sub
     End Class
 End Namespace

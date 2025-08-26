@@ -2,7 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-             xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI.Docking">
+             xmlns:localDocking="clr-namespace:OpenSilver.Samples.TelerikUI.Docking"
+             xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
 
     <UserControl.Resources>
         <telerik:InvertedBooleanConverter x:Key="InvertedBooleanConveter" />
@@ -144,10 +145,10 @@
                                     Padding="0"
                                     Background="{StaticResource LightGrayBrush}">
                     <telerik:RadDocking.DockingPanesFactory>
-                        <local:CustomDockingPanesFactory />
+                        <localDocking:CustomDockingPanesFactory />
                     </telerik:RadDocking.DockingPanesFactory>
                     <telerik:RadDocking.CurrentSaveLoadLayoutHelper>
-                        <local:CustomSaveLoadLayoutHelper />
+                        <localDocking:CustomSaveLoadLayoutHelper />
                     </telerik:RadDocking.CurrentSaveLoadLayoutHelper>
 
                     <telerik:RadSplitContainer MaxWidth="600"
@@ -171,11 +172,46 @@
                     </telerik:RadSplitContainer>
                 </telerik:RadDocking>
             </Grid>
-            <Button Grid.Row="2"
-                    Content="VIEW SOURCE..."
-                    Click="ButtonViewSource_Click"
-                    Background="#FFD66DED"
-                    Style="{StaticResource ButtonViewSource_Style}" />
+            <local:ViewSourceButton Grid.Row="2"
+                                    Margin="0,10,0,0"
+                                    Background="#FFD66DED">
+                <local:ViewSourceButton.Sources>
+                    <local:ViewSourceButtonInfo FileName="RadDocking_Demo.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking" />
+                    <local:ViewSourceButtonInfo FileName="RadDocking_Demo.xaml.cs"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking" />
+                    <local:ViewSourceButtonInfo FileName="RadDocking_Demo.xaml.vb"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking" />
+                    <local:ViewSourceButtonInfo FileName="ErrorList.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Views" />
+                    <local:ViewSourceButtonInfo FileName="Output.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Views" />
+                    <local:ViewSourceButtonInfo FileName="PropertiesPane.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Views" />
+                    <local:ViewSourceButtonInfo FileName="ServerExplorer.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Views" />
+                    <local:ViewSourceButtonInfo FileName="SolutionExplorer.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Views" />
+                    <local:ViewSourceButtonInfo FileName="ToolBox.xaml"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Views" />
+                    <local:ViewSourceButtonInfo FileName="MainWindowViewModel.cs"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/ViewModel" />
+                    <local:ViewSourceButtonInfo FileName="MainWindowViewModel.vb"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/ViewModel" />
+                    <local:ViewSourceButtonInfo FileName="PaneViewModel.cs"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/ViewModel" />
+                    <local:ViewSourceButtonInfo FileName="PaneViewModel.vb"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/ViewModel" />
+                    <local:ViewSourceButtonInfo FileName="CustomDockingPanesFactory.cs"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Helpers" />
+                    <local:ViewSourceButtonInfo FileName="CustomDockingPanesFactory.vb"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Helpers" />
+                    <local:ViewSourceButtonInfo FileName="CustomSaveLoadLayoutHelper.cs"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Helpers" />
+                    <local:ViewSourceButtonInfo FileName="CustomSaveLoadLayoutHelper.vb"
+                                                RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadDocking/Helpers" />
+                </local:ViewSourceButton.Sources>
+            </local:ViewSourceButton>
         </Grid>
     </ContentControl>
 </UserControl>
