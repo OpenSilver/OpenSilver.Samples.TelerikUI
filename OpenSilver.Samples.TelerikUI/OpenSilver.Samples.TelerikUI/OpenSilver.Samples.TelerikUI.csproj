@@ -89,7 +89,6 @@
     <Compile Include="Samples\Controls\RadWizard\ProgressPageBehavior.cs" />
     <Compile Include="Samples\Controls\RadWizard\RadWizard_Demo.xaml.cs" />
     <Compile Include="Samples\DataVisualization.xaml.cs" />
-    <Compile Include="Samples\Controls\Controls.xaml.cs" />
     <Compile Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\Label\Label_Demo.xaml.cs" />
     <Compile Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml.cs" />
@@ -591,9 +590,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadWindow\RadWindow_Demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Samples\Controls\Controls.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\DataManagement.xaml">

@@ -68,7 +68,6 @@
     <Compile Include="Other\Internal\ViewSourcePanel.xaml.vb" />
     <Compile Include="Other\Internal\WrapPanelWithProgressiveLoading.vb" />
     <Compile Include="Other\Planets.vb" />
-    <Compile Include="Samples\Controls\Controls.xaml.vb" />
     <Compile Include="Samples\Controls\GroupBox\GroupBox_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\Label\Label_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadAutoCompleteBox\RadAutoCompleteBox_Demo.xaml.vb" />
@@ -419,9 +418,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\Controls\RadWindow\RadWindow_demo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
-    <Content Include="Samples\Controls\Controls.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Samples\DataManagement.xaml">

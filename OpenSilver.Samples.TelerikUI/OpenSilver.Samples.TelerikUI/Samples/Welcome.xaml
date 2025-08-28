@@ -44,8 +44,6 @@
                     </Span>
             </TextBlock>
 
-            <Button Content="Continue to the demos" FontSize="16" FontWeight="Bold" Background="#FF2299A1" Padding="10,6" Foreground="White" Style="{StaticResource FlatButtonStyle}" HorizontalAlignment="Left" Margin="25,30,0,0" Click="ButtonToContinue_Click"/>
-
         </StackPanel>
     </Border>
 </UserControl>
