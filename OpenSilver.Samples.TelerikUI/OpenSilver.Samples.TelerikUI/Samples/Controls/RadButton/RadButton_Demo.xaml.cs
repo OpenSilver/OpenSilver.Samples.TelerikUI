@@ -5,6 +5,8 @@ namespace OpenSilver.Samples.TelerikUI
 {
     public partial class RadButton_Demo : UserControl
     {
+        private int _clickCount = 0;
+
         public RadButton_Demo()
         {
             InitializeComponent();
@@ -12,7 +14,8 @@ namespace OpenSilver.Samples.TelerikUI
 
         private void RadButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You pressed the button");
+            _clickCount++;
+            counter.Text = _clickCount.ToString();
         }
     }
 }

@@ -1,16 +1,18 @@
-﻿Imports System.Collections.Generic
-Imports System.Windows
+﻿Imports System.Windows
 Imports System.Windows.Controls
 
 Namespace OpenSilver.Samples.TelerikUI
-    Partial Public Class RadPathButton_Demo
+    Public Partial Class RadPathButton_Demo
         Inherits UserControl
+        Private _clickCount As Integer = 0
+
         Public Sub New()
             Me.InitializeComponent()
         End Sub
 
         Private Sub RadPathButton_Click(sender As Object, e As RoutedEventArgs)
-            MessageBox.Show("You pressed the button")
+            _clickCount += 1
+            Me.counter.Text = _clickCount.ToString()
         End Sub
     End Class
 End Namespace
