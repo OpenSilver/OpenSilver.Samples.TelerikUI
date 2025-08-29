@@ -26,8 +26,7 @@
         </DataTemplate>
 
         <DataTemplate x:Key="outlookBarContactsContentTemplate">
-            <telerik:RadListBox ItemsSource="{Binding ContactsList}"
-                                IsScrollIntoViewEnabled="False">
+            <telerik:RadListBox ItemsSource="{Binding ContactsList}">
                 <telerik:RadListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal"

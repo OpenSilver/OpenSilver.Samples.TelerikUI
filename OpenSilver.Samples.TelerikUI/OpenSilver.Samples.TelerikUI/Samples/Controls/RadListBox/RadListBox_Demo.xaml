@@ -27,7 +27,6 @@
                                     Grid.Column="0"
                                     ItemsSource="{Binding}"
                                     SelectedIndex="0"
-                                    IsScrollIntoViewEnabled="False"
                                     FontSize="20">
                     <telerik:RadListBox.ItemTemplate>
                         <DataTemplate>

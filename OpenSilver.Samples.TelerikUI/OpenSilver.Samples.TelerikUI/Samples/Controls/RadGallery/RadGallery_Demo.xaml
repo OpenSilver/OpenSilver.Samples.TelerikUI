@@ -19,8 +19,7 @@
                             Style="{StaticResource HeaderControl_Style}" />
             <telerik:RadGallery x:Name="radGallery"
                                 Grid.Row="1"
-                                HorizontalAlignment="Center"
-                                IsScrollIntoViewEnabled="False">
+                                HorizontalAlignment="Center">
                 <telerik:RadGalleryItem>
                     <Border Width="50"
                             Height="20"

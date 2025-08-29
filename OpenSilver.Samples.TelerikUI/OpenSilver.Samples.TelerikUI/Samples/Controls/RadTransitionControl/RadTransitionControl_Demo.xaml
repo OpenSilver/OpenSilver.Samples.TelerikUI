@@ -24,8 +24,7 @@
                 <telerik:RadListBox Grid.Column="0"
                                     x:Name="ColorsListBox"
                                     SelectedIndex="0"
-                                    ItemsSource="{Binding ColorItems}"
-                                    IsScrollIntoViewEnabled="False">
+                                    ItemsSource="{Binding ColorItems}">
                     <telerik:RadListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid>
