@@ -168,6 +168,22 @@
   <ItemGroup>
     <EmbeddedResource Include="OpenSilver.Compatibility.TelerikUI.license.json" />
     <Content Include="Other\embed.js" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\Backstage_Icon.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\Bookmark.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\chart.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\ClipArt.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\copy.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\CoverPage.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\CrossReference.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\cut.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\formatpainter.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\inserthyperlink.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\new.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\PageBreak.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\paste.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\picture.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\Shapes.png" />
+    <Resource Include="Samples\Controls\RadRibbonView\images\SmartArt.png" />
     <Resource Include="Samples\Controls\RadTreeListView\Folders.xml" />
     <Resource Include="Samples\Controls\RadDocking\Images\Docking\bullet_toggle_minus.png" />
     <Resource Include="Samples\Controls\RadDocking\Images\Docking\bullet_toggle_plus.png" />
