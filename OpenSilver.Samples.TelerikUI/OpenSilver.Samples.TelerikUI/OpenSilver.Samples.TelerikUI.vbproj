@@ -93,6 +93,20 @@
     <Compile Include="Samples\Controls\RadCartesianChart\SplineSeries_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadCartesianChart\StepAreaSeries_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadCartesianChart\StepLineSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\Area3DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\Doughnut3DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\Extensions\ExtendedCameraExtension.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\Helpers\SeriesExtensions.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\Line3DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\Pie3DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\RadChart3D_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\StackedArea1003DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\StackedArea3DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\StackedBar1003DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\StackedBar3DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\StackedLine3DSeries_Demo.xaml.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\ViewModel\RadialViewModel.vb" />
+    <Compile Include="Samples\Controls\RadChart3D\ViewModel\UserDataViewModel.vb" />
     <Compile Include="Samples\Controls\RadColorEditor\RadColorEditor_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadColorPicker\RadColorPicker_Demo.xaml.vb" />
     <Compile Include="Samples\Controls\RadComboBox\RadComboBox_Demo.xaml.vb" />
@@ -505,6 +519,36 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadCartesianChart\StepLineSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\Area3DSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\Doughnut3DSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\Line3DSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\Pie3DSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\RadChart3D_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\StackedArea1003DSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\StackedArea3DSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\StackedBar1003DSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\StackedBar3DSeries_Demo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Controls\RadChart3D\StackedLine3DSeries_Demo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Controls\RadColorEditor\RadColorEditor_Demo.xaml">

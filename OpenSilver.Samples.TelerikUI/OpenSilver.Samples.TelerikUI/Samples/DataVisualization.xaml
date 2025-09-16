@@ -10,6 +10,7 @@
         <controlskit:StaggeredPanel DesiredColumnWidth="800"
                                     ProgressiveRenderingChunkSize="2">
             <local:RadCartesianChart_Demo HorizontalAlignment="Center" />
+            <local:RadChart3D_Demo HorizontalAlignment="Center" />
             <local:RadPolarChart_Demo HorizontalAlignment="Center" />
             <local:RadSparkline_Demo HorizontalAlignment="Center" />
             <local:RadTimeBar_Demo HorizontalAlignment="Center" />

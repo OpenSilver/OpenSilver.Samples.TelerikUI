@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.Doughnut3DSeries_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI"
+             xmlns:extensions="clr-namespace:OpenSilver.Samples.TelerikUI.RadChart3D.Extensions"
+             xmlns:viewModel="clr-namespace:OpenSilver.Samples.TelerikUI.RadChart3D.ViewModel"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation">
+
+    <UserControl.DataContext>
+        <viewModel:RadialViewModel />
+    </UserControl.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <telerik:RadChart x:Name="chart"
+                              ItemsSource="{Binding Data}">
+                <telerik:RadChart.DefaultSeriesDefinition>
+                    <telerik:Doughnut3DSeriesDefinition />
+                </telerik:RadChart.DefaultSeriesDefinition>
+
+                <telerik:RadChart.DefaultView>
+                    <telerik:ChartDefaultView>
+                        <telerik:ChartDefaultView.ChartLegend>
+                            <telerik:ChartLegend Name="legend" />
+                        </telerik:ChartDefaultView.ChartLegend>
+                        <telerik:ChartDefaultView.ChartArea>
+                            <telerik:ChartArea LegendName="legend">
+                                <telerik:ChartArea.Extensions>
+                                    <extensions:ExtendedCameraExtension ZoomEnabled="True" />
+                                </telerik:ChartArea.Extensions>
+                            </telerik:ChartArea>
+                        </telerik:ChartDefaultView.ChartArea>
+                    </telerik:ChartDefaultView>
+                </telerik:RadChart.DefaultView>
+            </telerik:RadChart>
+        </Grid>
+
+        <local:ViewSourceButton Grid.Row="1"
+                                Margin="0,10,0,0"
+                                Background="#FFFF7065">
+            <local:ViewSourceButton.Sources>
+                <local:ViewSourceButtonInfo FileName="Doughnut3DSeries_Demo.xaml"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D" />
+                <local:ViewSourceButtonInfo FileName="Doughnut3DSeries_Demo.xaml.cs"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D" />
+                <local:ViewSourceButtonInfo FileName="Doughnut3DSeries_Demo.xaml.vb"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D" />
+                <local:ViewSourceButtonInfo FileName="RadialViewModel.cs"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D/ViewModel" />
+                <local:ViewSourceButtonInfo FileName="RadialViewModel.vb"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D/ViewModel" />
+                <local:ViewSourceButtonInfo FileName="SeriesExtensions.cs"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D/Helpers" />
+                <local:ViewSourceButtonInfo FileName="SeriesExtensions.vb"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D/Helpers" />
+                <local:ViewSourceButtonInfo FileName="ExtendedCameraExtension.cs"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D/Extensions" />
+                <local:ViewSourceButtonInfo FileName="ExtendedCameraExtension.vb"
+                                            RelativePath="OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/Samples/Controls/RadChart3D/Extensions" />
+            </local:ViewSourceButton.Sources>
+        </local:ViewSourceButton>
+    </Grid>
+
+</UserControl>

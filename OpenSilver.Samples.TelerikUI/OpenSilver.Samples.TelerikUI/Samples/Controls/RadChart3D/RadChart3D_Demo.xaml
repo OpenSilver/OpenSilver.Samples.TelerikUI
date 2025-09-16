@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="OpenSilver.Samples.TelerikUI.RadChart3D_Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             xmlns:local="clr-namespace:OpenSilver.Samples.TelerikUI">
+
+    <ContentControl Style="{StaticResource Card_Style}"
+                    Height="550"
+                    Width="800">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ContentControl Content="RadChart3D"
+                            Foreground="#FFFCAB54"
+                            Background="#FFCCA376"
+                            Style="{StaticResource HeaderControl_Style}" />
+            <Grid Grid.Row="1"
+                  Margin="15">
+                <telerik:RadTabControl BorderThickness="0">
+                    <telerik:RadTabItem Header="Area3D">
+                        <local:Area3DSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Doughnut3D">
+                        <local:Doughnut3DSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Line3D">
+                        <local:Line3DSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="Pie3D">
+                        <local:Pie3DSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="StackedArea3D">
+                        <local:StackedArea3DSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="StackedArea1003D">
+                        <local:StackedArea1003DSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="StackedBar3D">
+                        <local:StackedBar3DSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="StackedBar1003D">
+                        <local:StackedBar1003DSeries_Demo />
+                    </telerik:RadTabItem>
+
+                    <telerik:RadTabItem Header="StackedLine3D">
+                        <local:StackedLine3DSeries_Demo />
+                    </telerik:RadTabItem>
+                </telerik:RadTabControl>
+            </Grid>
+        </Grid>
+    </ContentControl>
+
+</UserControl>
