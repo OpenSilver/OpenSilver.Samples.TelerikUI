@@ -14,10 +14,10 @@ Namespace OpenSilver.Samples.TelerikUI
 
         Public Event Completed As EventHandler
 
-        Private Sub Wizard_Completed(sender As Object, e As RoutedEventArgs)
+        Private Async Sub Wizard_Completed(sender As Object, e As RoutedEventArgs)
             Dim theme = If(CType(Me.listbox.SelectedItem, Theme), TelerikUI.ThemeHelper.DefaultTheme)
 
-            TelerikUI.ThemeHelper.SetTheme(theme, Me.choice.IsChecked = True)
+            Await TelerikUI.ThemeHelper.SetThemeAsync(theme, Me.choice.IsChecked = True)
 
             RaiseEvent Completed(Me, EventArgs.Empty)
         End Sub

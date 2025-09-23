@@ -19,11 +19,11 @@ Namespace OpenSilver.Samples.TelerikUI
             Close()
         End Sub
 
-        Private Sub Save_Click(sender As Object, e As RoutedEventArgs)
+        Private Async Sub Save_Click(sender As Object, e As RoutedEventArgs)
             Dim theme = CType(Me.listbox.SelectedItem, Theme)
 
             If theme IsNot Nothing Then
-                TelerikUI.ThemeHelper.SetTheme(theme, Me.choice.IsChecked = True)
+                Await TelerikUI.ThemeHelper.SetThemeAsync(theme, Me.choice.IsChecked = True)
             End If
 
             Close()

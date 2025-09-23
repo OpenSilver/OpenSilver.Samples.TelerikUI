@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO.IsolatedStorage;
+using System.Threading.Tasks;
 using System.Windows;
 using Telerik.Windows.Controls;
 
@@ -11,6 +13,8 @@ namespace OpenSilver.Samples.TelerikUI
         public const string ApplicationThemeKey = "ApplicationTheme";
         private const string ThemeSettingKey = "TelerikTheme";
         private const string LoadThemeOnceSettingKey = "TelerikThemeLoadOnce";
+
+        private static ILazyAssemblyLoader _assemblyLoader;
 
         public static ReadOnlyCollection<Theme> Themes { get; } =
             new ReadOnlyCollection<Theme>(new List<Theme>
@@ -28,7 +32,7 @@ namespace OpenSilver.Samples.TelerikUI
 
         public static Theme DefaultTheme => Themes[0];
 
-        public static bool LoadTheme()
+        public static async Task<bool> LoadThemeAsync()
         {
             if (IsolatedStorageSettings.ApplicationSettings.Contains(LoadThemeOnceSettingKey))
             {
@@ -38,7 +42,7 @@ namespace OpenSilver.Samples.TelerikUI
                 Theme theme = ThemeManager.FromName(themeName);
                 if (theme != null)
                 {
-                    SetTheme(theme, false);
+                    await SetThemeAsync(theme, false);
                     return true;
                 }
             }
@@ -49,7 +53,7 @@ namespace OpenSilver.Samples.TelerikUI
                 Theme theme = ThemeManager.FromName(themeName);
                 if (theme != null)
                 {
-                    SetTheme(theme, false);
+                    await SetThemeAsync(theme, false);
                     return true;
                 }
             }
@@ -57,10 +61,15 @@ namespace OpenSilver.Samples.TelerikUI
             return false;
         }
 
-        public static void SetTheme(Theme theme, bool remember = false)
+        public static async Task SetThemeAsync(Theme theme, bool remember = false)
         {
             if (StyleManager.ApplicationTheme == null)
             {
+                if (theme != DefaultTheme)
+                {
+                    await LoadThemeAssembly(theme);
+                }
+
                 StyleManager.ApplicationTheme = theme;
                 Application.Current.Resources[ApplicationThemeKey] = theme;
 
@@ -90,6 +99,50 @@ namespace OpenSilver.Samples.TelerikUI
         public static void ResetTheme()
         {
             IsolatedStorageSettings.ApplicationSettings.Remove(ThemeSettingKey);
+        }
+
+        internal static void Initialize(ILazyAssemblyLoader assemblyLoader)
+        {
+            _assemblyLoader = assemblyLoader ?? throw new ArgumentNullException(nameof(assemblyLoader));
+        }
+
+        private static Task LoadThemeAssembly(Theme theme)
+        {
+            if (_assemblyLoader is null)
+            {
+                throw new InvalidOperationException();
+            }
+
+            return _assemblyLoader.LoadAssembliesAsync(new string[1] { GetAssemblyName(theme.Source) });
+        }
+
+        private static string GetAssemblyName(Uri themeUri)
+        {
+            string uri = themeUri.ToString();
+
+            if (!IsComponentUri(uri))
+            {
+                throw new InvalidOperationException();
+            }
+
+            return ExtractAssemblyNameFromComponentUri(uri);
+        }
+
+        private static bool IsComponentUri(string uri)
+        {
+            int index = uri.IndexOf(';');
+            if (index > -1)
+            {
+                return uri.AsSpan(index).StartsWith(";component/".AsSpan(), StringComparison.OrdinalIgnoreCase);
+            }
+
+            return false;
+        }
+
+        private static string ExtractAssemblyNameFromComponentUri(string uri)
+        {
+            int offset = uri[0] == '/' ? 1 : 0;
+            return uri.Substring(offset, uri.IndexOf(';') - offset);
         }
     }
 }

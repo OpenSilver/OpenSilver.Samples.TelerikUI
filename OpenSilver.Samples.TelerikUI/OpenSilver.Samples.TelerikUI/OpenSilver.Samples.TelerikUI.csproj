@@ -54,6 +54,7 @@
     <Compile Include="MainPage.xaml.cs" />
     <Compile Include="Other\GanttViewModel.cs" />
     <Compile Include="Other\Internal\ControlToDisplayCodeHostedOnGitHub.cs" />
+    <Compile Include="Other\Internal\ILazyAssemblyLoader.cs" />
     <Compile Include="Other\Internal\ViewSourceButton.cs" />
     <Compile Include="Other\Internal\ViewSourceButtonInfo.cs" />
     <Compile Include="Other\Internal\ViewSourcePanel.xaml.cs" />

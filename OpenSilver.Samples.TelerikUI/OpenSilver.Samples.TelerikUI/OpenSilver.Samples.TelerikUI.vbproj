@@ -60,6 +60,7 @@
     <Compile Include="MainPage.xaml.vb" />
     <Compile Include="Other\GanttViewModel.vb" />
     <Compile Include="Other\Internal\ControlToDisplayCodeHostedOnGitHub.vb" />
+    <Compile Include="Other\Internal\ILazyAssemblyLoader.vb" />
     <Compile Include="Other\Internal\SettingsWindow.xaml.vb" />
     <Compile Include="Other\Internal\StartupWizard.xaml.vb" />
     <Compile Include="Other\Internal\ThemeHelper.vb" />

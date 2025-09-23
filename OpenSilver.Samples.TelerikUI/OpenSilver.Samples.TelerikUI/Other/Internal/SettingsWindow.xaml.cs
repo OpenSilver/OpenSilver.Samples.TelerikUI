@@ -23,13 +23,13 @@ namespace OpenSilver.Samples.TelerikUI
             Close();
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+        private async void Save_Click(object sender, RoutedEventArgs e)
         {
             Theme theme = (Theme)listbox.SelectedItem;
 
             if (theme != null)
             {
-                ThemeHelper.SetTheme(theme, choice.IsChecked == true);
+                await ThemeHelper.SetThemeAsync(theme, choice.IsChecked == true);
             }
 
             Close();
