@@ -20,4 +20,16 @@
     <ProjectReference Include="..\OpenSilver.Samples.TelerikUI\OpenSilver.Samples.TelerikUI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Expression_Dark.dll" />
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Office_Black.dll" />
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Office_Blue.dll" />
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Office_Silver.dll" />
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Summer.dll" />
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Transparent.dll" />
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Vista.dll" />
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Windows7.dll" />
+    <BlazorWebAssemblyLazyLoad Include="Telerik.Windows.Themes.Windows8.dll" />
+  </ItemGroup>
+
 </Project>
