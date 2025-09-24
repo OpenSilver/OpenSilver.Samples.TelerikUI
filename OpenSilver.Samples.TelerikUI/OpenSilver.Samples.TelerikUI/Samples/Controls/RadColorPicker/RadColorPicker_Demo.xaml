@@ -14,7 +14,7 @@
             </Grid.RowDefinitions>
             <ContentControl Content="RadColorPicker" Foreground="#FFFF657F" Background="#FFCB8591" Style="{StaticResource HeaderControl_Style}"/>
             <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <controls:RadColorPicker x:Name="ColorPicker" CustomLayout="True" SelectedColorChanged="SelectedColor_Changed"/>
+                <controls:RadColorPicker x:Name="ColorPicker" SelectedColorChanged="SelectedColor_Changed"/>
                 <Border x:Name="ColorBorder" Width="30" Height="18" Margin="3"/>
             </StackPanel>
 

@@ -13,7 +13,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="RadToolBar" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadToolBar Grid.Row="1" CustomLayout="True" Height="25">
+            <controls:RadToolBar Grid.Row="1" Height="25">
                 <controls:RadButton Content="FILE" />
                 <controls:RadButton Content="EDIT" />
                 <controls:RadButton Content="VIEW" />

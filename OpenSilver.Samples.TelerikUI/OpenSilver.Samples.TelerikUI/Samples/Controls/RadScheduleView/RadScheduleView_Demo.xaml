@@ -16,7 +16,7 @@
             <ContentControl Content="RadScheduleView" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
 
             <Grid  Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
-                <schedule:RadScheduleView  x:Name="scheduleView" CustomLayout="True">
+                <schedule:RadScheduleView  x:Name="scheduleView">
                     <schedule:RadScheduleView.ViewDefinitions>
                         <schedule:MonthViewDefinition MinTimeRulerExtent="1" />
                         <schedule:TimelineViewDefinition MinTimeRulerExtent="1" />

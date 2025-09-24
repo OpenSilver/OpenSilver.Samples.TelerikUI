@@ -345,3 +345,5 @@ Binaries
 # Browser projects
 **/wwwroot/libs
 **/wwwroot/resources
+
+/OpenSilver.Samples.TelerikUI/OpenSilver.Samples.TelerikUI/OpenSilver.Compatibility.TelerikUI.license.json

@@ -13,7 +13,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="RadRibbonView" Foreground="#FFF78069" Background="#FFDCA59C" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadRibbonView x:Name="radRibbonView" CustomLayout="True" Grid.Row="1" Title="My Title" ApplicationName="My Application" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <controls:RadRibbonView x:Name="radRibbonView" Grid.Row="1" Title="My Title" ApplicationName="My Application" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                 <controls:RadRibbonTab Header="Home">
                     <controls:RadRibbonGroup Header="Clipboard">
                     </controls:RadRibbonGroup>

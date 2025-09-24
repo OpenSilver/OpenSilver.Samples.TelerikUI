@@ -13,7 +13,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ContentControl Content="RadWrapPanel" Foreground="#FFD59851" Background="#FFBFA383" Style="{StaticResource HeaderControl_Style}"/>
-            <controls:RadWrapPanel CustomLayout="True" Grid.Row="1" Width="150" Height="140" ItemWidth="44" ItemHeight="24">
+            <controls:RadWrapPanel Grid.Row="1" Width="150" Height="140" ItemWidth="44" ItemHeight="24">
                 <Border Width="40" Height="20" Margin="2" Background="LightBlue"/>
                 <Border Width="40" Height="20" Margin="2" Background="LightBlue"/>
                 <Border Width="40" Height="20" Margin="2" Background="LightBlue"/>

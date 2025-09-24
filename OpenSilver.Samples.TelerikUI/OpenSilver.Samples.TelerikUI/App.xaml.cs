@@ -11,12 +11,13 @@ namespace OpenSilver.Samples.TelerikUI
     {
         public App()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+            Startup += OnStartup;
+        }
 
-            // Enter construction logic here...
-
-            var mainPage = new MainPage();
-            Window.Current.Content = mainPage;
+        private void OnStartup(object sender, StartupEventArgs e)
+        {
+            RootVisual = new MainPage();
         }
     }
 }

@@ -5,7 +5,7 @@ Imports System.Windows.Media
 Imports Telerik.Windows
 
 Namespace OpenSilver.Samples.TelerikUI
-    Public Partial Class RadContextMenu_Demo
+    Partial Public Class RadContextMenu_Demo
         Inherits UserControl
         Public Sub New()
             Me.InitializeComponent()
@@ -40,12 +40,5 @@ Namespace OpenSilver.Samples.TelerikUI
         Private Sub RadMenuItemReset_Click(ByVal sender As Object, ByVal e As RadRoutedEventArgs)
             Me.ContextMenuBorder.Background = New SolidColorBrush(Colors.LightGray)
         End Sub
-
-        Private Sub ContextMenuBorder_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            ' We get rid of the default contextmenu that appears when right clicking on the element so it won't overlap on the RadContextMenu:
-            Dim div = CSHTML5.Interop.GetDiv(Me.ContextMenuBorder)
-            CSHTML5.Internal.INTERNAL_HtmlDomManager.SetDomElementAttribute(div, "oncontextmenu", "return false")
-        End Sub
-
     End Class
 End Namespace
