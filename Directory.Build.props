@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
-    <OpenSilverVersion Condition=" '$(OpenSilverVersion)' == '' ">3.3.0</OpenSilverVersion>
-    <OpenSilverControlsKitVersion Condition=" '$(OpenSilverControlsKitVersion)' == '' ">3.3.0</OpenSilverControlsKitVersion>
-    <TelerikVersion Condition=" '$(TelerikVersion)' == '' ">3.3.0</TelerikVersion>
+    <OpenSilverVersion Condition=" '$(OpenSilverVersion)' == '' ">3.4.0-preview-2026-03-10-165309-58a23946</OpenSilverVersion>
+    <OpenSilverControlsKitVersion Condition=" '$(OpenSilverControlsKitVersion)' == '' ">3.4.0-preview-2026-03-10-163934-eb332e2</OpenSilverControlsKitVersion>
+    <TelerikVersion Condition=" '$(TelerikVersion)' == '' ">3.4.0-private-2026-03-10-045411-721a4d22</TelerikVersion>
   </PropertyGroup>
 </Project>
